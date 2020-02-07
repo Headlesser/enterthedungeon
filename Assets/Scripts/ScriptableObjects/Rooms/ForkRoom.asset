@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 33679f0a95fef08478f51265b4f0a415, type: 3}
+  m_Name: ForkRoom
+  m_EditorClassIdentifier: 
+  description: 'You are in a long, narrow hallway. A single torch hangs between two
+    doorways. On the door to the west, the word ''DEATH'' is written. On the door
+    to the east, the word ''LIFE'' is written. You can feel your heart pound in your
+    ears. '
+  roomID: fork room
+  exits:
+  - keyString: south
+    exitDescription: There is an unlocked gate to the south.
+    valueRoom: {fileID: 11400000, guid: 0ad0a5ad067994c45850fd2e74cc6e96, type: 2}

@@ -10,5 +10,6 @@ public class Room : ScriptableObject
     [TextArea]
     public string description;
     public string roomID;
+    public Exit[] exits;
 
 }

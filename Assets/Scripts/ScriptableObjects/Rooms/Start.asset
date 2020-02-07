@@ -15,4 +15,8 @@ MonoBehaviour:
   description: You wake up on a cold and damp floor made of stone. The room is dark.
     You hear water dripping from the ceiling. Your eyes adjust and you see a rusted
     iron gate blocking your path. You need to get out of here.
-  roomID: start
+  roomID: start room
+  exits:
+  - keyString: north
+    exitDescription: You see a locked gate. It is covered in rust.
+    valueRoom: {fileID: 0}
