@@ -123,6 +123,7 @@ GameObject:
   - component: {fileID: 412027414}
   - component: {fileID: 412027413}
   - component: {fileID: 412027415}
+  - component: {fileID: 412027416}
   m_Layer: 0
   m_Name: GameController
   m_TagString: Untagged
@@ -144,6 +145,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   displayText: {fileID: 1854673702}
   roomNavigation: {fileID: 0}
+  interactionDescriptionsInRoom: []
 --- !u!4 &412027414
 Transform:
   m_ObjectHideFlags: 0
@@ -171,6 +173,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   currentRoom: {fileID: 11400000, guid: 0ad0a5ad067994c45850fd2e74cc6e96, type: 2}
+--- !u!114 &412027416
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 412027412}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 38b098db3f9538d4aae2da4f0a28f42f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  inputField: {fileID: 731166395}
 --- !u!1 &474725219
 GameObject:
   m_ObjectHideFlags: 0
