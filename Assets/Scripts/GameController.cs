@@ -8,6 +8,7 @@ public class GameController : MonoBehaviour
 {
 
     public TMP_Text displayText;
+    public InputAction[] inputActions;
 
     [HideInInspector]
     public Navigation roomNavigation;
@@ -15,6 +16,8 @@ public class GameController : MonoBehaviour
     public List<string> interactionDescriptionsInRoom = new List<string>();
 
     List<string> actionLog = new List<string>();
+
+    public Image roomImage;
 
     void Awake()
     {
@@ -25,6 +28,7 @@ public class GameController : MonoBehaviour
     {
         DisplayRoomText();
         DisplayLoggedText();
+        DisplayRoomImage();
     }
 
     public void DisplayLoggedText()
@@ -36,6 +40,7 @@ public class GameController : MonoBehaviour
 
     public void DisplayRoomText()
     {
+        ClearCollectionsForNewRoom();
         UnpackRoom();
 
         string joinedInteractionDescriptions = string.Join("\n", interactionDescriptionsInRoom.ToArray());
@@ -46,9 +51,20 @@ public class GameController : MonoBehaviour
         LogStringWithReturn(combinedText);
     }
 
+    public void DisplayRoomImage()
+    {
+        roomImage.sprite = roomNavigation.currentRoom.sprite;
+    }
+
     void UnpackRoom()
     {
         roomNavigation.UnpackExitsInRoom();
+    }
+
+    void ClearCollectionsForNewRoom()
+    {
+        interactionDescriptionsInRoom.Clear();
+        roomNavigation.ClearExits();
     }
 
     public void LogStringWithReturn(string stringToAdd)

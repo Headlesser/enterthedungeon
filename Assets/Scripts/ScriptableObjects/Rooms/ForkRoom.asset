@@ -14,10 +14,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   description: 'You are in a long, narrow hallway. A single torch hangs between two
     doorways. On the door to the west, the word ''DEATH'' is written. On the door
-    to the east, the word ''LIFE'' is written. You can feel your heart pound in your
-    ears. '
+    to the east, the word ''LIFE'' is written. '
   roomID: fork room
   exits:
   - keyString: south
     exitDescription: There is an unlocked gate to the south.
     valueRoom: {fileID: 11400000, guid: 0ad0a5ad067994c45850fd2e74cc6e96, type: 2}
+  sprite: {fileID: 10913, guid: 0000000000000000f000000000000000, type: 0}
