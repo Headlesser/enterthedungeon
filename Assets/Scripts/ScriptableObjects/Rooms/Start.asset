@@ -12,12 +12,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 33679f0a95fef08478f51265b4f0a415, type: 3}
   m_Name: Start
   m_EditorClassIdentifier: 
-  description: You wake up on a cold and damp floor made of stone. The room is dark.
-    You hear water dripping from the ceiling. Your eyes adjust and you see a rusted
-    iron gate blocking your path. You need to get out of here.
+  description: You wake up on a cold, damp floor made of stone. The room is dark.
+    You hear water dripping from the ceiling. You need to get out of here.
   roomID: start room
   exits:
   - keyString: north
     exitDescription: You see a locked gate. It is covered in rust.
     valueRoom: {fileID: 11400000, guid: b6b5aab6ff20ad0488b0f47d06f7f0e7, type: 2}
   sprite: {fileID: 21300000, guid: e516812b65a2c7f4ba4d38be4e58f750, type: 3}
+  interactableObjectsInRoom:
+  - {fileID: 11400000, guid: ebc620d05577b364b874347218897105, type: 2}

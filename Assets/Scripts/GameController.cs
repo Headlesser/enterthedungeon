@@ -14,6 +14,8 @@ public class GameController : MonoBehaviour
     public Navigation roomNavigation;
     [HideInInspector]
     public List<string> interactionDescriptionsInRoom = new List<string>();
+    [HideInInspector]
+    public InteractableItems interactableItems;
 
     List<string> actionLog = new List<string>();
 
@@ -21,6 +23,7 @@ public class GameController : MonoBehaviour
 
     void Awake()
     {
+        interactableItems = GetComponent<InteractableItems>();
         roomNavigation = GetComponent<Navigation>();
     }
 
@@ -58,7 +61,24 @@ public class GameController : MonoBehaviour
 
     void UnpackRoom()
     {
+        //'loads' the new room
         roomNavigation.UnpackExitsInRoom();
+        PrepareObjectsToTakeOrExamine(roomNavigation.currentRoom);
+    }
+
+    void PrepareObjectsToTakeOrExamine(Room currentRoom)
+    {
+        for (int i = 0; i < currentRoom.interactableObjectsInRoom.Length; i++)
+        {
+            //go over the array of objects in the room to display their descriptions
+            //get referance to InteractableItems script
+            string descriptionNotInInventory = interactableItems.GetObjectsNotInInventory(currentRoom,i);
+            if(descriptionNotInInventory != null)
+            {
+                //if loop succeeded and something WAS found inside of the room
+                interactionDescriptionsInRoom.Add(descriptionNotInInventory);
+            }
+        }
     }
 
     void ClearCollectionsForNewRoom()

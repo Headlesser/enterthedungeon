@@ -15,5 +15,7 @@ public class Room : ScriptableObject
     public Sprite sprite;
     //Make it so this variable stores the 'image' of the room. Will change as player moves to 
     //different rooms.
+    public InteractableObject[] interactableObjectsInRoom;
+    //Items found in the room that can be picked up/interacted with
 
 }
