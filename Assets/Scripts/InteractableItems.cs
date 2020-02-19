@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class InteractableItems : MonoBehaviour
 {
+    public Dictionary<string, string> examineDictionary = new Dictionary<string, string>();
     //Items are either in the player's inventory, or inside of a room.
     //If something is in the inventory, do NOT display it's description in the room.
     [HideInInspector]
@@ -21,5 +22,13 @@ public class InteractableItems : MonoBehaviour
         }
 
         return null;
+    }
+
+    public void ClearCollections()
+    {
+        //Clear all entries in dictionary when moving to the next room
+        //Because those items will no longer be present in the new room
+        examineDictionary.Clear();
+        nounsInRoom.Clear();
     }
 }

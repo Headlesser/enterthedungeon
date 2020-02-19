@@ -9,5 +9,6 @@ public class InteractableObject : ScriptableObject
     public string noun = "name";
     [TextArea]
     public string description = "Description of item in the room";
+    public Interaction[] interactions;
 
 }

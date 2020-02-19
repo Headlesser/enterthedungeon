@@ -78,11 +78,42 @@ public class GameController : MonoBehaviour
                 //if loop succeeded and something WAS found inside of the room
                 interactionDescriptionsInRoom.Add(descriptionNotInInventory);
             }
+            InteractableObject interactableInRoom = currentRoom.interactableObjectsInRoom[i];
+
+            for (int j = 0; j < interactableInRoom.interactions.Length; j++)
+            {
+                //first loop gets all the interactabe objects. 
+                //Second loop --> on each object, loop over its individual interactions
+                Interaction interaction = interactableInRoom.interactions[j];
+                if(interaction.inputAction.keyWord == "examine")
+                {
+                    //if the player types the examine keyword...
+                    //add it to examine dictionary. For example, if you pass in "Rusty Key", return the text response for it.
+                    interactableItems.examineDictionary.Add(interactableInRoom.noun, interaction.textResponse);
+                }
+            }
+        }
+    }
+
+    public string TextVerbDictionaryWithNoun(Dictionary<string, string> verbDictionary, string verb, string noun)
+    {
+        //check if the noun the player examines is in the dictionary. if it is, display text.
+        //otherwise, give negative response
+        if(verbDictionary.ContainsKey(noun))
+        {
+            return verbDictionary[noun];
+        }
+        else
+        {
+            return "You cannot " + verb + " " + noun + ".";
         }
     }
 
     void ClearCollectionsForNewRoom()
     {
+        //'Clear' all the lists/dictionaries so they can be repopulated with
+        //the information stored with the next room
+        interactableItems.ClearCollections();
         interactionDescriptionsInRoom.Clear();
         roomNavigation.ClearExits();
     }
