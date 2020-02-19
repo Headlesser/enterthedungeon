@@ -10,18 +10,17 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ed19a84eeb1cdeb4ba651ef11a20d3b5, type: 3}
-  m_Name: Rusty Key
+  m_Name: Skull
   m_EditorClassIdentifier: 
-  noun: key
-  description: Hanging on the wall is a rusty iron ring with a single key.
+  noun: skull
+  description: There is a totally inconspicuous testing skull on the floor.
   interactions:
   - inputAction: {fileID: 11400000, guid: 90542c9d641a4f744bc08a88649757c9, type: 2}
-    textResponse: The key is covered in rust and is rough to the touch. It looks prone
-      to breaking.
+    textResponse: The skull needs to be used on the special door.
     actionResponse: {fileID: 0}
   - inputAction: {fileID: 11400000, guid: 4004b81a9d6368a4d958b07ba4a7772b, type: 2}
-    textResponse: You take the rusty key.
+    textResponse: You take the skull
     actionResponse: {fileID: 0}
   - inputAction: {fileID: 11400000, guid: 703f97af50ba68d4dbcabf97f7fc2f38, type: 2}
     textResponse: 
-    actionResponse: {fileID: 0}
+    actionResponse: {fileID: 11400000, guid: fe15ab54cf5e26c4b8bc71f0f2148dd1, type: 2}

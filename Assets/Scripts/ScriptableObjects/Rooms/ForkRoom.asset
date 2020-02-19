@@ -21,3 +21,5 @@ MonoBehaviour:
     exitDescription: There is an unlocked gate to the south.
     valueRoom: {fileID: 11400000, guid: 0ad0a5ad067994c45850fd2e74cc6e96, type: 2}
   sprite: {fileID: 10913, guid: 0000000000000000f000000000000000, type: 0}
+  interactableObjectsInRoom:
+  - {fileID: 11400000, guid: 2c63ddcf26c49bd499f0e7d225f95b9a, type: 2}
