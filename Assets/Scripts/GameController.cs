@@ -85,11 +85,20 @@ public class GameController : MonoBehaviour
                 //first loop gets all the interactabe objects. 
                 //Second loop --> on each object, loop over its individual interactions
                 Interaction interaction = interactableInRoom.interactions[j];
+                //Interactions are JUST the names and descriptions of the objects in the room.
+                //This isn't what you want to remove
                 if(interaction.inputAction.keyWord == "examine")
                 {
                     //if the player types the examine keyword...
-                    //add it to examine dictionary. For example, if you pass in "Rusty Key", return the text response for it.
+                    //add it to examine dictionary. For example, if you pass in "Key", return the text response for it.
                     interactableItems.examineDictionary.Add(interactableInRoom.noun, interaction.textResponse);
+                }
+                if(interaction.inputAction.keyWord == "take")
+                {
+                    //if the player types the take keyword...
+                    //add it to take dictionary, remove it from examineDictionary. 
+                    //Remember, the takeDictionary IS your Inventory Dictionary!
+                    interactableItems.takeDictionary.Add(interactableInRoom.noun, interaction.textResponse);
                 }
             }
         }

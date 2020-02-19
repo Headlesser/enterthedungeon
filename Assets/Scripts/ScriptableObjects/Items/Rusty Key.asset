@@ -18,3 +18,5 @@ MonoBehaviour:
   - inputAction: {fileID: 11400000, guid: 90542c9d641a4f744bc08a88649757c9, type: 2}
     textResponse: The key is covered in rust and is rough to the touch. It looks prone
       to breaking.
+  - inputAction: {fileID: 11400000, guid: 4004b81a9d6368a4d958b07ba4a7772b, type: 2}
+    textResponse: You take the rusty key.
