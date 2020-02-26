@@ -24,6 +24,9 @@ This file contains the documentation for Enter the Dungeon.
 ## Asset List
 [Assets](https://github.com/Headlesser/enterthedungeon/wiki/Asset-List)
 
+## To-Do List
+[To-Do](#sticky_notes)
+
 ## Sources
 [Sources](https://github.com/Headlesser/enterthedungeon/wiki/Sources)
 
@@ -132,6 +135,14 @@ something I can happily point to when asked about my likes. I hope my target use
 group finds a fun and engaging experience, regardless of how long or short the end
 product may be. Sometimes even the shortest experiences, if they’re good, stick with
 those who were able to enjoy them. 
+
+# Sticky Notes
+
+ - Make it so you can ONLY examine an item if it is either PRESENT IN THE CURRENT ROOM or IS IN YOUR INVENTORY. If an item is ever used, it should be REMOVED from all dictionaries and cannot be examined. If player returns to a room where they took an item, they should NOT be able to examine the 'ghost' of that item.
+ - Make it so text does not scroll infinitely up over the sprite. 'Lock' size of the text area somehow.
+ - Make it so, after using an item, it doesn't repeat the old room description again? (Replace it w/ the new one after triggering an event. I will have to clear the log before printing).
+ - Make sure sprite sizes are standardized.
+ - Create map layout for section 1.
 
 # Process
 ### January 20, 2020
