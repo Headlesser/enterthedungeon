@@ -6,6 +6,7 @@ This file contains the documentation for Enter the Dungeon.
 
 ## Introduction
 [Proposal](#proposal)
+
 [Overview](#overview)
 
 ## Controls
@@ -144,3 +145,15 @@ In addition to this I thought about the idea of a non-game related project. I wa
 My third idea is inevitably the one I settled on, which came to fruition after trying to think of a way to scope down the point-and-click puzzle game idea.
 
 ![Page3](https://github.com/Headlesser/enterthedungeon/raw/master/images/p1.png "My first idea for the game")
+
+### January 24, 2020
+I created my repository after settling on my idea for a text adventure game.
+
+### January 26, 2020
+I started the Unity Text Adventure tutorial parts 1, 2, and 3 which can be found here:
+https://www.youtube.com/watch?v=jAf1I1UWo5Q
+https://www.youtube.com/watch?v=dQ4jcxKwXM8
+https://www.youtube.com/watch?v=TP4gLQmKOLo
+
+I had trouble getting my .gitignore file to ignore the proper folders and put it on the to-do list.
+
