@@ -18,8 +18,8 @@ This file contains the documentation for Enter the Dungeon.
 ## Game Map
 [Game Map](https://github.com/Headlesser/enterthedungeon/wiki/Game-Map)
 
-## Process
-[Development Diary](#process)
+## Development Diary
+[Process](#process)
 
 ## Asset List
 [Assets](https://github.com/Headlesser/enterthedungeon/wiki/Asset-List)
