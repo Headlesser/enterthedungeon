@@ -151,6 +151,7 @@ I created my repository after settling on my idea for a text adventure game.
 
 ### January 26, 2020
 I started the Unity Text Adventure tutorial parts 1, 2, and 3 which can be found here:
+
 https://www.youtube.com/watch?v=jAf1I1UWo5Q
 
 https://www.youtube.com/watch?v=dQ4jcxKwXM8
