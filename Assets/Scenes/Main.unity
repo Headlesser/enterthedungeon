@@ -283,6 +283,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   usableItemList:
   - {fileID: 11400000, guid: 2c63ddcf26c49bd499f0e7d225f95b9a, type: 2}
+  - {fileID: 11400000, guid: ebc620d05577b364b874347218897105, type: 2}
+  - {fileID: 11400000, guid: c064ecda8c8b4824dba30137b73613f7, type: 2}
   nounsInRoom: []
 --- !u!1 &474725219
 GameObject:

@@ -12,11 +12,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 33679f0a95fef08478f51265b4f0a415, type: 3}
   m_Name: ForkRoomOpen
   m_EditorClassIdentifier: 
-  description: The door to your south has disappeared... You cannot go back.
-  roomID: fork room
+  description: "The gargoyle's eyes light up and you feel the floor begin to quake.
+    The sound of scraping stone hammers your ears as the statue shifts position. \nThe
+    door to your south has slammed shut behind you... You cannot turn back now."
+  roomID: fork room open
   exits:
-  - keyString: west
-    exitDescription: 'A secret door opens to the west. '
+  - keyString: north
+    exitDescription: As the dust settles, you find a hidden exit has appeared to the
+      NORTH.
     valueRoom: {fileID: 11400000, guid: 11d2b88fb14b15a4d873186520609511, type: 2}
   sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
   interactableObjectsInRoom: []

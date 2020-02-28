@@ -15,7 +15,7 @@ public class InteractableItems : MonoBehaviour
     [HideInInspector]
     public List<string> nounsInRoom = new List<string>();
     //private?
-    private List<string> nounsInInventory = new List<string>();
+    public List<string> nounsInInventory = new List<string>();
     GameController controller;
 
     void Awake()

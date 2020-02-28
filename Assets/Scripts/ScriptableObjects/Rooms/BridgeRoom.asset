@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 33679f0a95fef08478f51265b4f0a415, type: 3}
+  m_Name: BridgeRoom
+  m_EditorClassIdentifier: 
+  description: You feel the spray of salt water as you stand at the edge of an enormous
+    gap too large to cross. An icy torrent of frothing water rushes below you. A fall
+    down there would assuredly spell certain death. There is a raised drawbridge visible
+    on the opposite ledge. A mechanism controlling the drawbridge sits near the ledge.
+    It appears to be broken.
+  roomID: bridge room
+  exits:
+  - keyString: west
+    exitDescription: There is a hallway to the west where you entered.
+    valueRoom: {fileID: 11400000, guid: b6b5aab6ff20ad0488b0f47d06f7f0e7, type: 2}
+  sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
+  interactableObjectsInRoom: []

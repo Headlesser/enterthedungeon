@@ -23,5 +23,5 @@ MonoBehaviour:
     textResponse: You take the rusty key.
     actionResponse: {fileID: 0}
   - inputAction: {fileID: 11400000, guid: 703f97af50ba68d4dbcabf97f7fc2f38, type: 2}
-    textResponse: 
-    actionResponse: {fileID: 0}
+    textResponse: You use the key. The rusted gate creaks open.
+    actionResponse: {fileID: 11400000, guid: 2ad2b5ce8d0c10147ac31e01d5883ce9, type: 2}

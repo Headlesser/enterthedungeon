@@ -71,7 +71,7 @@ public class GameController : MonoBehaviour
         for (int i = 0; i < currentRoom.interactableObjectsInRoom.Length; i++)
         {
             //go over the array of objects in the room to display their descriptions
-            //get referance to InteractableItems script
+            //get reference to InteractableItems script
             string descriptionNotInInventory = interactableItems.GetObjectsNotInInventory(currentRoom,i);
             if(descriptionNotInInventory != null)
             {
@@ -83,7 +83,7 @@ public class GameController : MonoBehaviour
             for (int j = 0; j < interactableInRoom.interactions.Length; j++)
             {
                 //first loop gets all the interactabe objects. 
-                //Second loop --> on each object, loop over its individual interactions
+                //Second loop --> on each object, loop over its individual interactions (examine, take, use)
                 Interaction interaction = interactableInRoom.interactions[j];
                 //Interactions are JUST the names and descriptions of the objects in the room.
                 //This isn't what you want to remove
