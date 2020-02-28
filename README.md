@@ -1,3 +1,4 @@
+
 # EnterTheDungeon
 
 This file contains the documentation for Enter the Dungeon.
@@ -13,7 +14,7 @@ This file contains the documentation for Enter the Dungeon.
 [Control Map](https://github.com/Headlesser/enterthedungeon/wiki/Controls)
 
 ## Puzzle Design
-[Puzzle Documentation](https://github.com/Headlesser/enterthedungeon/wiki/Puzzle-Design)
+[Puzzle Documentation](#puzzle-design)
 
 ## Game Map
 [Game Map](https://github.com/Headlesser/enterthedungeon/wiki/Game-Map)
@@ -28,7 +29,7 @@ This file contains the documentation for Enter the Dungeon.
 [To-Do](#to-do-notes)
 
 ## Sources
-[Sources](https://github.com/Headlesser/enterthedungeon/wiki/Sources)
+[Sources](#sources)
 
 
 
@@ -50,6 +51,8 @@ Enter the Dungeon will be released for PCs running windows and will be available
 
 
 # Proposal
+
+[View in PDF format](https://github.com/Headlesser/enterthedungeon/raw/master/documentation/proposal.pdf)
 
 ## Overall Idea
 
@@ -136,16 +139,39 @@ group finds a fun and engaging experience, regardless of how long or short the e
 product may be. Sometimes even the shortest experiences, if they’re good, stick with
 those who were able to enjoy them. 
 
+# Controls
+Enter the Dungeon uses entirely text-based controls. Typing controls follow a verb-noun format.
+There are 5 primary input methods that allow the user to perform every action they need to complete the game.
+
+ - Go 
+`Allows the user to move between rooms by designating one of the four cardinal directions (north, south, east, west).`
+ - Examine
+ - `Allows the user to look at objects of interest and get more information. Used to provide hints to solve any given puzzle.`
+ - Take
+ - `Allows the user to take objects from rooms and add them to their inventory. Items cannot be used unless they are in the player's  possession.`
+ - Use
+ - `Allows the player to use items to unlock doors or reveal other secrets, provided they are in the correct room and are using the correct item.`
+ - Inventory
+ - `Displays every item that the player has taken and not used. Used items will be removed from the inventory. If an item is in the player's inventory, they can still examine it as if it were still inside of a room.`
+ - 
+# Puzzle Design
+For this project I decided to utilize a design formula I have developed for creating a lock-and-key puzzle structure. This structure involves a core, linear path that the player follows all the way to the end (think of a straight line, or the trunk of a tree). That is, the player's path through the game, inevitably, is a linear experience. However, each section of this tree trunk is divided up into parts, and these parts can be stacked on top of one another to create a more modular way of designing. For example, the Start Room is the bottom section of the trunk, and features the easiest puzzle: `take key` -> `use key` -> `go north`. This immediately leads to the End Room, which has no puzzle and simply concludes the game.
+
+The trunk of this puzzle tree can now be elongated (or shortened) as much as is needed, thus allowing the game to always be in somewhat of a 'completed' state but easily built upon.  Furthermore, to introduce more complexity into the puzzles, each section of trunk can have a limitless amount of 'branches'. In this case, the Start Room, Section 1, is a section of trunk with no branches. Section 2, however, is a section of trunk with one branches, with branches following the formula `# of branches = # of keys needed to complete the section - 1`. For example, Section 1 needs 1 key to complete it, `1-1 = 0` branches. Section 2 needs 2 keys to complete it (drawbridge lever, gargoyle eye), `2-1 = 1` branch. 
+
+
+## Section 1: Start
+
+
 # To Do Notes
 
  - ~~Create map layout for section 1.~~
  - Make it so you can ONLY examine an item if it is either PRESENT IN THE CURRENT ROOM or IS IN YOUR INVENTORY. If an item is ever used, it should be REMOVED from all dictionaries and cannot be examined. If player returns to a room where they took an item, they should NOT be able to examine the 'ghost' of that item.
  - Make it so text does not scroll infinitely up over the sprite. 'Lock' size of the text area somehow.
- - Make it so, after using an item, it doesn't repeat the old room description again? (Replace it w/ the new one after triggering an event. I will have to clear the log before printing).
- - Make sure sprite sizes are standardized.
+ - ~~Make it so, after using an item, it doesn't repeat the old room description again? (Replace it w/ the new one after triggering an event. I will have to clear the log before printing).~~
+ - ~~Make sure sprite sizes are standardized.~~
 
 # Process
-### January 20, 2020
 I began this project on January 20th, 2020, which began as a few sketches of ideas in my notebook. At first I thought of making a 2D point-and-click puzzle game. I was very into games such as [Deep Sleep](https://scriptwelder.itch.io/deep-sleep) and [Don't Escape: 4 Days to Survive](https://dont-escape.com/) by *scriptwealder*, and started writing up some notes in my sketchbook seen here:
 ![Page1](https://github.com/Headlesser/enterthedungeon/raw/master/images/p3.png "My first idea for the game")
 
@@ -157,17 +183,10 @@ My third idea is inevitably the one I settled on, which came to fruition after t
 
 ![Page3](https://github.com/Headlesser/enterthedungeon/raw/master/images/p1.png "My first idea for the game")
 
-### January 24, 2020
-I created my repository after settling on my idea for a text adventure game.
+After solidifying my idea, I began work on creating the framework for this game by following Unity's online learning Text Adventure tutorial series. Seeing as this is a project to stress puzzle creation and writing skills, I did not want to have to spend too long debugging or creating game code. 
 
-### January 26, 2020
-I started the Unity Text Adventure tutorial parts 1, 2, and 3 which can be found here:
+Around a month later, after completing the tutorial series, I came to the realization that I was running behind schedule.
 
-https://www.youtube.com/watch?v=jAf1I1UWo5Q
-
-https://www.youtube.com/watch?v=dQ4jcxKwXM8
-
-https://www.youtube.com/watch?v=TP4gLQmKOLo
-
-I had trouble getting my .gitignore file to ignore the proper folders and put it on the to-do list.
-
+# Sources
+### 2/02/2020
+https://learn.unity.com/tutorial/recorded-video-session-text-adventure-game-part-1
