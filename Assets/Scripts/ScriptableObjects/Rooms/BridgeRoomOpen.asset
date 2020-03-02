@@ -17,7 +17,7 @@ MonoBehaviour:
   exits:
   - keyString: west
     exitDescription: There is a hallway to the west where you entered.
-    valueRoom: {fileID: 11400000, guid: b6b5aab6ff20ad0488b0f47d06f7f0e7, type: 2}
+    valueRoom: {fileID: 11400000, guid: 7fdc13d28e871fa4bb88ceaf06148851, type: 2}
   - keyString: north
     exitDescription: You can now safely cross the gap to the north.
     valueRoom: {fileID: 11400000, guid: 05508c6da99ae724aa61e4e7d92662c1, type: 2}

@@ -6,6 +6,7 @@ using UnityEngine;
 public class ChangeRoomResponse : ActionResponse
 {
     public Room roomToChangeTo;
+    //private InteractableItems interactableItems;
     //If you use item in correct place
     //it will 'change' you to a 'new' room where the secret door is open.
     //Think of it more like creating a room that is a copy of the current one, but

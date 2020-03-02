@@ -1,0 +1,36 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 33679f0a95fef08478f51265b4f0a415, type: 3}
+  m_Name: ForkRoomBridgeRoomOpen
+  m_EditorClassIdentifier: 
+  description: 'You emerge upon a large room with two doors. Sitting beetween them
+    is a gargoyle. The statue is ancient and crumbling, but seems harmless. A single
+    blue gemstone adornes its left eyesocket.
+
+'
+  roomID: fork room bridge room open
+  exits:
+  - keyString: south
+    exitDescription: There is an unlocked gate to the south.
+    valueRoom: {fileID: 11400000, guid: b1324972ab3d09b4e8adb743a239bbb3, type: 2}
+  - keyString: west
+    exitDescription: The door to the WEST is covered in what looks to be scratch marks.
+      The cobbles leading through the door are stained with a dark, coagulated substance.
+      You can hear nothing coming from beyond the door.
+    valueRoom: {fileID: 11400000, guid: 9a77787eb6f14a441812df87fb7386c6, type: 2}
+  - keyString: east
+    exitDescription: The door to the EAST appears rotted and is cold to the touch.
+      You can feel a damp breeze flow under the door. A low, steady rumble echoes
+      just on the other side.
+    valueRoom: {fileID: 11400000, guid: 1eb0ad051a16be246875ca106a5b1ef1, type: 2}
+  sprite: {fileID: 10913, guid: 0000000000000000f000000000000000, type: 0}
+  interactableObjectsInRoom: []
