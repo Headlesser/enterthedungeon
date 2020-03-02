@@ -8,6 +8,7 @@ public class InteractableItems : MonoBehaviour
     //Master list of every possible usable item in the game
     public Dictionary<string, string> examineDictionary = new Dictionary<string, string>();
     public Dictionary<string, string> takeDictionary = new Dictionary<string, string>();
+    public Dictionary<string, string> useDictionaryResponse = new Dictionary<string, string>();
     private Dictionary<string, ActionResponse> useDictionary = new Dictionary<string, ActionResponse>();
 
     //Items are either in the player's inventory, or inside of a room.
@@ -122,7 +123,7 @@ public class InteractableItems : MonoBehaviour
             if(useDictionary.ContainsKey(nounToUse))
             {
                 //if player has the item in their inventory and it is within the useItem dictionary
-                bool actionResult = useDictionary[nounToUse].DoActionResponse(controller);
+                bool actionResult = useDictionary[nounToUse].DoActionResponse(controller, separatedInputWords);
                 if(!actionResult)
                 {
                     controller.LogStringWithReturn("Nothing seems to happen.");

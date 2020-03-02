@@ -96,9 +96,13 @@ public class GameController : MonoBehaviour
                 if(interaction.inputAction.keyWord == "take")
                 {
                     //if the player types the take keyword...
-                    //add it to take dictionary, remove it from examineDictionary. 
+                    //add it to take dictionary 
                     //Remember, the takeDictionary IS your Inventory Dictionary!
                     interactableItems.takeDictionary.Add(interactableInRoom.noun, interaction.textResponse);
+                }
+                if(interaction.inputAction.keyWord == "use")
+                {
+                    interactableItems.useDictionaryResponse.Add(interactableInRoom.noun, interaction.textResponse);
                 }
             }
         }

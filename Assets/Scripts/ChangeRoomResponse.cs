@@ -6,17 +6,18 @@ using UnityEngine;
 public class ChangeRoomResponse : ActionResponse
 {
     public Room roomToChangeTo;
-    //private InteractableItems interactableItems;
     //If you use item in correct place
     //it will 'change' you to a 'new' room where the secret door is open.
     //Think of it more like creating a room that is a copy of the current one, but
     //with the new entrance/exit.
 
-    public override bool DoActionResponse(GameController controller)
+    public override bool DoActionResponse(GameController controller, string[] separatedInputWords)
     {
         if(controller.roomNavigation.currentRoom.roomID == requiredString)
         {
             controller.roomNavigation.currentRoom = roomToChangeTo;
+            controller.LogStringWithReturn(controller.TextVerbDictionaryWithNoun(controller.interactableItems.useDictionaryResponse, separatedInputWords[0], separatedInputWords[1]));
+            controller.interactableItems.nounsInInventory.Remove(separatedInputWords[1]);
             controller.DisplayRoomText();
             return true;
         }
