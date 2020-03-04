@@ -25,6 +25,8 @@ This file contains the documentation for Enter the Dungeon.
 
 [Technical Documentation](#technical-documentation)
 
+[Art Documentation[(#art-and-visuals)
+
 ## Asset List
 [Assets](#assets)
 
@@ -248,6 +250,8 @@ to
 DoActionResponse()
 ```
 as well, which logged the `textResponse` value identical to the way `take` and `examine` had been initially set up.
+
+# Art and Visuals
 
 # Assets
 [An excel document containing the list of assets per section can be found here.](https://docs.google.com/spreadsheets/d/1_scVRSXG6_j4dud2x9jJDUqPNOE1y2HsckKVOYKUXjU/edit?usp=sharing)
