@@ -34,6 +34,7 @@ public class Navigation : MonoBehaviour
             controller.LogStringWithReturn("You go " + directionNoun);
             controller.DisplayRoomText();
             controller.DisplayRoomImage();
+            controller.PlayRoomSound();
         }
         else
         {

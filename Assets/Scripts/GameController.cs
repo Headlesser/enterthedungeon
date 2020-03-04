@@ -21,10 +21,15 @@ public class GameController : MonoBehaviour
 
     public Image roomImage;
 
+    public AudioSource audioSource;
+    public AudioSource actionAudioSource;
+
     void Awake()
     {
         interactableItems = GetComponent<InteractableItems>();
         roomNavigation = GetComponent<Navigation>();
+        audioSource = GetComponent<AudioSource>();
+        actionAudioSource = GetComponentInChildren<AudioSource>();
     }
 
     void Start()
@@ -32,6 +37,7 @@ public class GameController : MonoBehaviour
         DisplayRoomText();
         DisplayLoggedText();
         DisplayRoomImage();
+        PlayRoomSound();
     }
 
     public void DisplayLoggedText()
@@ -57,6 +63,19 @@ public class GameController : MonoBehaviour
     public void DisplayRoomImage()
     {
         roomImage.sprite = roomNavigation.currentRoom.sprite;
+    }
+
+    public void StopRoomSound()
+    {
+        audioSource.Stop();
+    }
+
+    public void PlayRoomSound()
+    {
+        //Set the audio clip to play to the room's audio clip
+        //Debug.Log(roomNavigation.currentRoom.audio);
+        audioSource.clip = roomNavigation.currentRoom.audio;
+        audioSource.Play();
     }
 
     void UnpackRoom()

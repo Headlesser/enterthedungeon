@@ -14,3 +14,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   requiredString: start room
   roomToChangeTo: {fileID: 11400000, guid: b1324972ab3d09b4e8adb743a239bbb3, type: 2}
+  actionSound: {fileID: 8300000, guid: c1ef8277d4ded3547b9e0f494bb853bd, type: 3}
