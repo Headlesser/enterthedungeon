@@ -141,8 +141,7 @@ references for examples of good, engaging writing and puzzle design.
 I would like to see my project as something I can put on my portfolio, as well as
 something I can happily point to when asked about my likes. I hope my target user
 group finds a fun and engaging experience, regardless of how long or short the end
-product may be. Sometimes even the shortest experiences, if they’re good, stick with
-those who were able to enjoy them. 
+product may be. I would rather end up with a completed project than an unfinished project that is longer. 
 
 # Controls
 Enter the Dungeon uses entirely text-based controls. Typing controls follow a verb-noun format.
