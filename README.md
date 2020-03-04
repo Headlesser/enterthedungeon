@@ -256,17 +256,18 @@ The visual aesthetic of Enter the Dungeon is intended to be simple, pixelated an
 
  I looked at classic text-based games such as Zork, and other games such as Undertale, The Oregon Trail, etc for reference while exploring different options.
 
- - Screenshot from Zork. I know I wanted a similar setup with white text on a black background.
+ - [Screenshot from Zork](https://www.mobygames.com/game/apple2/zork-the-great-underground-empire/screenshots/gameShotId,305672/). I know I wanted a similar setup with white text on a black background.
 ![zork](https://github.com/Headlesser/enterthedungeon/raw/master/images/zork.png "Screenshot of the introduction in Zork")
 
- - Screenshot from The Oregon Trail. I knew I didn't want to have art as detailed as shown, but the overall organization of the screen with interactions on the bottom and image on the top was what I wanted to go for.
+ - [Screenshot from The Oregon Trail](https://classicreload.com/oregon-trail.html?__cf_chl_captcha_tk__=cb1462cf9da207f8e5900c80be6efb68a1d3e319-1583281001-0-ARbV5-5zHTjJ-CI3KctSuhVV0C3Ta38QGyMnjdGbsAxYzVIAY1k1JOU7zvyckd-ifHNgOFo8RPkmYNrvpJuVJN2oxzn_zPuxjCopCUw08DsV2njfdHPvSjYRxUscAMx3kY4DQjJ6qjrcNwnJR8tCdWER1tlAxZ339XdYn9Da9Hf1Ud3vOJHUM-FsxgoIZG1N3pEPKlL-1uFiMkDhskrtqPXSXJkiEBi4tyHnSWVlzx0JBnRTlpPtspsjhTgj7_oTNx-3FKOHRSkiCzWX1HgWiSPQhb3XJJKNmV6qNJYWd11PG_yLVlOnLOgcDVGJWekaQl6EwhhoWYaKNRCMLaP-_1MGEN5-MaLmAIVBOu-ZwpcUtYxWkMvewVb5-_jKNXwFmTy2ZGOVecROXLv0VGOu65tbBuQZ5jzClcZiDLTrFvaKfSN9CpfNPLw-UsCfQnAELIBAwLSsEFgovwXeP4w7tYHe2YZfnptpGHMmjhFLdTcr5X93Xm-JD6O4zziCaR5WEvBmFTuAtSHAUGC8kxasXIg). I knew I didn't want to have art as detailed as shown, but the overall organization of the screen with interactions on the bottom and image on the top was what I wanted to go for.
 ![oregontrail](https://github.com/Headlesser/enterthedungeon/raw/master/images/oregontrail.png)
  
- - Screenshot from Undertale. Again, I liked the layout of the screen, with text on the bottom and the image on top, which would change depending on where you were in the game.![undertale](https://github.com/Headlesser/enterthedungeon/raw/master/images/undertale.jpg)
+ - [Screenshot from Undertale](https://www.kotaku.com.au/2015/12/undertale-as-told-by-123-screenshots/). Again, I liked the layout of the screen, with text on the bottom and the image on top, which would change depending on where you were in the game.![undertale](https://github.com/Headlesser/enterthedungeon/raw/master/images/undertale.jpg)
 
 I began work making some sprites and decided that rather than create an entire layout of a room, I would only draw what was absolutely necessary for the player to see visually, as I did not want the writing to be given a back seat. I also thought that this would be a good idea because it could help players recognize exactly what items or objects were important, which would, in turn, allow them to better understand the layout of their surroundings and potentially give visual clues as to the solution of a puzzle.
 
 For example, the start room is the simplest puzzle: the player must pick up a key, and use it on the door so they can leave the room. For this, I decided that the only real important thing to show was the door with a keyhole, indicating that the key they pick up must go to this door (although it is hard to skip over regardless considering there are no other options to take).
+
 ![Start Room Sprite](https://github.com/Headlesser/enterthedungeon/raw/master/images/Door.png)
 
 # Assets
@@ -305,3 +306,9 @@ Youtube Playlist version:
  - [Part 2 Section 8](https://www.youtube.com/watch?v=G7c0x7ibjQ0&list=PLX2vGYjWbI0RfcpqpKlmLEy7NteIog8g4&index=16)
  - [Part 2 Section 9](https://www.youtube.com/watch?v=SqoPJ2-gDwc&list=PLX2vGYjWbI0RfcpqpKlmLEy7NteIog8g4&index=17)
  - [Part 2 Section 10](https://www.youtube.com/watch?v=WewuY--upVw&list=PLX2vGYjWbI0RfcpqpKlmLEy7NteIog8g4&index=18)
+ 
+ [Screenshot from Zork: The Great Underground Empire](https://www.mobygames.com/game/apple2/zork-the-great-underground-empire/screenshots/gameShotId,305672/)
+ 
+ [Screenshot from Undertale](https://www.kotaku.com.au/2015/12/undertale-as-told-by-123-screenshots/)
+ 
+ [Screenshot from The Oregon Trail](https://classicreload.com/oregon-trail.html?__cf_chl_captcha_tk__=cb1462cf9da207f8e5900c80be6efb68a1d3e319-1583281001-0-ARbV5-5zHTjJ-CI3KctSuhVV0C3Ta38QGyMnjdGbsAxYzVIAY1k1JOU7zvyckd-ifHNgOFo8RPkmYNrvpJuVJN2oxzn_zPuxjCopCUw08DsV2njfdHPvSjYRxUscAMx3kY4DQjJ6qjrcNwnJR8tCdWER1tlAxZ339XdYn9Da9Hf1Ud3vOJHUM-FsxgoIZG1N3pEPKlL-1uFiMkDhskrtqPXSXJkiEBi4tyHnSWVlzx0JBnRTlpPtspsjhTgj7_oTNx-3FKOHRSkiCzWX1HgWiSPQhb3XJJKNmV6qNJYWd11PG_yLVlOnLOgcDVGJWekaQl6EwhhoWYaKNRCMLaP-_1MGEN5-MaLmAIVBOu-ZwpcUtYxWkMvewVb5-_jKNXwFmTy2ZGOVecROXLv0VGOu65tbBuQZ5jzClcZiDLTrFvaKfSN9CpfNPLw-UsCfQnAELIBAwLSsEFgovwXeP4w7tYHe2YZfnptpGHMmjhFLdTcr5X93Xm-JD6O4zziCaR5WEvBmFTuAtSHAUGC8kxasXIg)
