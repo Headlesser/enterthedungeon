@@ -34,7 +34,7 @@ This file contains the documentation for Enter the Dungeon.
 [To-Do](#to-do-list)
 
 ## Sources
-[Sources](#sources)
+[Sources](#sources-1)
 
 
 
