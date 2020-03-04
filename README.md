@@ -284,10 +284,9 @@ For example, the start room is the simplest puzzle: the player must pick up a ke
 
 # Sources
 ### 2/02/2020
-Full Unity Text Adventure tutorial
-https://learn.unity.com/tutorial/recorded-video-session-text-adventure-game-part-1
-Youtube Playlist version:
+[Full Unity Text Adventure tutorial](https://learn.unity.com/tutorial/recorded-video-session-text-adventure-game-part-1)
 
+Youtube Playlist version:
  - [Part 1 Section 1](https://www.youtube.com/watch?v=jAf1I1UWo5Q&list=PLX2vGYjWbI0RfcpqpKlmLEy7NteIog8g4)
  - [Part 1 Section 2](https://www.youtube.com/watch?v=dQ4jcxKwXM8&list=PLX2vGYjWbI0RfcpqpKlmLEy7NteIog8g4&index=2)
  - [Part 1 Section 3](https://www.youtube.com/watch?v=TP4gLQmKOLo&list=PLX2vGYjWbI0RfcpqpKlmLEy7NteIog8g4&index=3)
