@@ -252,6 +252,22 @@ DoActionResponse()
 as well, which logged the `textResponse` value identical to the way `take` and `examine` had been initially set up.
 
 # Art and Visuals
+The visual aesthetic of Enter the Dungeon is intended to be simple, pixelated and and primarily restricted to a color palette of black and white only (with some few exceptions). I inevitably decided on this approach due to the time constraints on the project and estimating ahead of time how long I thought I would have to both complete the tutorial, build upon it, design puzzles, and incorporate art and sound within a roughly 3 month period.
+
+ I looked at classic text-based games such as Zork, and other games such as Undertale, The Oregon Trail, etc for reference while exploring different options.
+
+ - Screenshot from Zork. I know I wanted a similar setup with white text on a black background.
+![zork](https://github.com/Headlesser/enterthedungeon/raw/master/images/zork.png "Screenshot of the introduction in Zork")
+
+ - Screenshot from The Oregon Trail. I knew I didn't want to have art as detailed as shown, but the overall organization of the screen with interactions on the bottom and image on the top was what I wanted to go for.
+![oregontrail](https://github.com/Headlesser/enterthedungeon/raw/master/images/oregontrail.png)
+ 
+ - Screenshot from Undertale. Again, I liked the layout of the screen, with text on the bottom and the image on top, which would change depending on where you were in the game.![undertale](https://github.com/Headlesser/enterthedungeon/raw/master/images/undertale.jpg)
+
+I began work making some sprites and decided that rather than create an entire layout of a room, I would only draw what was absolutely necessary for the player to see visually, as I did not want the writing to be given a back seat. I also thought that this would be a good idea because it could help players recognize exactly what items or objects were important, which would, in turn, allow them to better understand the layout of their surroundings and potentially give visual clues as to the solution of a puzzle.
+
+For example, the start room is the simplest puzzle: the player must pick up a key, and use it on the door so they can leave the room. For this, I decided that the only real important thing to show was the door with a keyhole, indicating that the key they pick up must go to this door (although it is hard to skip over regardless considering there are no other options to take).
+![Start Room Sprite](https://github.com/Headlesser/enterthedungeon/raw/master/images/Door.png)
 
 # Assets
 [An excel document containing the list of assets per section can be found here.](https://docs.google.com/spreadsheets/d/1_scVRSXG6_j4dud2x9jJDUqPNOE1y2HsckKVOYKUXjU/edit?usp=sharing)
