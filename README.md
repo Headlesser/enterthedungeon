@@ -6,27 +6,32 @@ This file contains the documentation for Enter the Dungeon.
 # Table of Contents
 
 ## Introduction
-[Proposal](#proposal)
-
 [Overview](#overview)
 
+[Proposal](#proposal)
+
 ## Controls
-[Control Map](https://github.com/Headlesser/enterthedungeon/wiki/Controls)
+[Control Map](#controls)
 
 ## Puzzle Design
-[Puzzle Documentation](#puzzle-design)
+[Puzzle Documentation](#puzzle-design-1)
 
-## Game Map
-[Game Map](https://github.com/Headlesser/enterthedungeon/wiki/Game-Map)
+[Section 1 - Start](#section-1---start)
 
-## Development Diary
+[Game Map](#game-map)
+
+## Process
 [Process](#process)
 
+[Technical Documentation](#technical-documentation)
+
+[Art Documentation](#art-and-visuals)
+
 ## Asset List
-[Assets](https://github.com/Headlesser/enterthedungeon/wiki/Asset-List)
+[Assets](#assets)
 
 ## To-Do List
-[To-Do](#to-do-notes)
+[To-Do](#to-do-list)
 
 ## Sources
 [Sources](#sources)
@@ -160,16 +165,7 @@ For this project I decided to utilize a design formula I have developed for crea
 The trunk of this puzzle tree can now be elongated (or shortened) as much as is needed, thus allowing the game to always be in somewhat of a 'completed' state but easily built upon.  Furthermore, to introduce more complexity into the puzzles, each section of trunk can have a limitless amount of 'branches'. In this case, the Start Room, Section 1, is a section of trunk with no branches. Section 2, however, is a section of trunk with one branches, with branches following the formula `# of branches = # of keys needed to complete the section - 1`. For example, Section 1 needs 1 key to complete it, `1-1 = 0` branches. Section 2 needs 2 keys to complete it (drawbridge lever, gargoyle eye), `2-1 = 1` branch. 
 
 
-## Section 1: Start
-
-
-# To Do Notes
-
- - ~~Create map layout for section 1.~~
- - Make it so you can ONLY examine an item if it is either PRESENT IN THE CURRENT ROOM or IS IN YOUR INVENTORY. If an item is ever used, it should be REMOVED from all dictionaries and cannot be examined. If player returns to a room where they took an item, they should NOT be able to examine the 'ghost' of that item.
- - Make it so text does not scroll infinitely up over the sprite. 'Lock' size of the text area somehow.
- - ~~Make it so, after using an item, it doesn't repeat the old room description again? (Replace it w/ the new one after triggering an event. I will have to clear the log before printing).~~
- - ~~Make sure sprite sizes are standardized.~~
+## Section 1 - Start
 
 # Process
 I began this project on January 20th, 2020, which began as a few sketches of ideas in my notebook. At first I thought of making a 2D point-and-click puzzle game. I was very into games such as [Deep Sleep](https://scriptwelder.itch.io/deep-sleep) and [Don't Escape: 4 Days to Survive](https://dont-escape.com/) by *scriptwealder*, and started writing up some notes in my sketchbook seen here:
@@ -185,8 +181,111 @@ My third idea is inevitably the one I settled on, which came to fruition after t
 
 After solidifying my idea, I began work on creating the framework for this game by following Unity's online learning Text Adventure tutorial series. Seeing as this is a project to stress puzzle creation and writing skills, I did not want to have to spend too long debugging or creating game code. 
 
-Around a month later, after completing the tutorial series, I came to the realization that I was running behind schedule.
+After completing the Unity tutorial I began taking notes on a list of adjustments and additions I wanted to make to the basic framework before continuing forward. I know I wanted to have image and audio support at the very least, which I knew I would have to expand upon myself as the tutorial only provided the textual functionality. To accomplish this, I made a few small changes to the tutorial code which can be found here.
+
+## Technical Documentation
+### Adding Image Support
+In Room.cs I added a public Sprite variable `sprite` which would store the image representing the layout of whatever particular room object it is assigned to. This is essentially extending off of the variables the tutorial had already designated (`description`, `roomID`, etc).
+
+```csharp
+public  class  Room : ScriptableObject
+{
+//Scriptable Object
+//Never get attached to game objects, exist as assets and run in memory, etc.
+[TextArea]
+public  string  description;
+public  string  roomID;
+public  Exit[] exits;
+public  Sprite  sprite;
+//Make it so this variable stores the 'image' of the room. Will change as player moves to
+//different rooms.
+public  InteractableObject[] interactableObjectsInRoom;
+//Items found in the room that can be picked up/interacted with
+}
+```
+To complete this functionality I also had to make a few small additions to GameController.cs. I declared a public Image `roomImage` which is assigned through script to call the room's `sprite`, thus displaying the correct image when moving between rooms. I created a small function to perform this action,
+```csharp
+public  void  DisplayRoomImage()
+{
+roomImage.sprite = roomNavigation.currentRoom.sprite;
+}
+```
+and then added a call to it much like the system the tutorial set in place for displaying a room's `description` value when entering a new area.
+```csharp
+void  Start()
+{
+DisplayRoomText();
+DisplayLoggedText();
+DisplayRoomImage();
+}
+```
+
+### Adding Audio Support
+
+### Debugging `Use` Functionality
+One issue I ran into after finishing the tutorial was that it did not initialize the `use` functionality that I had expected. A problem arose where, after the player would 'use' a particular item in their inventory, it would remain listed in their inventory after they would use it. This action also did not utilize the `textResponse` value that `take` and `examine` would, wherein after the player performs either of these inputs (for example: `take key`), the text logger would return that `InputAction`'s `textResponse`.
+
+To fix the but involving the listing of items in the inventory, I revisited InteractableItems.cs and tried to find the section of code I would have to add to. I had difficulty navigating which script to work in at first due to the fact that following a tutorial essentially means you are trying to work on code someone else has created for you. I was able to read through the setup of classes and eventually made a small addition to ChangeRoomResponse.cs,
+```csharp
+public  override  bool  DoActionResponse(GameController  controller, string[] separatedInputWords)
+{
+if(controller.roomNavigation.currentRoom.roomID == requiredString)
+{
+	controller.roomNavigation.currentRoom = roomToChangeTo;
+	controller.interactableItems.nounsInInventory.Remove(separatedInputWords[1]); //Added this
+	controller.DisplayRoomText();
+	return  true;
+}
+return  false;
+}
+```
+where I simply added in a line that, upon the player using an item in the correct room, would remove that item from their inventory list after use. This, I thought, would make it less confusing to the player as to what items they had on hand, and also make the inventory list less populated with unnecessary information.
+
+To fix the issue with `textResponse` not working with the `use` action, I first went back and revisited the definitions and set-up for the `take` and `examine` `InputActions` so I could reverse-engineer the same functionality that I wanted in `use`. Following a similar process to the first problem, I adjusted ChangeRoomResponse.cs and added
+```csharp
+controller.LogStringWithReturn(controller.TextVerbDictionaryWithNoun(controller.interactableItems.useDictionaryResponse, separatedInputWords[0], separatedInputWords[1])); 
+```
+to
+ ```csharp
+DoActionResponse()
+```
+as well, which logged the `textResponse` value identical to the way `take` and `examine` had been initially set up.
+
+# Art and Visuals
+
+# Assets
+[An excel document containing the list of assets per section can be found here.](https://docs.google.com/spreadsheets/d/1_scVRSXG6_j4dud2x9jJDUqPNOE1y2HsckKVOYKUXjU/edit?usp=sharing)
+
+# To Do List
+ - Make it so text does not scroll infinitely up over the sprite. 'Lock' size of the text area, make scroll bar.
+ - Create art assets for section 1
+ - Create audio assets for section 1
+ - ~~Make it so you can ONLY examine an item if it is either PRESENT IN THE CURRENT ROOM or IS IN YOUR INVENTORY. If an item is ever used, it should be REMOVED from all dictionaries and cannot be examined. If player returns to a room where they took an item, they should NOT be able to examine the 'ghost' of that item.~~
+ - - ~~Create map layout for section 1.~~
+ - ~~Make it so, after using an item, it doesn't repeat the old room description again? (Replace it w/ the new one after triggering an event. I will have to clear the log before printing).~~
+ - ~~Make sure sprite sizes are standardized.~~
 
 # Sources
 ### 2/02/2020
+Full Unity Text Adventure tutorial
 https://learn.unity.com/tutorial/recorded-video-session-text-adventure-game-part-1
+Youtube Playlist version:
+
+ - [Part 1 Section 1](https://www.youtube.com/watch?v=jAf1I1UWo5Q&list=PLX2vGYjWbI0RfcpqpKlmLEy7NteIog8g4)
+ - [Part 1 Section 2](https://www.youtube.com/watch?v=dQ4jcxKwXM8&list=PLX2vGYjWbI0RfcpqpKlmLEy7NteIog8g4&index=2)
+ - [Part 1 Section 3](https://www.youtube.com/watch?v=TP4gLQmKOLo&list=PLX2vGYjWbI0RfcpqpKlmLEy7NteIog8g4&index=3)
+ - [Part 1 Section 4](https://www.youtube.com/watch?v=-LlAahTMtjw&list=PLX2vGYjWbI0RfcpqpKlmLEy7NteIog8g4&index=4)
+ - [Part 1 Section 5](https://www.youtube.com/watch?v=m7Sl9NLv4HI&list=PLX2vGYjWbI0RfcpqpKlmLEy7NteIog8g4&index=5)
+ - [Part 1 Section 6](https://www.youtube.com/watch?v=g9Pjv-BWpso&list=PLX2vGYjWbI0RfcpqpKlmLEy7NteIog8g4&index=6)
+ - [Part 1 Section 7](https://www.youtube.com/watch?v=XLDrIBaxHKg&list=PLX2vGYjWbI0RfcpqpKlmLEy7NteIog8g4&index=7)
+ - [Part 1 Section 8](https://www.youtube.com/watch?v=Mb7SHYZ65Xo&list=PLX2vGYjWbI0RfcpqpKlmLEy7NteIog8g4&index=8)
+ - [Part 2 Section 1](https://www.youtube.com/watch?v=Bak8azAM_cA&list=PLX2vGYjWbI0RfcpqpKlmLEy7NteIog8g4&index=9)
+ - [Part 2 Section 2](https://www.youtube.com/watch?v=_6vqKgIwv18&list=PLX2vGYjWbI0RfcpqpKlmLEy7NteIog8g4&index=10)
+ - [Part 2 Section 3](https://www.youtube.com/watch?v=PJmodQ1VG0A&list=PLX2vGYjWbI0RfcpqpKlmLEy7NteIog8g4&index=11)
+ - [Part 2 Section 4](https://www.youtube.com/watch?v=BrKzV0M3o_Q&list=PLX2vGYjWbI0RfcpqpKlmLEy7NteIog8g4&index=12)
+ - [Part 2 Section 5](https://www.youtube.com/watch?v=MNe2WMFL3EA&list=PLX2vGYjWbI0RfcpqpKlmLEy7NteIog8g4&index=13)
+ - [Part 2 Section 6](https://www.youtube.com/watch?v=-adAYJTf288&list=PLX2vGYjWbI0RfcpqpKlmLEy7NteIog8g4&index=14)
+ - [Part 2 Section 7](https://www.youtube.com/watch?v=kzMJWWI3Lrw&list=PLX2vGYjWbI0RfcpqpKlmLEy7NteIog8g4&index=15)
+ - [Part 2 Section 8](https://www.youtube.com/watch?v=G7c0x7ibjQ0&list=PLX2vGYjWbI0RfcpqpKlmLEy7NteIog8g4&index=16)
+ - [Part 2 Section 9](https://www.youtube.com/watch?v=SqoPJ2-gDwc&list=PLX2vGYjWbI0RfcpqpKlmLEy7NteIog8g4&index=17)
+ - [Part 2 Section 10](https://www.youtube.com/watch?v=WewuY--upVw&list=PLX2vGYjWbI0RfcpqpKlmLEy7NteIog8g4&index=18)
