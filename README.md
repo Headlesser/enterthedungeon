@@ -7,6 +7,7 @@ This file contains the documentation for Enter the Dungeon.
 
 ## Introduction
 [Overview](#overview)
+
 [Proposal](#proposal)
 
 ## Controls
@@ -14,11 +15,14 @@ This file contains the documentation for Enter the Dungeon.
 
 ## Puzzle Design
 [Puzzle Documentation](#puzzle-design)
+
 [Section 1 - Start](#section-1---start)
+
 [Game Map](#game-map)
 
 ## Process
 [Process](#process)
+
 [Technical Documentation](#technical-documentation)
 
 ## Asset List
