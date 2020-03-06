@@ -344,7 +344,7 @@ For example, the start room is the simplest puzzle: the player must pick up a ke
 # Assets
 [An excel document containing the list of assets per section can be found here.](https://docs.google.com/spreadsheets/d/1_scVRSXG6_j4dud2x9jJDUqPNOE1y2HsckKVOYKUXjU/edit?usp=sharing)
 
-[Links to audio used in testing and final product can be found here.](#sources-1)
+[Links to audio used in testing and final product can be found here.](#audio)
 
 # To Do List
  - Make it so text does not scroll infinitely up over the sprite. 'Lock' size of the text area, make scroll bar.
