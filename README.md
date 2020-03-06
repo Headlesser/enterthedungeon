@@ -344,6 +344,8 @@ For example, the start room is the simplest puzzle: the player must pick up a ke
 # Assets
 [An excel document containing the list of assets per section can be found here.](https://docs.google.com/spreadsheets/d/1_scVRSXG6_j4dud2x9jJDUqPNOE1y2HsckKVOYKUXjU/edit?usp=sharing)
 
+[Links to audio used in testing and final product can be found here.](#sources-1)
+
 # To Do List
  - Make it so text does not scroll infinitely up over the sprite. 'Lock' size of the text area, make scroll bar.
  - Create art assets for section 1
@@ -354,7 +356,8 @@ For example, the start room is the simplest puzzle: the player must pick up a ke
  - ~~Make sure sprite sizes are standardized.~~
 
 # Sources
-### 2/02/2020
+### Tutorials
+[Unity Documentation & User Manual](https://docs.unity3d.com/Manual/index.html)
 [Full Unity Text Adventure tutorial](https://learn.unity.com/tutorial/recorded-video-session-text-adventure-game-part-1)
 
 Youtube Playlist version:
@@ -377,10 +380,16 @@ Youtube Playlist version:
  - [Part 2 Section 9](https://www.youtube.com/watch?v=SqoPJ2-gDwc&list=PLX2vGYjWbI0RfcpqpKlmLEy7NteIog8g4&index=17)
  - [Part 2 Section 10](https://www.youtube.com/watch?v=WewuY--upVw&list=PLX2vGYjWbI0RfcpqpKlmLEy7NteIog8g4&index=18)
  
+ ### Images
  [Screenshot from Zork: The Great Underground Empire](https://www.mobygames.com/game/apple2/zork-the-great-underground-empire/screenshots/gameShotId,305672/)
  
  [Screenshot from Undertale](https://www.kotaku.com.au/2015/12/undertale-as-told-by-123-screenshots/)
  
  [Screenshot from The Oregon Trail](https://classicreload.com/oregon-trail.html?__cf_chl_captcha_tk__=cb1462cf9da207f8e5900c80be6efb68a1d3e319-1583281001-0-ARbV5-5zHTjJ-CI3KctSuhVV0C3Ta38QGyMnjdGbsAxYzVIAY1k1JOU7zvyckd-ifHNgOFo8RPkmYNrvpJuVJN2oxzn_zPuxjCopCUw08DsV2njfdHPvSjYRxUscAMx3kY4DQjJ6qjrcNwnJR8tCdWER1tlAxZ339XdYn9Da9Hf1Ud3vOJHUM-FsxgoIZG1N3pEPKlL-1uFiMkDhskrtqPXSXJkiEBi4tyHnSWVlzx0JBnRTlpPtspsjhTgj7_oTNx-3FKOHRSkiCzWX1HgWiSPQhb3XJJKNmV6qNJYWd11PG_yLVlOnLOgcDVGJWekaQl6EwhhoWYaKNRCMLaP-_1MGEN5-MaLmAIVBOu-ZwpcUtYxWkMvewVb5-_jKNXwFmTy2ZGOVecROXLv0VGOu65tbBuQZ5jzClcZiDLTrFvaKfSN9CpfNPLw-UsCfQnAELIBAwLSsEFgovwXeP4w7tYHe2YZfnptpGHMmjhFLdTcr5X93Xm-JD6O4zziCaR5WEvBmFTuAtSHAUGC8kxasXIg)
  
- [Unity Documentation & User Manual](https://docs.unity3d.com/Manual/index.html)
+ ### Audio
+ [Wind audio clip from freesound.org](https://freesound.org/people/florianreichelt/sounds/459977/)
+ [Water dripping audio clip from freesound.org](https://freesound.org/people/IPaddeh/sounds/422873/)
+ [Stone sliding audio clip from freesound.org](https://freesound.org/people/Rooms_Boxes/sounds/424169/)
+ [Rushing water audio clip from freesound.org](https://freesound.org/people/eardeer/sounds/443869/)
+ [Testing 'beep' audio clip from freesound.org](https://freesound.org/people/thisusernameis/sounds/426888/)
