@@ -11,7 +11,7 @@ This file contains the documentation for Enter the Dungeon.
 [Proposal](#proposal)
 
 ## Controls
-[Control Map](#controls)
+[Control Map](#controls-1)
 
 ## Puzzle Design
 [Puzzle Documentation](#puzzle-design-1)
@@ -157,7 +157,7 @@ There are 5 primary input methods that allow the user to perform every action th
  - `Allows the player to use items to unlock doors or reveal other secrets, provided they are in the correct room and are using the correct item.`
  - Inventory
  - `Displays every item that the player has taken and not used. Used items will be removed from the inventory. If an item is in the player's inventory, they can still examine it as if it were still inside of a room.`
- - 
+ 
 # Puzzle Design
 For this project I decided to utilize a design formula I have developed for creating a lock-and-key puzzle structure. This structure involves a core, linear path that the player follows all the way to the end (think of a straight line, or the trunk of a tree). That is, the player's path through the game, inevitably, is a linear experience. However, each section of this tree trunk is divided up into parts, and these parts can be stacked on top of one another to create a more modular way of designing. For example, the Start Room is the bottom section of the trunk, and features the easiest puzzle: `take key` -> `use key` -> `go north`. This immediately leads to the End Room, which has no puzzle and simply concludes the game.
 
