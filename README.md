@@ -181,6 +181,8 @@ After solidifying my idea, I began work on creating the framework for this game 
 
 After completing the Unity tutorial I began taking notes on a list of adjustments and additions I wanted to make to the basic framework before continuing forward. I know I wanted to have image and audio support at the very least, which I knew I would have to expand upon myself as the tutorial only provided the textual functionality. To accomplish this, I made a few small changes to the tutorial code which can be found [here](#technical-documentation).
 
+After reaching the halfway point of the project (approximately 7 weeks in), I went back and reviewed my work thus far. I created a brief presentation to describe my progress, concerns, and questions to address for the final sprint, which can be viewed [here](https://github.com/Headlesser/enterthedungeon/raw/master/documentation/midwayreview.pdf). I found it to be incredibly helpful to create a [To-Do](#to-do-list) list section for myself to help me keep track of what tasks I had to finish, as well as to help pace myself so I could visually see how much progress I am making each week. I would give myself approximately 2-3 specific, concrete tasks to finish each week as a way to keep from falling behind and better estimate how much time I have left to complete what I intend, and make adjustments should the workload prove to be too much.
+
 ## Technical Documentation
 ### Adding Image Support
 In Room.cs I added a public Sprite variable `sprite` which would store the image representing the layout of whatever particular room object it is assigned to. This is essentially extending off of the variables the tutorial had already designated (`description`, `roomID`, etc).
