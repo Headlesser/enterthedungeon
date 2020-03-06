@@ -21,7 +21,7 @@ This file contains the documentation for Enter the Dungeon.
 [Game Map](#game-map)
 
 ## Process
-[Process](#process)
+[Process](#process-1)
 
 [Technical Documentation](#technical-documentation)
 
