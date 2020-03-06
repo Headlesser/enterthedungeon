@@ -220,6 +220,78 @@ DisplayRoomImage();
 ```
 
 ### Adding Audio Support
+Similar to above, in Room.cs I added a new reference for a public AudioClip variable `audio`, which will store the audio file that is to be played in the particular room it is assigned to.
+```csharp
+public AudioClip audio;
+    //This variable stores the soundtrack of the specific room it is assigned to. Should fade in/out and 
+    //change to the next looping clip as player moves between rooms.
+```
+There were a few small changes I also had to make between incorporating audio and how I incorporated image support. For example, I also wanted the `use` action to be accompanied by a sound, indicating to the player that they successfully did something or made some kind of change to the room. For this, I went into ChangeRoomResponse.cs and added a second public variable `public AudioClip actionSound`, which would store the sfx to play whenever the `use` InputAction specifically was successful.
+```csharp
+public  AudioClip  actionSound;
+```
+Additionally, I added a brief statement within `DoActionResponse` which is set up to play `actionSound` one time rather than looping.
+```csharp
+if(actionSound != null)
+{
+	controller.actionAudioSource.PlayOneShot(actionSound);
+	//actionSound = null; to remove the old sound?
+	//Plays the 'activation' sound ONCE.
+	//This will only be for the 'use' functionality
+	//Things such as jingling of key, scraping gargoyle statue, etc. Stuff that indicates 'that input was successful'
+	//Put within a != null statement in case any room happens to not have an audio clip.
+}
+```
+I put it within an `if` statement in the event that a `use` action, for whatever reason, doesn't have a sfx attached to it.
+
+Furthermore, within Navigation.cs, I incorporated two extra lines within `AttemptToChangeRooms` which would update and play the correct image/audio clip if moving to a room was successful.
+
+```csharp
+public void AttemptToChangeRooms(string directionNoun)
+{
+	if(exitDictionary.ContainsKey(directionNoun))
+	{
+		//move to the next room if text was correct
+		currentRoom = exitDictionary[directionNoun];
+		controller.LogStringWithReturn("You go " + directionNoun);
+		controller.DisplayRoomText();
+		controller.DisplayRoomImage(); //Add image transition
+		controller.PlayRoomSound(); //Add audio transition
+}
+```
+
+Then finally, in GameController.cs, I added two variables to store the `AudioSource` components that would be responsible for playing the assigned sound. Since I wanted both background music and an sfx for `use` to be playing at the same time, I created a separate empty game object as a child to GameController and gave it an `AudioSource` component. This object `ActionAudioSource` would store the information for the `use` audio clip, while GameController's `AudioSource` component would track the audio information for `room`s.
+
+```csharp
+public AudioSource audioSource;
+public AudioSource actionAudioSource;
+
+void Awake()
+{
+interactableItems = GetComponent<InteractableItems>();
+roomNavigation = GetComponent<Navigation>();
+audioSource = GetComponent<AudioSource>(); //GameController's audio source
+actionAudioSource = GetComponentInChildren<AudioSource>(); //ActionAudioSource's audio source
+}
+
+void Start()
+{
+DisplayRoomText();
+DisplayLoggedText();
+DisplayRoomImage(); //Change the room's image
+PlayRoomSound(); //Play the room's music
+}
+
+...
+
+public void PlayRoomSound()
+{
+//Set the audio clip to play to the room's audio clip
+//Debug.Log(roomNavigation.currentRoom.audio);
+audioSource.clip = roomNavigation.currentRoom.audio; //Set the GameController's audioClip value to the current room's audioClip
+audioSource.Play(); //Play the clip, looping.
+}
+```
 
 ### Debugging `Use` Functionality
 One issue I ran into after finishing the tutorial was that it did not initialize the `use` functionality that I had expected. A problem arose where, after the player would 'use' a particular item in their inventory, it would remain listed in their inventory after they would use it. This action also did not utilize the `textResponse` value that `take` and `examine` would, wherein after the player performs either of these inputs (for example: `take key`), the text logger would return that `InputAction`'s `textResponse`.
