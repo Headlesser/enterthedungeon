@@ -27,11 +27,10 @@ This file contains the documentation for Enter the Dungeon.
 
 [Art Documentation](#art-and-visuals)
 
+[To-Do](#to-do-list-1)
+
 ## Asset List
 [Assets](#assets)
-
-## To-Do List
-[To-Do](#to-do-list)
 
 ## Sources
 [Sources](#sources-1)
