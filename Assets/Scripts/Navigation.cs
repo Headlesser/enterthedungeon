@@ -32,6 +32,7 @@ public class Navigation : MonoBehaviour
             //move to the next room if text was correct
             currentRoom = exitDictionary[directionNoun];
             controller.LogStringWithReturn("You go " + directionNoun);
+            //controller.EmptyTextLog();
             controller.DisplayRoomText();
             controller.DisplayRoomImage();
             controller.PlayRoomSound();

@@ -23,6 +23,8 @@ public class GameController : MonoBehaviour
 
     public AudioSource audioSource;
     public AudioSource actionAudioSource;
+    public float textDelay;
+    //public ScrollRect scrollRect;
 
     void Awake()
     {
@@ -45,6 +47,33 @@ public class GameController : MonoBehaviour
         //Displays everything in the action log currently.
         string logAsText = string.Join("\n", actionLog.ToArray());
         displayText.text = logAsText;
+        //StartCoroutine(ScrollToTop());
+    }
+
+    // IEnumerator ScrollToTop() //Keep the bar scrolled to the very bottom.
+    // {
+    //     yield return new WaitForEndOfFrame();
+    //     Canvas.ForceUpdateCanvases();
+    //     scrollRect.verticalNormalizedPosition = 0f; 
+    //     Canvas.ForceUpdateCanvases();    
+    // }
+
+    //Replaces DisplayLoggedText();
+    //https://www.youtube.com/watch?v=1qbjmb_1hV4&t=442s
+    IEnumerator TypeWriterText()
+    {
+        string logAsText = string.Join("\n", actionLog.ToArray());
+        for (int i = 0; i < logAsText.Length; i++)
+        {
+            displayText.text = logAsText.Substring(0, i);
+            yield return new WaitForSeconds(textDelay);
+        }
+    }
+
+    public void EmptyTextLog()
+    {
+        //Call to clear out all text from the action log. Do this after entering a new SECTION.
+        actionLog.Clear();
     }
 
     public void DisplayRoomText()

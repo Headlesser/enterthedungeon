@@ -21,6 +21,7 @@ public class ChangeRoomResponse : ActionResponse
             controller.LogStringWithReturn(controller.TextVerbDictionaryWithNoun(controller.interactableItems.useDictionaryResponse, separatedInputWords[0], separatedInputWords[1]));
             controller.interactableItems.nounsInInventory.Remove(separatedInputWords[1]);
             controller.DisplayRoomText();
+            controller.DisplayRoomImage();
 
             if(actionSound != null)
             {
