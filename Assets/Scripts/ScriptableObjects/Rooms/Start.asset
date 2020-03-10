@@ -12,9 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 33679f0a95fef08478f51265b4f0a415, type: 3}
   m_Name: Start
   m_EditorClassIdentifier: 
-  description: You wake up on a cold, damp floor made of stone. The room is dark.
-    You hear water dripping from the ceiling. There is a locked gate to the north,
-    covered in rust. You need to get out of here.
+  description: 'You feel cold as the walls of the prison close around you. You can
+    hear the distant clacking of loose pebbles falling from the ceiling and the incessant,
+    rhythmic dripping of water. Before you stands a rusted iron gate, locked by an
+    old iron padlock. '
   roomID: start room
   exits: []
   sprite: {fileID: 21300000, guid: e516812b65a2c7f4ba4d38be4e58f750, type: 3}

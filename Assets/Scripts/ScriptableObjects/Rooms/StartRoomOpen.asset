@@ -16,7 +16,7 @@ MonoBehaviour:
   roomID: start room open
   exits:
   - keyString: north
-    exitDescription: The gate to the north is open.
+    exitDescription: The way to the NORTH is now open.
     valueRoom: {fileID: 11400000, guid: b6b5aab6ff20ad0488b0f47d06f7f0e7, type: 2}
   sprite: {fileID: 10901, guid: 0000000000000000f000000000000000, type: 0}
   audio: {fileID: 8300000, guid: c100587da22ba1244a2d7f04fd614fd3, type: 3}

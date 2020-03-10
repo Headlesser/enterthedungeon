@@ -13,15 +13,19 @@ MonoBehaviour:
   m_Name: Rusty Key
   m_EditorClassIdentifier: 
   noun: key
-  description: Hanging on the wall is a rusty iron ring with a single key.
+  description: "Dangling from a hook on the wall hangs a rusted iron KEY. It seems
+    someone has left a message for you just beside it.\r\n\u201CIf you want to escape,
+    keep moving forward.\u201D"
   interactions:
   - inputAction: {fileID: 11400000, guid: 90542c9d641a4f744bc08a88649757c9, type: 2}
-    textResponse: The key is covered in rust and is rough to the touch. It looks prone
-      to breaking.
+    textResponse: The key to the iron gate. It is brittle and rough to the touch and
+      your fingers turn red from the rust. Looks prone to break after use.
     actionResponse: {fileID: 0}
   - inputAction: {fileID: 11400000, guid: 4004b81a9d6368a4d958b07ba4a7772b, type: 2}
     textResponse: You take the rusty key.
     actionResponse: {fileID: 0}
   - inputAction: {fileID: 11400000, guid: 703f97af50ba68d4dbcabf97f7fc2f38, type: 2}
-    textResponse: You use the key. The rusted gate creaks open.
+    textResponse: The key breaks as you use it on the padlock. The room quakes beneath
+      your feet and you hear the cranking of invisible machinery as the iron gate
+      ascends.
     actionResponse: {fileID: 11400000, guid: 2ad2b5ce8d0c10147ac31e01d5883ce9, type: 2}
