@@ -105,6 +105,8 @@ public class InteractableItems : MonoBehaviour
             nounsInInventory.Add(noun);
             AddActionResponsesToUseDictionary();
             nounsInRoom.Remove(noun);
+            //controller.roomNavigation.currentRoom.interactableObjectsInRoom.Remove(FindObjectToRemove(separatedInputWords));
+            //Debug.Log("Remove the item from the room list");
             return takeDictionary;
         }
         else
@@ -113,6 +115,23 @@ public class InteractableItems : MonoBehaviour
             return null;
         }
     }
+
+    //This works, but means I have to reassign the lists every time I play the game.
+    //Also, to make sure an object doesn't 'respawn' after being used, it must have an 'open' version of the room where that item does not exist.
+    //As soon as all items/secrets required to open the TRUNK room are gotten, seal all other exits from the final version of that room.
+
+    // private InteractableObject FindObjectToRemove(string[] separatedInputWords)
+    // {
+    //     for (int i = 0; i < controller.roomNavigation.currentRoom.interactableObjectsInRoom.Count; i++)
+    //     {
+    //         InteractableObject interactableObjectInRoom = controller.roomNavigation.currentRoom.interactableObjectsInRoom[i];
+    //         if(interactableObjectInRoom.noun == separatedInputWords[1])
+    //         {
+    //             return interactableObjectInRoom;
+    //         }
+    //     }
+    //     return null;
+    // }
 
     public void UseItem(string[] separatedInputWords)
     {

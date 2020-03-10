@@ -23,4 +23,5 @@ MonoBehaviour:
     exitDescription: There is a hallway to the west where you entered.
     valueRoom: {fileID: 11400000, guid: b6b5aab6ff20ad0488b0f47d06f7f0e7, type: 2}
   sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
+  audio: {fileID: 8300000, guid: 04d2a5f828388ca489bb257614319635, type: 3}
   interactableObjectsInRoom: []

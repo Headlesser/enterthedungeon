@@ -22,4 +22,5 @@ MonoBehaviour:
     exitDescription: You can now safely cross the gap to the north.
     valueRoom: {fileID: 11400000, guid: 05508c6da99ae724aa61e4e7d92662c1, type: 2}
   sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
+  audio: {fileID: 8300000, guid: 04d2a5f828388ca489bb257614319635, type: 3}
   interactableObjectsInRoom: []

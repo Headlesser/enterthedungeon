@@ -114,14 +114,16 @@ public class GameController : MonoBehaviour
                 }
                 if(interaction.inputAction.keyWord == "take")
                 {
+                    //Debug.Log("Took an item, delete it from the room's list");
                     //if the player types the take keyword...
                     //add it to take dictionary 
                     //Remember, the takeDictionary IS your Inventory Dictionary!
                     interactableItems.takeDictionary.Add(interactableInRoom.noun, interaction.textResponse);
                 }
-                if(interaction.inputAction.keyWord == "use")
+                if(interaction.inputAction.keyWord == "use" && !interactableItems.useDictionaryResponse.ContainsKey(interactableInRoom.noun)) //this is the error line. don't add to the dictionary if its already in it
                 {
                     interactableItems.useDictionaryResponse.Add(interactableInRoom.noun, interaction.textResponse);
+                    //delete item from room interactableobjects array/list
                 }
             }
         }

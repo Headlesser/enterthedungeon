@@ -20,5 +20,6 @@ MonoBehaviour:
     exitDescription: There is a hallway to the south where you came.
     valueRoom: {fileID: 11400000, guid: 1eb0ad051a16be246875ca106a5b1ef1, type: 2}
   sprite: {fileID: 10913, guid: 0000000000000000f000000000000000, type: 0}
+  audio: {fileID: 8300000, guid: 960e25904943e674d8b52c8f6ac919a3, type: 3}
   interactableObjectsInRoom:
   - {fileID: 11400000, guid: 2c63ddcf26c49bd499f0e7d225f95b9a, type: 2}

@@ -20,5 +20,6 @@ public class Room : ScriptableObject
     //change to the next looping clip as player moves between rooms.
     public InteractableObject[] interactableObjectsInRoom;
     //Items found in the room that can be picked up/interacted with
+    //public List<InteractableObject> interactableObjectsInRoom = new List<InteractableObject>();
 
 }
