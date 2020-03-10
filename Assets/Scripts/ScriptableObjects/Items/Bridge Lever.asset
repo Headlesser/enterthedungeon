@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Bridge Lever
   m_EditorClassIdentifier: 
   noun: rod
-  description: Laying below the skeleton is a strange iron rod.
+  description: Laying below the skeleton is a strange iron ROD.
   interactions:
   - inputAction: {fileID: 11400000, guid: 90542c9d641a4f744bc08a88649757c9, type: 2}
     textResponse: The bent piece of metal has seen better days. It smells of brine
@@ -22,7 +22,7 @@ MonoBehaviour:
     actionResponse: {fileID: 0}
   - inputAction: {fileID: 11400000, guid: 4004b81a9d6368a4d958b07ba4a7772b, type: 2}
     textResponse: You take the rod.
-    actionResponse: {fileID: 11400000, guid: 952a402644a44bb4fa239cfa5dd985f0, type: 2}
+    actionResponse: {fileID: 0}
   - inputAction: {fileID: 11400000, guid: 703f97af50ba68d4dbcabf97f7fc2f38, type: 2}
     textResponse: 'You insert the rod into the mechanism. The sound of cranking gears
       rises over the rushing tide as the drawbridge lowers. '
