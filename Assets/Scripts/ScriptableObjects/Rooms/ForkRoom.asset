@@ -20,17 +20,18 @@ MonoBehaviour:
   roomID: fork room
   exits:
   - keyString: south
-    exitDescription: There is an unlocked gate to the south.
+    exitDescription: There is an unlocked gate to the SOUTH where you came.
     valueRoom: {fileID: 11400000, guid: b1324972ab3d09b4e8adb743a239bbb3, type: 2}
   - keyString: west
-    exitDescription: The door to the WEST is covered in what looks to be scratch marks.
-      The cobbles leading through the door are stained with a dark, coagulated substance.
-      You can hear nothing coming from beyond the door.
+    exitDescription: To the WEST is a sturdy wooden door that appears slightly ajar.
+      There are deep scratch marks near the lower left corner. The stones leading
+      down the passageway appear stained with a dark, coagulated substance, and you
+      can faintly make out what appears to be the decaying remains of torn fingernails.
     valueRoom: {fileID: 11400000, guid: 9a77787eb6f14a441812df87fb7386c6, type: 2}
   - keyString: east
-    exitDescription: The door to the EAST appears rotted and is cold to the touch.
-      You can feel a damp breeze flow under the door. A low, steady rumble echoes
-      just on the other side.
+    exitDescription: To the EAST is a rotting wooden door coated with a slimy residue
+      that stinks of brine and mildew. You can feel a damp breeze flow from the passageway
+      beyond. A low, steady rumble echoes just on the other side.
     valueRoom: {fileID: 11400000, guid: 2564083d5daa5024f8f992ebb25ef077, type: 2}
   sprite: {fileID: 10911, guid: 0000000000000000f000000000000000, type: 0}
   audio: {fileID: 8300000, guid: 960e25904943e674d8b52c8f6ac919a3, type: 3}
