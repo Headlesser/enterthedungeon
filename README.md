@@ -348,7 +348,9 @@ For example, the start room is the simplest puzzle: the player must pick up a ke
 [Links to audio used in testing and final product can be found here.](#audio)
 
 # To Do List
- - Make it so text does not scroll infinitely up over the sprite. 'Lock' size of the text area, make scroll bar.
+ - Second pass text for section 1
+ - Ditch scrollbar idea, have 'typewriter text'. Ask for help w/ this.
+ - ~~Make it so text does not scroll infinitely up over the sprite. 'Lock' size of the text area, make scroll bar.~~
  - Create art assets for section 1
  - Create audio assets for section 1
  - ~~Make it so you can ONLY examine an item if it is either PRESENT IN THE CURRENT ROOM or IS IN YOUR INVENTORY. If an item is ever used, it should be REMOVED from all dictionaries and cannot be examined. If player returns to a room where they took an item, they should NOT be able to examine the 'ghost' of that item.~~
