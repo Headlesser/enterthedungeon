@@ -38,7 +38,8 @@ public class TextInput : MonoBehaviour
 
     void InputComplete()
     {
-        controller.DisplayLoggedText();
+        //controller.DisplayLoggedText();
+        StartCoroutine(controller.DisplayLoggedText());
         inputField.ActivateInputField();
         inputField.text = null;
     }

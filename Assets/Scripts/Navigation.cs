@@ -31,15 +31,15 @@ public class Navigation : MonoBehaviour
         {
             //move to the next room if text was correct
             currentRoom = exitDictionary[directionNoun];
-            controller.LogStringWithReturn("You go " + directionNoun);
-            //controller.EmptyTextLog();
+            controller.EmptyTextLog();
+            controller.LogStringWithReturn("You go " + directionNoun + ".");
             controller.DisplayRoomText();
             controller.DisplayRoomImage();
             controller.PlayRoomSound();
         }
         else
         {
-            controller.LogStringWithReturn("You cannot go " + directionNoun);
+            controller.LogStringWithReturn("You cannot go " + directionNoun + ".");
         }
     }
 

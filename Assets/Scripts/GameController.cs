@@ -24,7 +24,7 @@ public class GameController : MonoBehaviour
     public AudioSource audioSource;
     public AudioSource actionAudioSource;
     public float textDelay;
-    //public ScrollRect scrollRect;
+    private string previousLog;
 
     void Awake()
     {
@@ -37,18 +37,19 @@ public class GameController : MonoBehaviour
     void Start()
     {
         DisplayRoomText();
-        DisplayLoggedText();
+        //DisplayLoggedText();
+        StartCoroutine(DisplayLoggedText());
         DisplayRoomImage();
         PlayRoomSound();
     }
 
-    public void DisplayLoggedText()
-    {
-        //Displays everything in the action log currently.
-        string logAsText = string.Join("\n", actionLog.ToArray());
-        displayText.text = logAsText;
-        //StartCoroutine(ScrollToTop());
-    }
+    // public void DisplayLoggedText()
+    // {
+    //     //Displays everything in the action log currently.
+    //     string logAsText = string.Join("\n", actionLog.ToArray());
+    //     displayText.text = logAsText;
+    //     //StartCoroutine(ScrollToTop());
+    // }
 
     // IEnumerator ScrollToTop() //Keep the bar scrolled to the very bottom.
     // {
@@ -60,12 +61,14 @@ public class GameController : MonoBehaviour
 
     //Replaces DisplayLoggedText();
     //https://www.youtube.com/watch?v=1qbjmb_1hV4&t=442s
-    IEnumerator TypeWriterText()
+    public IEnumerator DisplayLoggedText()
     {
+        //Currently set up so it just prints out the entire action log again. 
+        //We want it to ONLY print out what did not exist in the previous log. That is --> Only the newest lines.
         string logAsText = string.Join("\n", actionLog.ToArray());
         for (int i = 0; i < logAsText.Length; i++)
         {
-            displayText.text = logAsText.Substring(0, i);
+            displayText.text += logAsText.Substring(0, i);
             yield return new WaitForSeconds(textDelay);
         }
     }
