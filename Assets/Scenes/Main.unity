@@ -226,6 +226,8 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 4004b81a9d6368a4d958b07ba4a7772b, type: 2}
   - {fileID: 11400000, guid: a5488d18ebf965447a158bc9d53fd8f5, type: 2}
   - {fileID: 11400000, guid: 703f97af50ba68d4dbcabf97f7fc2f38, type: 2}
+  - {fileID: 11400000, guid: 4a4098e4445caac458ad6b595965c327, type: 2}
+  - {fileID: 11400000, guid: c004cb09ea9d51a438be1dc9bef2a831, type: 2}
   roomNavigation: {fileID: 0}
   interactionDescriptionsInRoom: []
   interactableItems: {fileID: 0}
@@ -233,6 +235,7 @@ MonoBehaviour:
   audioSource: {fileID: 0}
   actionAudioSource: {fileID: 0}
   textDelay: 0
+  typewriterText: 0
 --- !u!4 &412027414
 Transform:
   m_ObjectHideFlags: 0
@@ -260,7 +263,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0d1ab62bedf3b3945af89f9c1975605c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  currentRoom: {fileID: 11400000, guid: 0ad0a5ad067994c45850fd2e74cc6e96, type: 2}
+  currentRoom: {fileID: 11400000, guid: 4d26f99adeed71c4aac19d8b0fa26b46, type: 2}
 --- !u!114 &412027416
 MonoBehaviour:
   m_ObjectHideFlags: 0

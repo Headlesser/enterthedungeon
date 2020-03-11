@@ -24,10 +24,11 @@ public class GameController : MonoBehaviour
     public AudioSource audioSource;
     public AudioSource actionAudioSource;
     public float textDelay;
-    private string previousLog;
+    public bool typewriterText;
 
     void Awake()
     {
+        typewriterText = false;
         interactableItems = GetComponent<InteractableItems>();
         roomNavigation = GetComponent<Navigation>();
         audioSource = GetComponent<AudioSource>();
@@ -37,19 +38,42 @@ public class GameController : MonoBehaviour
     void Start()
     {
         DisplayRoomText();
-        //DisplayLoggedText();
-        StartCoroutine(DisplayLoggedText());
+        if(typewriterText)
+        {
+            StartCoroutine(DisplayLoggedTextType());
+        }
+        if(!typewriterText)
+        {
+            DisplayLoggedText();
+        }
         DisplayRoomImage();
         PlayRoomSound();
     }
 
-    // public void DisplayLoggedText()
-    // {
-    //     //Displays everything in the action log currently.
-    //     string logAsText = string.Join("\n", actionLog.ToArray());
-    //     displayText.text = logAsText;
-    //     //StartCoroutine(ScrollToTop());
-    // }
+    public void Quit()
+    {
+        Application.Quit();
+    }
+
+    public void DisplayControls()
+    {
+        string movement ="'go' + direction (north, south, east, west) to move between rooms";
+        string take = "'take' + item to add item to your inventory";
+        string examine = "'examine' + item to look closely at object";
+        string use = "'use' + item to use an item";
+        string inventory = "'inventory' to open inventory";
+        string quit = "'quit' to quit the game (CAUTION: You cannot escape without consequences!)";
+        string help = "'help' to display controls";
+        LogStringWithReturn(movement + "\n" + examine + "\n" + take + "\n" + use + "\n" + inventory + "\n" + quit + "\n" + help);
+    }
+
+    public void DisplayLoggedText()
+    {
+        //Displays everything in the action log currently.
+        string logAsText = string.Join("\n", actionLog.ToArray());
+        displayText.text = logAsText;
+        //StartCoroutine(ScrollToTop());
+    }
 
     // IEnumerator ScrollToTop() //Keep the bar scrolled to the very bottom.
     // {
@@ -61,14 +85,14 @@ public class GameController : MonoBehaviour
 
     //Replaces DisplayLoggedText();
     //https://www.youtube.com/watch?v=1qbjmb_1hV4&t=442s
-    public IEnumerator DisplayLoggedText()
+    public IEnumerator DisplayLoggedTextType()
     {
         //Currently set up so it just prints out the entire action log again. 
         //We want it to ONLY print out what did not exist in the previous log. That is --> Only the newest lines.
         string logAsText = string.Join("\n", actionLog.ToArray());
         for (int i = 0; i < logAsText.Length; i++)
         {
-            displayText.text += logAsText.Substring(0, i);
+            displayText.text = logAsText.Substring(0, i);
             yield return new WaitForSeconds(textDelay);
         }
     }

@@ -27,7 +27,7 @@ public class Navigation : MonoBehaviour
 
     public void AttemptToChangeRooms(string directionNoun)
     {
-        if(exitDictionary.ContainsKey(directionNoun))
+        if(exitDictionary.ContainsKey(directionNoun) && directionNoun != "start")
         {
             //move to the next room if text was correct
             currentRoom = exitDictionary[directionNoun];

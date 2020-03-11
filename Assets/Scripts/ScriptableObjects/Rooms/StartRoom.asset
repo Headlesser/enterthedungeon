@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 33679f0a95fef08478f51265b4f0a415, type: 3}
+  m_Name: StartRoom
+  m_EditorClassIdentifier: 
+  description: 'You feel cold as the walls of the prison close around you. You can
+    hear the distant clacking of loose pebbles falling from the ceiling and the incessant,
+    rhythmic dripping of water. Before you stands a rusted iron gate, locked by an
+    old iron padlock. '
+  roomID: start room
+  exits: []
+  sprite: {fileID: 21300000, guid: e516812b65a2c7f4ba4d38be4e58f750, type: 3}
+  audio: {fileID: 8300000, guid: c100587da22ba1244a2d7f04fd614fd3, type: 3}
+  interactableObjectsInRoom:
+  - {fileID: 11400000, guid: ebc620d05577b364b874347218897105, type: 2}
