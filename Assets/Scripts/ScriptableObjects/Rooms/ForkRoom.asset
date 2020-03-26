@@ -33,6 +33,6 @@ MonoBehaviour:
       that stinks of brine and mildew. You can feel a damp breeze flow from the passageway
       beyond. A low, steady rumble echoes just on the other side.
     valueRoom: {fileID: 11400000, guid: 2564083d5daa5024f8f992ebb25ef077, type: 2}
-  sprite: {fileID: 10911, guid: 0000000000000000f000000000000000, type: 0}
-  audio: {fileID: 8300000, guid: 960e25904943e674d8b52c8f6ac919a3, type: 3}
+  sprite: {fileID: 21300000, guid: a4dd34d64b6c40d4e89b82cef27b0cd1, type: 3}
+  audio: {fileID: 8300000, guid: 4eb7c87658873fa439df502bca248c89, type: 3}
   interactableObjectsInRoom: []

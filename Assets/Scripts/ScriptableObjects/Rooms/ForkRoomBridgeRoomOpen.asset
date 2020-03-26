@@ -32,6 +32,6 @@ MonoBehaviour:
       You can feel a damp breeze flow under the door. A low, steady rumble echoes
       just on the other side.
     valueRoom: {fileID: 11400000, guid: 1eb0ad051a16be246875ca106a5b1ef1, type: 2}
-  sprite: {fileID: 10913, guid: 0000000000000000f000000000000000, type: 0}
+  sprite: {fileID: 21300000, guid: a4dd34d64b6c40d4e89b82cef27b0cd1, type: 3}
   audio: {fileID: 8300000, guid: 960e25904943e674d8b52c8f6ac919a3, type: 3}
   interactableObjectsInRoom: []
