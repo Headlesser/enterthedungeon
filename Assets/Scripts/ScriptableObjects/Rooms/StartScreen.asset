@@ -19,6 +19,6 @@ MonoBehaviour:
   - keyString: north
     exitDescription: 
     valueRoom: {fileID: 11400000, guid: 0ad0a5ad067994c45850fd2e74cc6e96, type: 2}
-  sprite: {fileID: 10917, guid: 0000000000000000f000000000000000, type: 0}
+  sprite: {fileID: 21300000, guid: e3456a23b93601d499a4acf4163b4ba9, type: 3}
   audio: {fileID: 0}
   interactableObjectsInRoom: []
