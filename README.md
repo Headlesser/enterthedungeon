@@ -183,6 +183,8 @@ After completing the Unity tutorial I began taking notes on a list of adjustment
 
 After reaching the halfway point of the project (approximately 7 weeks in), I went back and reviewed my work thus far. I created a brief presentation to describe my progress, concerns, and questions to address for the final sprint, which can be viewed [here](https://github.com/Headlesser/enterthedungeon/raw/master/documentation/midwayreview.pdf). I found it to be incredibly helpful to create a [To-Do](#to-do-list) list section for myself to help me keep track of what tasks I had to finish, as well as to help pace myself so I could visually see how much progress I am making each week. I would give myself approximately 2-3 specific, concrete tasks to finish each week as a way to keep from falling behind and better estimate how much time I have left to complete what I intend, and make adjustments should the workload prove to be too much.
 
+### As of March 23rd, I had completed the first puzzle section of the game. All subsequent sections will be developed during the coronavirus epidemic in a work-from-home environment.
+
 ## Technical Documentation
 ### Adding Image Support
 In Room.cs I added a public Sprite variable `sprite` which would store the image representing the layout of whatever particular room object it is assigned to. This is essentially extending off of the variables the tutorial had already designated (`description`, `roomID`, etc).
@@ -350,9 +352,10 @@ For example, the start room is the simplest puzzle: the player must pick up a ke
 # To Do List
  - Second pass text for section 1
  - Ditch scrollbar idea, have 'typewriter text'. Ask for help w/ this.
- - ~~Make it so text does not scroll infinitely up over the sprite. 'Lock' size of the text area, make scroll bar.~~
- - Create art assets for section 1
  - Create audio assets for section 1
+ - Finalize goals for deadline submission (3 completed sections)
+ - ~~Make it so text does not scroll infinitely up over the sprite. 'Lock' size of the text area, make scroll bar.~~
+ - ~~Create art assets for section 1~~
  - ~~Make it so you can ONLY examine an item if it is either PRESENT IN THE CURRENT ROOM or IS IN YOUR INVENTORY. If an item is ever used, it should be REMOVED from all dictionaries and cannot be examined. If player returns to a room where they took an item, they should NOT be able to examine the 'ghost' of that item.~~
  - - ~~Create map layout for section 1.~~
  - ~~Make it so, after using an item, it doesn't repeat the old room description again? (Replace it w/ the new one after triggering an event. I will have to clear the log before printing).~~
