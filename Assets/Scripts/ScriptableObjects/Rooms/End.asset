@@ -12,7 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 33679f0a95fef08478f51265b4f0a415, type: 3}
   m_Name: End
   m_EditorClassIdentifier: 
-  description: You have reached the exit. OR HAVE U???
+  description: '...You find yourself waiting in a black void. It''s as if this part
+    of the game hhas not been finished yet... (Thank you for playing!)'
   roomID: end
   exits: []
   sprite: {fileID: 21300000, guid: e3456a23b93601d499a4acf4163b4ba9, type: 3}

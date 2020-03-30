@@ -12,14 +12,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 33679f0a95fef08478f51265b4f0a415, type: 3}
   m_Name: GargoyleEyeRoom
   m_EditorClassIdentifier: 
-  description: You enter a small room with a carved pedestal at the center. On top
-    of the pedestal sits a gemstone.
+  description: You enter a small room where strange, hanging baubles filled with colored
+    gas hang all along the ceiling. There are shining deposits of crystal jutting
+    out from the walls that reflect the colorful light in a spectacular way. At the
+    center of the room is a rather magnificent pedestal made of stone similar to the
+    gargoyle from before.
   roomID: gemstone room
   exits:
   - keyString: south
-    exitDescription: There is a hallway to the south where you came.
+    exitDescription: There is a hallway to the SOUTH where you came.
     valueRoom: {fileID: 11400000, guid: 1eb0ad051a16be246875ca106a5b1ef1, type: 2}
   sprite: {fileID: 21300000, guid: fd42e23c168466c49bc25dd758e046eb, type: 3}
-  audio: {fileID: 8300000, guid: 960e25904943e674d8b52c8f6ac919a3, type: 3}
+  audio: {fileID: 8300000, guid: c5912a4aa7c6b394990e409ee05270ba, type: 3}
   interactableObjectsInRoom:
   - {fileID: 11400000, guid: 2c63ddcf26c49bd499f0e7d225f95b9a, type: 2}

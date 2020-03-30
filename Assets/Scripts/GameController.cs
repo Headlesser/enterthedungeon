@@ -62,9 +62,10 @@ public class GameController : MonoBehaviour
         string examine = "'examine' + item to look closely at object";
         string use = "'use' + item to use an item";
         string inventory = "'inventory' to open inventory";
+        string room = "'room' to display the room description again";
         string quit = "'quit' to quit the game (CAUTION: You cannot escape without consequences!)";
         string help = "'help' to display controls";
-        LogStringWithReturn(movement + "\n" + examine + "\n" + take + "\n" + use + "\n" + inventory + "\n" + quit + "\n" + help);
+        LogStringWithReturn(movement + "\n" + examine + "\n" + take + "\n" + use + "\n" + inventory + "\n" + room + "\n" + quit + "\n" + help);
     }
 
     public void DisplayLoggedText()
@@ -101,6 +102,17 @@ public class GameController : MonoBehaviour
     {
         //Call to clear out all text from the action log. Do this after entering a new SECTION.
         actionLog.Clear();
+    }
+
+    public void DisplayAllRoomText()
+    {
+        //For the 'room' input action. Displays room text, and items within the room.
+        string joinedInteractionDescriptions = string.Join("\n", interactionDescriptionsInRoom.ToArray());
+
+        //Displays Room's individual text.
+        string combinedText = roomNavigation.currentRoom.description + "\n" + joinedInteractionDescriptions;
+
+        LogStringWithReturn(combinedText);
     }
 
     public void DisplayRoomText()

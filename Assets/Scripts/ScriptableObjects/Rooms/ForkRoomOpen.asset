@@ -22,5 +22,5 @@ MonoBehaviour:
       NORTH.
     valueRoom: {fileID: 11400000, guid: 11d2b88fb14b15a4d873186520609511, type: 2}
   sprite: {fileID: 21300000, guid: e8389d252729c954394abd3235f4cc89, type: 3}
-  audio: {fileID: 8300000, guid: 960e25904943e674d8b52c8f6ac919a3, type: 3}
+  audio: {fileID: 8300000, guid: 4eb7c87658873fa439df502bca248c89, type: 3}
   interactableObjectsInRoom: []

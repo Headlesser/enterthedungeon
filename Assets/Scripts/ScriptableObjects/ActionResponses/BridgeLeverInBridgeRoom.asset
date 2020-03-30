@@ -14,3 +14,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   requiredString: bridge room
   roomToChangeTo: {fileID: 11400000, guid: 1eb0ad051a16be246875ca106a5b1ef1, type: 2}
+  actionSound: {fileID: 8300000, guid: c1ef8277d4ded3547b9e0f494bb853bd, type: 3}

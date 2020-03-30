@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   description: 'You emerge upon a large room with two doors. Sitting beetween them
     is a gargoyle. The statue is ancient and crumbling, but seems harmless. A single
-    blue gemstone adornes its left eyesocket.
+    blue gemstone adornes one of its eye sockets.
 
 '
   roomID: fork room
@@ -23,13 +23,13 @@ MonoBehaviour:
     exitDescription: There is an unlocked gate to the SOUTH where you came.
     valueRoom: {fileID: 11400000, guid: b1324972ab3d09b4e8adb743a239bbb3, type: 2}
   - keyString: west
-    exitDescription: To the WEST is a sturdy wooden door that appears slightly ajar.
-      There are deep scratch marks near the lower left corner. The stones leading
-      down the passageway appear stained with a dark, coagulated substance, and you
-      can faintly make out what appears to be the decaying remains of torn fingernails.
+    exitDescription: To the WEST is a sturdy doorway. There are deep scratch marks
+      on the floor leading through it. The stones leading down the passageway appear
+      stained with a dark, coagulated substance, and you can faintly make out what
+      appears to be the decaying remains of torn fingernails.
     valueRoom: {fileID: 11400000, guid: 9a77787eb6f14a441812df87fb7386c6, type: 2}
   - keyString: east
-    exitDescription: To the EAST is a rotting wooden door coated with a slimy residue
+    exitDescription: To the EAST is a rotting doorway coated with a slimy residue
       that stinks of brine and mildew. You can feel a damp breeze flow from the passageway
       beyond. A low, steady rumble echoes just on the other side.
     valueRoom: {fileID: 11400000, guid: 2564083d5daa5024f8f992ebb25ef077, type: 2}
