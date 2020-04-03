@@ -12,11 +12,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 33679f0a95fef08478f51265b4f0a415, type: 3}
   m_Name: GargoyleEyeRoom
   m_EditorClassIdentifier: 
-  description: You enter a small room where strange, hanging baubles filled with colored
-    gas hang all along the ceiling. There are shining deposits of crystal jutting
-    out from the walls that reflect the colorful light in a spectacular way. At the
-    center of the room is a rather magnificent pedestal made of stone similar to the
-    gargoyle from before.
+  description: You enter a small room where strange baubles filled with colored gas
+    hang all along the ceiling. There are shining deposits of crystal jutting out
+    from the walls that reflect the colorful light in a spectacular way. At the center
+    of the room is a rather magnificent pedestal made of stone similar to the gargoyle
+    from before.
   roomID: gemstone room
   exits:
   - keyString: south

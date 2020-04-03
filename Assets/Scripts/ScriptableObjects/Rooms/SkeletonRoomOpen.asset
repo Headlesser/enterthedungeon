@@ -14,11 +14,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   description: 'There is a skeleton shackled to the wall, covered in tiny, black,
     flesh-eating beetles. They seem to have cleaned the corpse of every last scrap
-    of meat. The mannacles show signs of struggle. '
+    of meat. The mannacles show signs of struggle long forgotten. '
   roomID: skeleton room
   exits:
   - keyString: east
-    exitDescription: There is a hallway to the east where you entered.
+    exitDescription: There is a hallway to the EAST where you entered.
     valueRoom: {fileID: 11400000, guid: 7fdc13d28e871fa4bb88ceaf06148851, type: 2}
   sprite: {fileID: 21300000, guid: 09ab302eb5071d6428357355947f70e9, type: 3}
   audio: {fileID: 8300000, guid: 960e25904943e674d8b52c8f6ac919a3, type: 3}

@@ -13,8 +13,9 @@ MonoBehaviour:
   m_Name: ForkRoomOpen
   m_EditorClassIdentifier: 
   description: "The gargoyle's eyes light up and you feel the floor begin to quake.
-    The sound of scraping stone hammers your ears as the statue shifts position. \nThe
-    door to your south has slammed shut behind you... You cannot turn back now."
+    The sound of scraping stone hammers your ears and the crumbling statue shifts
+    position. \nThe door to your south has slammed shut behind you... You cannot turn
+    back now."
   roomID: fork room open
   exits:
   - keyString: north

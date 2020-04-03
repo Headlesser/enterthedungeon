@@ -20,7 +20,7 @@ MonoBehaviour:
   roomID: bridge room
   exits:
   - keyString: west
-    exitDescription: There is a hallway to the west where you entered.
+    exitDescription: There is a hallway to the WEST where you entered.
     valueRoom: {fileID: 11400000, guid: b6b5aab6ff20ad0488b0f47d06f7f0e7, type: 2}
   sprite: {fileID: 21300000, guid: c3ddb9e19e75b4c4ab876018233e3a72, type: 3}
   audio: {fileID: 8300000, guid: 04d2a5f828388ca489bb257614319635, type: 3}

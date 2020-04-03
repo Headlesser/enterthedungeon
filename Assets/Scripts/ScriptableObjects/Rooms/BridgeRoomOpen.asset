@@ -16,7 +16,7 @@ MonoBehaviour:
   roomID: bridge room open
   exits:
   - keyString: west
-    exitDescription: There is a hallway to the west where you entered.
+    exitDescription: There is a hallway to the WEST where you entered.
     valueRoom: {fileID: 11400000, guid: 7fdc13d28e871fa4bb88ceaf06148851, type: 2}
   - keyString: north
     exitDescription: The lowered drawbridge has opened the path to the NORTH.
