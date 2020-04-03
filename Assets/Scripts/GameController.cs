@@ -149,8 +149,8 @@ public class GameController : MonoBehaviour
     void UnpackRoom()
     {
         //'loads' the new room
-        roomNavigation.UnpackExitsInRoom();
         PrepareObjectsToTakeOrExamine(roomNavigation.currentRoom);
+        roomNavigation.UnpackExitsInRoom();
     }
 
     void PrepareObjectsToTakeOrExamine(Room currentRoom)
