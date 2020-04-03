@@ -27,6 +27,8 @@ This file contains the documentation for Enter the Dungeon.
 
 [Art Documentation](#art-and-visuals)
 
+[Playtesting](#playtesting-notes)
+
 [To-Do](#to-do-list)
 
 ## Asset List
@@ -349,11 +351,21 @@ For example, the start room is the simplest puzzle: the player must pick up a ke
 
 [Links to audio used in testing and final product can be found here.](#audio)
 
+# Playtesting Notes
+First playtest session conducted with 4 adults ages 22-30. Mixed familiarity with experience playing games.
+- Scraping stone sound doesn't stop after leaving the final room
+- One player did not like item descriptions in room appearing below exit descriptions, 'were easy to forget about or miss'
+- Players complained about the text being too small or too dark to read
+- The puzzle was easy
+- Players wanted more objects to look at that may or may not have anything to do with the puzzle itself (clutter items/flavor text)
+- Players enjoyed the audio, though some placeholder tracks were too loud/were not cut properly
+
 # To Do List
  - Second pass text for section 1
  - Ditch scrollbar idea, have 'typewriter text'. Ask for help w/ this.
  - Create audio assets for section 1
  - Finalize goals for deadline submission (3 completed sections)
+ - ~~Fix things w/ playtest 1 feedback~~
  - ~~Make it so text does not scroll infinitely up over the sprite. 'Lock' size of the text area, make scroll bar.~~
  - ~~Create art assets for section 1~~
  - ~~Make it so you can ONLY examine an item if it is either PRESENT IN THE CURRENT ROOM or IS IN YOUR INVENTORY. If an item is ever used, it should be REMOVED from all dictionaries and cannot be examined. If player returns to a room where they took an item, they should NOT be able to examine the 'ghost' of that item.~~
