@@ -16,7 +16,7 @@ This file contains the documentation for Enter the Dungeon.
 ## Puzzle Design
 [Puzzle Documentation](#puzzle-design-1)
 
-[Section 1 - Start](#section-1---start)
+[Section 1 - The Start](#section-1.1-&-section-1.2)
 
 [Game Map](#game-map)
 
