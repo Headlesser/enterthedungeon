@@ -165,7 +165,9 @@ For this project I decided to utilize a design formula I have developed for crea
 The trunk of this puzzle tree can now be elongated (or shortened) as much as is needed, thus allowing the game to always be in somewhat of a 'completed' state but easily built upon.  Furthermore, to introduce more complexity into the puzzles, each section of trunk can have a limitless amount of 'branches'. In this case, the Start Room, Section 1, is a section of trunk with no branches. Section 2, however, is a section of trunk with one branches, with branches following the formula `# of branches = # of keys needed to complete the section - 1`. For example, Section 1 needs 1 key to complete it, `1-1 = 0` branches. Section 2 needs 2 keys to complete it (drawbridge lever, gargoyle eye), `2-1 = 1` branch. 
 
 
-## Section 1 - Start
+## Section 1.1 & Section 1.2
+I put the first section into two parts as a 'section' is defined by moving up the 'trunk' of the puzzle tree. Section 1.1, although one room long, moves directly up the trunk of the tree (no branches), so I define it as one very small section. The stars on this diagram represent 'keys' needed to enter another room. Stars found within rectangles indicate that key is found within that room. Stars on lines indicate that specific key is needed to reach the connecting room.
+![Diagram1](https://github.com/Headlesser/enterthedungeon/raw/master/images/diagram_section_1.png)
 
 # Process
 I began this project on January 20th, 2020, which began as a few sketches of ideas in my notebook. At first I thought of making a 2D point-and-click puzzle game. I was very into games such as [Deep Sleep](https://scriptwelder.itch.io/deep-sleep) and [Don't Escape: 4 Days to Survive](https://dont-escape.com/) by *scriptwealder*, and started writing up some notes in my sketchbook seen here:
