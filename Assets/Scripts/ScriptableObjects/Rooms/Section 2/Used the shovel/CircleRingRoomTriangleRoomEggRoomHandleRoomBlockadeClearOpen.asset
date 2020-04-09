@@ -1,0 +1,30 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 33679f0a95fef08478f51265b4f0a415, type: 3}
+  m_Name: CircleRingRoomTriangleRoomEggRoomHandleRoomBlockadeClearOpen
+  m_EditorClassIdentifier: 
+  description: This is the circle room with the rubble cleared. The player should
+    still be able to collect the AXE HANDLE and GLUE if they still need to.
+  roomID: circle room triangle room egg room open
+  exits:
+  - keyString: west
+    exitDescription: There is a passage to the WEST where you entered from.
+    valueRoom: {fileID: 11400000, guid: eb1311cc8f8e2e94594ac1e0c95ad094, type: 2}
+  - keyString: north
+    exitDescription: There is a door to the NORTH. This leads to the axe room.
+    valueRoom: {fileID: 11400000, guid: 3d52053af1e499f418a2d002fc1a2a07, type: 2}
+  - keyString: east
+    exitDescription: There is a door to the EAST. This leads to the axe handle room.
+    valueRoom: {fileID: 11400000, guid: 0abe187f1db462c418031be26ce39561, type: 2}
+  sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
+  audio: {fileID: 0}
+  interactableObjectsInRoom: []

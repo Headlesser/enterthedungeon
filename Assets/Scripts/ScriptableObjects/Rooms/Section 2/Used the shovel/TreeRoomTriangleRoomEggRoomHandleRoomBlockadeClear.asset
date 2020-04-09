@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 33679f0a95fef08478f51265b4f0a415, type: 3}
+  m_Name: TreeRoomTriangleRoomEggRoomHandleRoomBlockadeClear
+  m_EditorClassIdentifier: 
+  description: This room has the bleeding tree in it. The player must be able to collect
+    GLUE still. After using the glue, the egg/triangle rooms can be blocked off forever.
+  roomID: tree room triangle room egg room open
+  exits:
+  - keyString: east
+    exitDescription: EAST leads to the main room.
+    valueRoom: {fileID: 11400000, guid: 7dc52331ef4387d46aee2c41bbbf1936, type: 2}
+  - keyString: west
+    exitDescription: WEST leads to the triangle room.
+    valueRoom: {fileID: 11400000, guid: e87fb520e66d511458057c8b6223aecd, type: 2}
+  sprite: {fileID: 10913, guid: 0000000000000000f000000000000000, type: 0}
+  audio: {fileID: 0}
+  interactableObjectsInRoom: []

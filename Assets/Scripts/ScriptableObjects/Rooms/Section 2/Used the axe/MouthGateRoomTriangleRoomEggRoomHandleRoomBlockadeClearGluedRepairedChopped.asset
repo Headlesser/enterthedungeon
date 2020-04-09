@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 33679f0a95fef08478f51265b4f0a415, type: 3}
+  m_Name: MouthGateRoomTriangleRoomEggRoomHandleRoomBlockadeClearGluedRepairedChopped
+  m_EditorClassIdentifier: 
+  description: As you enter the room, a torrent of steamy, humid air washes over you,
+    making your skin feel damp and sticky. Burning torches line the walls and you
+    find another large gate blocking your path forward. The bars do not appear to
+    be made of metal, and you notice the ground right in front of it is stained a
+    bright red. You could almost swear you saw the bars moving...
+  roomID: mouth room triangle room egg room open
+  exits: []
+  sprite: {fileID: 10913, guid: 0000000000000000f000000000000000, type: 0}
+  audio: {fileID: 0}
+  interactableObjectsInRoom: []

@@ -301,6 +301,7 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 4b4b46ea0e5721e41900a075b55431cb, type: 2}
   - {fileID: 11400000, guid: f13982ca2e103174e83bd2ebc6d2cd87, type: 2}
   - {fileID: 11400000, guid: 176571d4e43270545bc8cba88bad61c9, type: 2}
+  - {fileID: 11400000, guid: 762b616176cd8b14a95d8722cd9b1598, type: 2}
   nounsInRoom: []
   nounsInInventory: []
 --- !u!82 &412027418

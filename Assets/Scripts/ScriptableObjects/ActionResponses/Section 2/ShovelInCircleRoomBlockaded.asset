@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 738363cbe1249ab42b2068d2f37a6d19, type: 3}
   m_Name: ShovelInCircleRoomBlockaded
   m_EditorClassIdentifier: 
-  requiredString: 
-  roomToChangeTo: {fileID: 0}
-  actionSound: {fileID: 0}
+  requiredString: circle room triangle room egg room handle room blockade
+  roomToChangeTo: {fileID: 11400000, guid: 6890d7f4ebb655e4790e02500e92d3fb, type: 2}
+  actionSound: {fileID: 8300000, guid: 9863ffa5bd2b5eb46abadef149968fec, type: 3}

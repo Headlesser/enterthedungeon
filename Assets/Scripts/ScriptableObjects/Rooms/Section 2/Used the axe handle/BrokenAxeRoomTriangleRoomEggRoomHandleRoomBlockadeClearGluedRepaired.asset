@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 33679f0a95fef08478f51265b4f0a415, type: 3}
+  m_Name: BrokenAxeRoomTriangleRoomEggRoomHandleRoomBlockadeClearGluedRepaired
+  m_EditorClassIdentifier: 
+  description: This room contains the completely repaired axe that can be taken.
+  roomID: axe room glue and handle
+  exits:
+  - keyString: south
+    exitDescription: There is a passage to the SOUTH where you came from.
+    valueRoom: {fileID: 11400000, guid: b483c1f20497dfb4985ef1f8dbb194c5, type: 2}
+  sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
+  audio: {fileID: 0}
+  interactableObjectsInRoom:
+  - {fileID: 11400000, guid: 86594a6623ceecc458c518be93770fe8, type: 2}
