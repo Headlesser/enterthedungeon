@@ -16,10 +16,10 @@ MonoBehaviour:
   description: A pile of bloody meat harvested from the bleeding tree.
   interactions:
   - inputAction: {fileID: 11400000, guid: 90542c9d641a4f744bc08a88649757c9, type: 2}
-    textResponse: 
+    textResponse: '...'
     actionResponse: {fileID: 0}
   - inputAction: {fileID: 11400000, guid: 4004b81a9d6368a4d958b07ba4a7772b, type: 2}
-    textResponse: 
+    textResponse: '...'
     actionResponse: {fileID: 0}
   - inputAction: {fileID: 11400000, guid: 703f97af50ba68d4dbcabf97f7fc2f38, type: 2}
     textResponse: You throw the bloody meat to the gate and it gobbles it up.

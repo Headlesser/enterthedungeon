@@ -13,8 +13,8 @@ MonoBehaviour:
   m_Name: BrokenAxeRoomTriangleRoomEggRoomHandleRoomBlockadeClearOpen
   m_EditorClassIdentifier: 
   description: This room is a dead end, it contains the broken axe in a stump. It
-    needs to be smothered in glue first before teleporting to the 'needs a handle'
-    room.
+    needs to be smothered in glue/mucous first before teleporting to the 'needs a
+    handle' room.
   roomID: axe room
   exits:
   - keyString: south
