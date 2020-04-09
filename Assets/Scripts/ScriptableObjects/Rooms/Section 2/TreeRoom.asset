@@ -12,9 +12,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 33679f0a95fef08478f51265b4f0a415, type: 3}
   m_Name: TreeRoom
   m_EditorClassIdentifier: 
-  description: 
+  description: This room has the bleeding tree in it.
   roomID: tree room
-  exits: []
-  sprite: {fileID: 0}
+  exits:
+  - keyString: west
+    exitDescription: WEST leads to the triangle key room before the egg room.
+    valueRoom: {fileID: 11400000, guid: 02543a56c96b9b54fb6ce0321e90e232, type: 2}
+  - keyString: east
+    exitDescription: There is a passage to the EAST where you entered from.
+    valueRoom: {fileID: 11400000, guid: 86519852ffc0e5248a4a314dbc0622ac, type: 2}
+  sprite: {fileID: 10913, guid: 0000000000000000f000000000000000, type: 0}
   audio: {fileID: 0}
   interactableObjectsInRoom: []

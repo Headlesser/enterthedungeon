@@ -13,14 +13,16 @@ MonoBehaviour:
   m_Name: AxeHandle
   m_EditorClassIdentifier: 
   noun: handle
-  description: 
+  description: Among the brambles you see a sanded piece of wood that looks different
+    from all the other branches. It looks like the handle to some sort of tool.
   interactions:
   - inputAction: {fileID: 11400000, guid: 90542c9d641a4f744bc08a88649757c9, type: 2}
-    textResponse: 
+    textResponse: The handle is long and smooth, but you can see faint cracks along
+      the wooden fibers. Shake it around too hard and it'll probably snap.
     actionResponse: {fileID: 0}
   - inputAction: {fileID: 11400000, guid: 4004b81a9d6368a4d958b07ba4a7772b, type: 2}
-    textResponse: 
+    textResponse: You take the handle.
     actionResponse: {fileID: 0}
   - inputAction: {fileID: 11400000, guid: 703f97af50ba68d4dbcabf97f7fc2f38, type: 2}
-    textResponse: 
-    actionResponse: {fileID: 0}
+    textResponse: You use the handle on the broken axe covered in sticky mucous.
+    actionResponse: {fileID: 11400000, guid: 9eee3f2274e9d2c4f814225f623dbb0d, type: 2}

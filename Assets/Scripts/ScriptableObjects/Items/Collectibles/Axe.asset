@@ -13,14 +13,16 @@ MonoBehaviour:
   m_Name: Axe
   m_EditorClassIdentifier: 
   noun: axe
-  description: 
+  description: 'You see the remnants of an old, heavy axe embedded in a a rotting
+    stump. '
   interactions:
   - inputAction: {fileID: 11400000, guid: 90542c9d641a4f744bc08a88649757c9, type: 2}
-    textResponse: 
+    textResponse: The handle is broken and the blade appears rusted. Even so, the
+      tool appears to have seen recent use...
     actionResponse: {fileID: 0}
   - inputAction: {fileID: 11400000, guid: 4004b81a9d6368a4d958b07ba4a7772b, type: 2}
-    textResponse: 
+    textResponse: You take the repaired axe.
     actionResponse: {fileID: 0}
   - inputAction: {fileID: 11400000, guid: 703f97af50ba68d4dbcabf97f7fc2f38, type: 2}
-    textResponse: 
-    actionResponse: {fileID: 0}
+    textResponse: You swing the axe at the crooked trunk of the tree.
+    actionResponse: {fileID: 11400000, guid: af3c914ab0e16104488d807155711501, type: 2}

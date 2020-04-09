@@ -12,9 +12,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 33679f0a95fef08478f51265b4f0a415, type: 3}
   m_Name: AxeHandleRoom
   m_EditorClassIdentifier: 
-  description: 
-  roomID: 
-  exits: []
-  sprite: {fileID: 0}
+  description: This room is a dead end, it contains the handle to the broken axe,
+    and a shovel to clear the rubble.
+  roomID: axe handle room
+  exits:
+  - keyString: west
+    exitDescription: There is a passage to the WEST where you came from.
+    valueRoom: {fileID: 11400000, guid: 8ae29569d225951459237f70b2fc029d, type: 2}
+  sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
   audio: {fileID: 0}
-  interactableObjectsInRoom: []
+  interactableObjectsInRoom:
+  - {fileID: 11400000, guid: c48e4b48001b7e2479d7c4c4ee0ba8ae, type: 2}
+  - {fileID: 11400000, guid: c48e4b48001b7e2479d7c4c4ee0ba8ae, type: 2}

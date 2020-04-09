@@ -12,9 +12,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 33679f0a95fef08478f51265b4f0a415, type: 3}
   m_Name: EggRoom
   m_EditorClassIdentifier: 
-  description: 
-  roomID: 
-  exits: []
-  sprite: {fileID: 0}
+  description: This is the egg room.
+  roomID: egg room
+  exits:
+  - keyString: south
+    exitDescription: There is a passage to the SOUTH where you entered from.
+    valueRoom: {fileID: 11400000, guid: afc94ca791dbf9a45bc379010ee0d275, type: 2}
+  sprite: {fileID: 10913, guid: 0000000000000000f000000000000000, type: 0}
   audio: {fileID: 0}
   interactableObjectsInRoom: []

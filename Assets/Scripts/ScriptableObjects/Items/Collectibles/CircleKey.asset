@@ -24,4 +24,4 @@ MonoBehaviour:
     actionResponse: {fileID: 0}
   - inputAction: {fileID: 11400000, guid: 703f97af50ba68d4dbcabf97f7fc2f38, type: 2}
     textResponse: You use the knocking ring on the rounded divit in the door.
-    actionResponse: {fileID: 0}
+    actionResponse: {fileID: 11400000, guid: 7742d7e1c814d7641accc950107429d7, type: 2}

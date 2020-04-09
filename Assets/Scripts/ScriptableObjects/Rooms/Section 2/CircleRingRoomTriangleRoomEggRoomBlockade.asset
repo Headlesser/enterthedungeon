@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 33679f0a95fef08478f51265b4f0a415, type: 3}
+  m_Name: CircleRingRoomTriangleRoomEggRoomBlockade
+  m_EditorClassIdentifier: 
+  description: 'This will be a room description.
+
+    There is a door to the EAST. This door will be ''locked'' by the triangle key,
+    the broken axe room is blocked by rubble.'
+  roomID: circle room triangle room egg room blockade
+  exits:
+  - keyString: west
+    exitDescription: There is a passage to the WEST where you entered from.
+    valueRoom: {fileID: 11400000, guid: 69572d2dd7b6f5b4a948cda71e9bbff3, type: 2}
+  sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
+  audio: {fileID: 0}
+  interactableObjectsInRoom: []

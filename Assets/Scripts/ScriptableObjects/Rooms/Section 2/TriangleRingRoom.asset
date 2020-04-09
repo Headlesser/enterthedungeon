@@ -12,9 +12,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 33679f0a95fef08478f51265b4f0a415, type: 3}
   m_Name: TriangleRingRoom
   m_EditorClassIdentifier: 
-  description: 
-  roomID: 
-  exits: []
-  sprite: {fileID: 0}
+  description: This is the room before the egg room. After burning the eggs, the triangle
+    key will appear.
+  roomID: triangle room
+  exits:
+  - keyString: east
+    exitDescription: There is a passage to the EAST where you entered from.
+    valueRoom: {fileID: 11400000, guid: 9ea4f20bbf9dcf24b9926ffff43786a6, type: 2}
+  sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
   audio: {fileID: 0}
   interactableObjectsInRoom: []

@@ -13,5 +13,14 @@ MonoBehaviour:
   m_Name: TriangleKey
   m_EditorClassIdentifier: 
   noun: triangle
-  description: Description of item in the room
-  interactions: []
+  description: triangle key is here.
+  interactions:
+  - inputAction: {fileID: 11400000, guid: 90542c9d641a4f744bc08a88649757c9, type: 2}
+    textResponse: '...'
+    actionResponse: {fileID: 0}
+  - inputAction: {fileID: 11400000, guid: 4004b81a9d6368a4d958b07ba4a7772b, type: 2}
+    textResponse: '...'
+    actionResponse: {fileID: 0}
+  - inputAction: {fileID: 11400000, guid: 703f97af50ba68d4dbcabf97f7fc2f38, type: 2}
+    textResponse: You use the triangle key.
+    actionResponse: {fileID: 11400000, guid: c9075f0ea979ed845a15e42282dd6d02, type: 2}
