@@ -294,6 +294,12 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 2c63ddcf26c49bd499f0e7d225f95b9a, type: 2}
   - {fileID: 11400000, guid: ebc620d05577b364b874347218897105, type: 2}
   - {fileID: 11400000, guid: c064ecda8c8b4824dba30137b73613f7, type: 2}
+  - {fileID: 11400000, guid: 86594a6623ceecc458c518be93770fe8, type: 2}
+  - {fileID: 11400000, guid: c48e4b48001b7e2479d7c4c4ee0ba8ae, type: 2}
+  - {fileID: 11400000, guid: ad5d6c9f3718eba4f891bb7dc7f7377c, type: 2}
+  - {fileID: 11400000, guid: 33eee4278dce88f45b3a9d27b96f22e9, type: 2}
+  - {fileID: 11400000, guid: 4b4b46ea0e5721e41900a075b55431cb, type: 2}
+  - {fileID: 11400000, guid: f13982ca2e103174e83bd2ebc6d2cd87, type: 2}
   nounsInRoom: []
   nounsInInventory: []
 --- !u!82 &412027418

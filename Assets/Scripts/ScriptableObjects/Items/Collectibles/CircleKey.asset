@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ed19a84eeb1cdeb4ba651ef11a20d3b5, type: 3}
+  m_Name: CircleKey
+  m_EditorClassIdentifier: 
+  noun: ring
+  description: 'The door to the north has a circular-shaped metal ornament on it,
+    presumably used for knocking. '
+  interactions:
+  - inputAction: {fileID: 11400000, guid: 90542c9d641a4f744bc08a88649757c9, type: 2}
+    textResponse: It looks worn and ready to fall off.
+    actionResponse: {fileID: 0}
+  - inputAction: {fileID: 11400000, guid: 4004b81a9d6368a4d958b07ba4a7772b, type: 2}
+    textResponse: You take the knocking ring off of the door.
+    actionResponse: {fileID: 0}
+  - inputAction: {fileID: 11400000, guid: 703f97af50ba68d4dbcabf97f7fc2f38, type: 2}
+    textResponse: You use the knocking ring on the rounded divit in the door.
+    actionResponse: {fileID: 0}
