@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: AxeInTreeRoom
   m_EditorClassIdentifier: 
   requiredString: tree room triangle room egg room open
-  roomToChangeTo: {fileID: 11400000, guid: c0737a0b2ba9fbc44aa92142dfea2934, type: 2}
+  roomToChangeTo: {fileID: 11400000, guid: 09fe779631c773e4c99fa53908e522ff, type: 2}
   actionSound: {fileID: 8300000, guid: 9863ffa5bd2b5eb46abadef149968fec, type: 3}
