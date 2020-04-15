@@ -22,6 +22,6 @@ MonoBehaviour:
     exitDescription: The door to the EAST has been unlocked. This leads to the axe
       handle room.
     valueRoom: {fileID: 11400000, guid: ee811366b99c78f4bab5fb42c3a2f84d, type: 2}
-  sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
+  sprite: {fileID: 21300000, guid: 5a061c834d90b5d479c1822841eca760, type: 3}
   audio: {fileID: 0}
   interactableObjectsInRoom: []

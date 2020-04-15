@@ -19,6 +19,6 @@ MonoBehaviour:
   - keyString: east
     exitDescription: EAST leads to the main room.
     valueRoom: {fileID: 11400000, guid: 69fb8691b80286646b9010c71608a632, type: 2}
-  sprite: {fileID: 10913, guid: 0000000000000000f000000000000000, type: 0}
+  sprite: {fileID: 21300000, guid: 9a6843d8e10e05b41b9af04a814b467c, type: 3}
   audio: {fileID: 0}
   interactableObjectsInRoom: []

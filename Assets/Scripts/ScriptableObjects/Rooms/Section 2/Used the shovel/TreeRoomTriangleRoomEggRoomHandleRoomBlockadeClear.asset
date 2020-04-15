@@ -22,6 +22,6 @@ MonoBehaviour:
   - keyString: west
     exitDescription: WEST leads to the triangle room.
     valueRoom: {fileID: 11400000, guid: e87fb520e66d511458057c8b6223aecd, type: 2}
-  sprite: {fileID: 10913, guid: 0000000000000000f000000000000000, type: 0}
+  sprite: {fileID: 21300000, guid: 9a6843d8e10e05b41b9af04a814b467c, type: 3}
   audio: {fileID: 0}
   interactableObjectsInRoom: []

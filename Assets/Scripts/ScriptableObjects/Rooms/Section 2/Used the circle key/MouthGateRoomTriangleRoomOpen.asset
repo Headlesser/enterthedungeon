@@ -29,7 +29,7 @@ MonoBehaviour:
       to the WEST. On the wall above the passageway, you see the word 'DEATh' carved
       above it.
     valueRoom: {fileID: 11400000, guid: edf55fae9398591488356a3330aae2d6, type: 2}
-  sprite: {fileID: 10913, guid: 0000000000000000f000000000000000, type: 0}
+  sprite: {fileID: 21300000, guid: 05133a1687d2ea54caf69c0ff43a95c1, type: 3}
   audio: {fileID: 0}
   interactableObjectsInRoom:
   - {fileID: 11400000, guid: 4b4b46ea0e5721e41900a075b55431cb, type: 2}
