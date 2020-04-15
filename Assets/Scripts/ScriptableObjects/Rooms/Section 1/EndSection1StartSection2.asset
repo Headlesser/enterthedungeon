@@ -20,6 +20,6 @@ MonoBehaviour:
   - keyString: north
     exitDescription: There is a light at the end of the tunnel to the NORTH.
     valueRoom: {fileID: 11400000, guid: 86519852ffc0e5248a4a314dbc0622ac, type: 2}
-  sprite: {fileID: 10913, guid: 0000000000000000f000000000000000, type: 0}
+  sprite: {fileID: 21300000, guid: 63f497d68d2c21a4ca4719b35cf3088f, type: 3}
   audio: {fileID: 0}
   interactableObjectsInRoom: []

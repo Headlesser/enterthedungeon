@@ -18,6 +18,6 @@ MonoBehaviour:
   - keyString: south
     exitDescription: There is a passage to the SOUTH where you came from.
     valueRoom: {fileID: 11400000, guid: 73dda893e31780d43894d99ad78448a4, type: 2}
-  sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
+  sprite: {fileID: 21300000, guid: 30b4f3738a2a2c14ca65e44f8787740c, type: 3}
   audio: {fileID: 0}
   interactableObjectsInRoom: []

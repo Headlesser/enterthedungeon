@@ -21,7 +21,7 @@ MonoBehaviour:
   - keyString: west
     exitDescription: There is a passage to the WEST where you came from.
     valueRoom: {fileID: 11400000, guid: 6890d7f4ebb655e4790e02500e92d3fb, type: 2}
-  sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
+  sprite: {fileID: 21300000, guid: 57a93ce8acc144a45b5747d552ba0903, type: 3}
   audio: {fileID: 0}
   interactableObjectsInRoom:
   - {fileID: 11400000, guid: c48e4b48001b7e2479d7c4c4ee0ba8ae, type: 2}
