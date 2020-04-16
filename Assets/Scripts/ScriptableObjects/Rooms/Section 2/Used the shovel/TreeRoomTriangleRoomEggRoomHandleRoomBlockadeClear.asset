@@ -12,15 +12,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 33679f0a95fef08478f51265b4f0a415, type: 3}
   m_Name: TreeRoomTriangleRoomEggRoomHandleRoomBlockadeClear
   m_EditorClassIdentifier: 
-  description: This room has the bleeding tree in it. The player must be able to collect
-    GLUE still. After using the glue, the egg/triangle rooms can be blocked off forever.
+  description: There is a lonely old tree rooted at the center of the crossing. While
+    lacking any sign of fruit, it appears sturdy and thriving.
   roomID: tree room triangle room egg room open
   exits:
   - keyString: east
-    exitDescription: EAST leads to the main room.
+    exitDescription: There is a passage to the EAST which leads back to the main gate.
     valueRoom: {fileID: 11400000, guid: 7dc52331ef4387d46aee2c41bbbf1936, type: 2}
   - keyString: west
-    exitDescription: WEST leads to the triangle room.
+    exitDescription: There is a passage to the WEST where a rather vulgar smell is
+      wafting in.
     valueRoom: {fileID: 11400000, guid: e87fb520e66d511458057c8b6223aecd, type: 2}
   sprite: {fileID: 21300000, guid: 9a6843d8e10e05b41b9af04a814b467c, type: 3}
   audio: {fileID: 0}

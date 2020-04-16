@@ -12,8 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 33679f0a95fef08478f51265b4f0a415, type: 3}
   m_Name: TriangleRoomEggRoomHandleRoomBlockadeClear
   m_EditorClassIdentifier: 
-  description: This is the triangle key room, with the egg room having been opened
-    and burned, and the triangle key now available to take.
+  description: You can still smell that festering odor. It is stronger from the north.
   roomID: triangle room egg room open
   exits:
   - keyString: north
