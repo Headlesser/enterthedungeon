@@ -12,8 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 33679f0a95fef08478f51265b4f0a415, type: 3}
   m_Name: CircleRingRoom
   m_EditorClassIdentifier: 
-  description: There is a door to the EAST. This door will be 'locked' by the triangle
-    key so it won't appear as an exit yet.
+  description: "There is a door to the EAST. \n\nThis door will be 'locked' by the
+    triangle key so it won't appear as an exit yet."
   roomID: circle room
   exits:
   - keyString: west

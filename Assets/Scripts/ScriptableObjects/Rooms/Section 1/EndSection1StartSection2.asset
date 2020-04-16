@@ -14,7 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   description: You head down the dark, musty hallway behind the gargoyle. A dim light
     flickers at the end of the gently sloping tunnel and you notice that the further
-    downwards you go, the stranger the shape of the dirt-encrusted walls.
+    downwards you go, the more the walls seem to curve, as if dug out by something
+    massive...
   roomID: end
   exits:
   - keyString: north

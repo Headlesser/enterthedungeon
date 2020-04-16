@@ -12,12 +12,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 33679f0a95fef08478f51265b4f0a415, type: 3}
   m_Name: TriangleRingRoom
   m_EditorClassIdentifier: 
-  description: This is the room before the egg room. After burning the eggs, the triangle
-    key will appear. The north passage is locked so it won't appear.
+  description: 'You notice a strange condensation begin to form on the walls as you
+    enter the room. There is a large, rounded formation protruding from the wall like
+    a boil on raised, fleshy skin. It looks like there might be something on the other
+    side, but you see no sign of anything to indicate a handle or button to open the
+    way beyond a <color="lightblue">circular</color> indentation in the center of
+    the door. It looks like something must have been able to fit it at one point in
+    time.
+
+    The festering smell is stronger here, but you cannot see anything that would indicate
+    a source besides an unsavory, <color="olive">puce</color> colored substance that
+    seems to have dripped onto the floor.'
   roomID: triangle room
   exits:
   - keyString: east
-    exitDescription: There is a passage to the EAST where you entered from.
+    exitDescription: There is a passage to the EAST that leads back to the lonely
+      tree.
     valueRoom: {fileID: 11400000, guid: 9ea4f20bbf9dcf24b9926ffff43786a6, type: 2}
   sprite: {fileID: 21300000, guid: 28e3dcfe574a9994babe2e2bafb8b4a0, type: 3}
   audio: {fileID: 0}
