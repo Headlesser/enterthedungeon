@@ -12,17 +12,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ed19a84eeb1cdeb4ba651ef11a20d3b5, type: 3}
   m_Name: AxeHandle
   m_EditorClassIdentifier: 
-  noun: handle
-  description: Among the brambles you see a sanded piece of wood that looks different
-    from all the other branches. It looks like the handle to some sort of tool.
+  noun: branch
+  description: 'Among the brambles you see a <color="brown">branch</color> that looks
+    thick and sturdy. '
   interactions:
   - inputAction: {fileID: 11400000, guid: 90542c9d641a4f744bc08a88649757c9, type: 2}
-    textResponse: The handle is long and smooth, but you can see faint cracks along
-      the wooden fibers. Shake it around too hard and it'll probably snap.
+    textResponse: The branch is long and crooked. You can see faint cracks along the
+      wooden fibers. It could probably work as a handle.
     actionResponse: {fileID: 0}
   - inputAction: {fileID: 11400000, guid: 4004b81a9d6368a4d958b07ba4a7772b, type: 2}
-    textResponse: You take the handle.
+    textResponse: You take the branch.
     actionResponse: {fileID: 0}
   - inputAction: {fileID: 11400000, guid: 703f97af50ba68d4dbcabf97f7fc2f38, type: 2}
-    textResponse: You use the handle on the broken axe covered in sticky mucous.
+    textResponse: You use the branch on the broken axe covered in sticky mucous. It
+      dries like super glue, making the axe wieldable once again.
     actionResponse: {fileID: 11400000, guid: 9eee3f2274e9d2c4f814225f623dbb0d, type: 2}
+  changeSprite: 0
+  changeTo: {fileID: 0}
