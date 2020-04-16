@@ -152,17 +152,17 @@ public class InteractableItems : MonoBehaviour
 
     public void ChangeImage(string noun)
     {
-        Debug.Log("begin change image...");
+        //Debug.Log("begin change image...");
         //check it the old fashioned way. If the noun given was taken, change the current room's sprite value
         //ONLY IF that object is supposed to.
         InteractableObject target = GetInteractableObjectFromUsableList(noun);
-        Debug.Log(target + " This is the object found.");
+        //Debug.Log(target + " This is the object found.");
         if(target.changeSprite == true)
         {
-            Debug.Log("This object is set to true to switch images");
+            //Debug.Log("This object is set to true to switch images");
             controller.roomNavigation.currentRoom.sprite = target.changeTo;
             controller.DisplayRoomImage();
-            Debug.Log("Change the image.");
+            //Debug.Log("Change the image.");
         }
     }
 
