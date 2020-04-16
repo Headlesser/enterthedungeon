@@ -17,7 +17,7 @@ public class ChangeRoomImage : ActionResponse
             controller.LogStringWithReturn(controller.TextVerbDictionaryWithNoun(controller.interactableItems.takeDictionary, separatedInputWords[0], separatedInputWords[1]));
             controller.DisplayRoomText();
             controller.DisplayRoomImage();
-            Debug.Log("Took the item, change the image");
+            //Debug.Log("Took the item, change the image");
 
             if(actionSound != null)
             {
