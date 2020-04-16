@@ -8,7 +8,7 @@ public class InteractableItems : MonoBehaviour
     //Master list of every possible usable item in the game
     public Dictionary<string, string> examineDictionary = new Dictionary<string, string>();
     public Dictionary<string, string> takeDictionary = new Dictionary<string, string>();
-    public Dictionary<string, ActionResponse> takeDictionaryAction = new Dictionary<string, ActionResponse>();
+    //public Dictionary<string, ActionResponse> takeDictionaryAction = new Dictionary<string, ActionResponse>();
     public Dictionary<string, string> useDictionaryResponse = new Dictionary<string, string>();
     private Dictionary<string, ActionResponse> useDictionary = new Dictionary<string, ActionResponse>();
 
@@ -65,32 +65,32 @@ public class InteractableItems : MonoBehaviour
         }
     }
 
-    public void AddActionResponsesToTakeActions()
-    {
-        //Whenever you take an item, update the 'use' dictionary.
-        for (int i = 0; i < nounsInInventory.Count; i++)
-        {
-            string noun = nounsInInventory[i];
-            //go through every noun in the inventory and get their name
-            InteractableObject interactableObjectInInventory = GetInteractableObjectFromUsableList(noun);
-            if(interactableObjectInInventory == null)
-            {
-                continue;
-            }
-            for (int j = 0; j < interactableObjectInInventory.interactions.Length; j++)
-            {
-                Interaction interaction = interactableObjectInInventory.interactions[j];
-                if(interaction.actionResponse == null)
-                {
-                    continue;
-                }
-                if(!takeDictionaryAction.ContainsKey(noun))
-                {
-                    takeDictionaryAction.Add(noun, interaction.actionResponse);
-                }
-            }
-        }
-    }
+    // public void AddActionResponsesToTakeActions()
+    // {
+    //     //Whenever you take an item, update the 'etake' dictionary.
+    //     for (int i = 0; i < nounsInInventory.Count; i++)
+    //     {
+    //         string noun = nounsInInventory[i];
+    //         //go through every noun in the inventory and get their name
+    //         InteractableObject interactableObjectInInventory = GetInteractableObjectFromUsableList(noun);
+    //         if(interactableObjectInInventory == null)
+    //         {
+    //             continue;
+    //         }
+    //         for (int j = 0; j < interactableObjectInInventory.interactions.Length; j++)
+    //         {
+    //             Interaction interaction = interactableObjectInInventory.interactions[j];
+    //             if(interaction.actionResponse == null)
+    //             {
+    //                 continue;
+    //             }
+    //             if(!takeDictionaryAction.ContainsKey(noun))
+    //             {
+    //                 takeDictionaryAction.Add(noun, interaction.actionResponse);
+    //             }
+    //         }
+    //     }
+    // }
 
     InteractableObject GetInteractableObjectFromUsableList(string noun)
     {
@@ -132,18 +132,37 @@ public class InteractableItems : MonoBehaviour
             //from being able to examine an object you have already taken should you backtrack.
             //also change the room's image?
             nounsInInventory.Add(noun);
-            AddActionResponsesToTakeActions();
             AddActionResponsesToUseDictionary();
+            ChangeImage(noun);
             nounsInRoom.Remove(noun);
-            takeDictionaryAction[noun].DoActionResponse(controller, separatedInputWords);
             //controller.roomNavigation.currentRoom.interactableObjectsInRoom.Remove(FindObjectToRemove(separatedInputWords));
             //Debug.Log("Remove the item from the room list");
+
+            //AddActionResponsesToTakeActions();
+            //takeDictionaryAction[nounToUse].DoActionResponse(controller, separatedInputWords);
+            //PROBLEM --> After doing a take action response, the USE action response no longer works? Fuck it.
             return takeDictionary;
         }
         else
         {
             controller.LogStringWithReturn("There is no " + noun + " in the room.");
             return null;
+        }
+    }
+
+    public void ChangeImage(string noun)
+    {
+        Debug.Log("begin change image...");
+        //check it the old fashioned way. If the noun given was taken, change the current room's sprite value
+        //ONLY IF that object is supposed to.
+        InteractableObject target = GetInteractableObjectFromUsableList(noun);
+        Debug.Log(target + " This is the object found.");
+        if(target.changeSprite == true)
+        {
+            Debug.Log("This object is set to true to switch images");
+            controller.roomNavigation.currentRoom.sprite = target.changeTo;
+            controller.DisplayRoomImage();
+            Debug.Log("Change the image.");
         }
     }
 

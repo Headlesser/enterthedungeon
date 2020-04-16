@@ -22,7 +22,7 @@ MonoBehaviour:
   - keyString: east
     exitDescription: There is a passage to the EAST where you entered from.
     valueRoom: {fileID: 11400000, guid: 3513e2d0ea547344da24f7526559ef61, type: 2}
-  sprite: {fileID: 21300000, guid: 6fd5b8f4a007ff244b63ac9c607cc2d6, type: 3}
+  sprite: {fileID: 21300000, guid: f0ae3f0c2bfbfb1478b6b4cd733886c1, type: 3}
   audio: {fileID: 0}
   interactableObjectsInRoom:
   - {fileID: 11400000, guid: f13982ca2e103174e83bd2ebc6d2cd87, type: 2}

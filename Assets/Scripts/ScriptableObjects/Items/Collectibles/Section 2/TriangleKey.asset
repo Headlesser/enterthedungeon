@@ -20,7 +20,9 @@ MonoBehaviour:
     actionResponse: {fileID: 0}
   - inputAction: {fileID: 11400000, guid: 4004b81a9d6368a4d958b07ba4a7772b, type: 2}
     textResponse: '...'
-    actionResponse: {fileID: 11400000, guid: 1d42d731418239545815a81c6008811b, type: 2}
+    actionResponse: {fileID: 0}
   - inputAction: {fileID: 11400000, guid: 703f97af50ba68d4dbcabf97f7fc2f38, type: 2}
     textResponse: You use the triangle key.
     actionResponse: {fileID: 11400000, guid: c9075f0ea979ed845a15e42282dd6d02, type: 2}
+  changeSprite: 1
+  changeTo: {fileID: 21300000, guid: f0ae3f0c2bfbfb1478b6b4cd733886c1, type: 3}

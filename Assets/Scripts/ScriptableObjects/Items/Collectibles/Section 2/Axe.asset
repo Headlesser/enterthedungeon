@@ -22,7 +22,9 @@ MonoBehaviour:
     actionResponse: {fileID: 0}
   - inputAction: {fileID: 11400000, guid: 4004b81a9d6368a4d958b07ba4a7772b, type: 2}
     textResponse: You take the repaired axe.
-    actionResponse: {fileID: 11400000, guid: 8b0696a223d2a624b8e15b815dd359df, type: 2}
+    actionResponse: {fileID: 0}
   - inputAction: {fileID: 11400000, guid: 703f97af50ba68d4dbcabf97f7fc2f38, type: 2}
     textResponse: You swing the axe at the crooked trunk of the tree.
     actionResponse: {fileID: 11400000, guid: af3c914ab0e16104488d807155711501, type: 2}
+  changeSprite: 1
+  changeTo: {fileID: 21300000, guid: edf9648834a4d0c43a953a702ade81d7, type: 3}

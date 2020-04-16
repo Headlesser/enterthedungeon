@@ -10,5 +10,8 @@ public class InteractableObject : ScriptableObject
     [TextArea]
     public string description = "Description of item in the room";
     public Interaction[] interactions;
+    public bool changeSprite; //This variable is ONLY true if the item needs to have its image changed
+
+    public Sprite changeTo; //This variable is ONLY used if the particular item needs to have an image changed
 
 }

@@ -15,7 +15,6 @@ public class ChangeRoomImage : ActionResponse
         {
             controller.roomNavigation.currentRoom.sprite = changeImageTo; //problem, does not reset the images to their original ones after testing.
             controller.LogStringWithReturn(controller.TextVerbDictionaryWithNoun(controller.interactableItems.takeDictionary, separatedInputWords[0], separatedInputWords[1]));
-            controller.DisplayRoomText();
             controller.DisplayRoomImage();
             //Debug.Log("Took the item, change the image");
 
