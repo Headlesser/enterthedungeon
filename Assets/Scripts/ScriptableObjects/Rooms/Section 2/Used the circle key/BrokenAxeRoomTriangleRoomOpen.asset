@@ -12,7 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 33679f0a95fef08478f51265b4f0a415, type: 3}
   m_Name: BrokenAxeRoomTriangleRoomOpen
   m_EditorClassIdentifier: 
-  description: This room is a dead end, it contains the broken axe in a stump.
+  description: At the center of the room, you find an old rotted tree stump. Signs
+    of <color="red">blood</color> still stain the wood. There is a heavy axe embedded
+    into the stump. It might be a useful tool to use, but without a proper handle
+    there's no way you could use it effectively.
   roomID: axe room
   exits:
   - keyString: south

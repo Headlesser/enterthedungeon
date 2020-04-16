@@ -12,8 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 33679f0a95fef08478f51265b4f0a415, type: 3}
   m_Name: BrokenAxeRoomTriangleRoomEggRoomHandleRoomBlockadeClearGlued
   m_EditorClassIdentifier: 
-  description: This room is a dead end, it contains the broken axe in a stump that
-    is covered in glue.
+  description: At the center of the room, you find an old rotted tree stump. Signs
+    of <color="red">blood</color> still stain the wood. There is a heavy axe embedded
+    into the stump, with the broken handle covered in a sticky mucous.
   roomID: axe room glue
   exits:
   - keyString: south

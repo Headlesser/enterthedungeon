@@ -12,15 +12,23 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 33679f0a95fef08478f51265b4f0a415, type: 3}
   m_Name: CircleRingRoomTriangleRoomOpen
   m_EditorClassIdentifier: 
-  description: There is a door to the EAST that is locked until the triangle key is
-    collected (after the eggs are burned).
+  description: 'The air is much drier on this side of the dungeon. It appears there
+    once was a lot of traffic here, but when and by whom, you are not sure. The walls
+    are lined with heavy iron <color="lightblue">ring</color>s, some of which are
+    still fitted with old, rusted chains. The faint stench of iron and salt hangs
+    in the air.
+
+    There is an oddly shaped door to the EAST that is blocked by the same unidentified
+    material as the main gate. There is some sort of triangular depression on the
+    wall beside it.'
   roomID: circle room triangle room open
   exits:
   - keyString: west
-    exitDescription: There is a passage to the WEST where you entered from.
+    exitDescription: There is a passage to the WEST that leads back to the main gate.
     valueRoom: {fileID: 11400000, guid: 0d729735d4fd2d64da9b19470ba1153b, type: 2}
   - keyString: north
-    exitDescription: There is a door to the NORTH. This leads to the axe room.
+    exitDescription: There is a short passageway to the NORTH, where you can see the
+      faint outline of some sort of object.
     valueRoom: {fileID: 11400000, guid: e75b8e0db0603134c905bc05c02151d3, type: 2}
   sprite: {fileID: 21300000, guid: f2dfdb87b2f5c2d40b78d1aa10dbd883, type: 3}
   audio: {fileID: 0}

@@ -12,15 +12,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 33679f0a95fef08478f51265b4f0a415, type: 3}
   m_Name: TriangleRoomOpen
   m_EditorClassIdentifier: 
-  description: This is the triangle key room, with the egg room entrance now open.
-    The triangle key will not appear until after you burn the eggs.
+  description: You can still smell that festering odor. It is stronger from the north.
   roomID: triangle room open
   exits:
   - keyString: north
-    exitDescription: There is a passage to the NORTH to the eggie room.
+    exitDescription: There is a passage to the NORTH that leads to the incubation
+      chamber.
     valueRoom: {fileID: 11400000, guid: 29b8f9de021513446a780b5d44ef06dd, type: 2}
   - keyString: east
-    exitDescription: There is a passage to the EAST where you entered from.
+    exitDescription: There is a passage to the EAST that leads to the lonely tree.
     valueRoom: {fileID: 11400000, guid: edf55fae9398591488356a3330aae2d6, type: 2}
   sprite: {fileID: 21300000, guid: e9ad0db4321b7594fb84c23ef3529403, type: 3}
   audio: {fileID: 0}

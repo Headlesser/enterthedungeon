@@ -12,22 +12,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 33679f0a95fef08478f51265b4f0a415, type: 3}
   m_Name: MouthGateRoomTriangleRoomEggRoomHandleRoomBlockadeClearGluedRepaired
   m_EditorClassIdentifier: 
-  description: As you enter the room, a torrent of steamy, humid air washes over you,
-    making your skin feel damp and sticky. Burning torches line the walls and you
-    find another large gate blocking your path forward. The bars do not appear to
-    be made of metal, and you notice the ground right in front of it is stained a
-    bright red. You could almost swear you saw the bars moving...
+  description: The gate remains clamped shut and unwilling to budge. The torches are
+    starting to burn dimmer. You quake at the idea of being stuck down here in the
+    pitch of black. There must be a key to the gate somewhere around here.
   roomID: mouth room triangle room egg room open
   exits:
   - keyString: east
     exitDescription: You can feel a distinctly warmer breeze blowing from the passageway
-      to the EAST. On the wall above the passageway, you see the word 'LIFE' carved
-      above it.
+      to the EAST. The tunnel is covered in thriving green foliage.
     valueRoom: {fileID: 11400000, guid: b483c1f20497dfb4985ef1f8dbb194c5, type: 2}
   - keyString: west
-    exitDescription: You can sense nothing noticeably useful coming from the passageway
-      to the WEST. On the wall above the passageway, you see the word 'DEATh' carved
-      above it.
+    exitDescription: You can see strange scuffs and drag marks on the ground coming
+      from the passageway to the WEST. The tunnel is covered in dried, brittle branches
+      covered in prickly thorns.
     valueRoom: {fileID: 11400000, guid: 6dad8587be52c3043bd76b7e49dde0e2, type: 2}
   sprite: {fileID: 21300000, guid: 05133a1687d2ea54caf69c0ff43a95c1, type: 3}
   audio: {fileID: 0}

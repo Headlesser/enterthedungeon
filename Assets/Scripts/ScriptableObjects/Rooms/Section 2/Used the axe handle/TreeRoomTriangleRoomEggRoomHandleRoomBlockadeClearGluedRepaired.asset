@@ -12,8 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 33679f0a95fef08478f51265b4f0a415, type: 3}
   m_Name: TreeRoomTriangleRoomEggRoomHandleRoomBlockadeClearGluedRepaired
   m_EditorClassIdentifier: 
-  description: This room has the bleeding tree in it. The tree can now be cut by the
-    axe. After being cut, all other rooms besides the main room will be blocked off.
+  description: There is a lonely old tree rooted at the center of the crossing. While
+    lacking any sign of fruit, it appears sturdy and thriving. You can see that further
+    down the passage to the WEST the ceiling has caved in. You'd better get out of
+    here before the rest of the ceiling goes with it.
   roomID: tree room triangle room egg room open
   exits:
   - keyString: east

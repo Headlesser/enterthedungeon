@@ -12,7 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 33679f0a95fef08478f51265b4f0a415, type: 3}
   m_Name: BrokenAxeRoomTriangleRoomEggRoomHandleRoomBlockadeClearGluedRepaired
   m_EditorClassIdentifier: 
-  description: This room contains the completely repaired axe that can be taken.
+  description: The mucous and branch did the trick. The axe has been repaired enough
+    to be used for a few swings.
   roomID: axe room glue and handle
   exits:
   - keyString: south

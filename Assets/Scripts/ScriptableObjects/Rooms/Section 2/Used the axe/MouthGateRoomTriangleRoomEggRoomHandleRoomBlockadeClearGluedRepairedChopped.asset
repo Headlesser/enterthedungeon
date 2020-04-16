@@ -12,11 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 33679f0a95fef08478f51265b4f0a415, type: 3}
   m_Name: MouthGateRoomTriangleRoomEggRoomHandleRoomBlockadeClearGluedRepairedChopped
   m_EditorClassIdentifier: 
-  description: As you enter the room, a torrent of steamy, humid air washes over you,
-    making your skin feel damp and sticky. Burning torches line the walls and you
-    find another large gate blocking your path forward. The bars do not appear to
-    be made of metal, and you notice the ground right in front of it is stained a
-    bright red. You could almost swear you saw the bars moving...
+  description: You can hear the faintest sound of breathing as you approach the main
+    gate. The sharp, teeth-like protrusions shift and grind together. It looks hungry...
   roomID: mouth room triangle room egg room open
   exits: []
   sprite: {fileID: 21300000, guid: 05133a1687d2ea54caf69c0ff43a95c1, type: 3}

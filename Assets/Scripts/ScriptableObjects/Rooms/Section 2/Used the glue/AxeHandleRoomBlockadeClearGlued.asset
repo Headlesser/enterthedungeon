@@ -12,10 +12,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 33679f0a95fef08478f51265b4f0a415, type: 3}
   m_Name: AxeHandleRoomBlockadeClearGlued
   m_EditorClassIdentifier: 
-  description: 'This room is a dead end, it contains the AXE HANDLE still if the player
-    has not grabbed it yet.
-
-'
+  description: "The room appears to be a dead end, though it is cluttered and filled
+    to the brim with waste. Piles of bramble, mud, rocks, and other material sit in
+    festering piles. A large, uprooted tree takes up most of the space, with dried
+    yet sturdy <color=\"brown\">branch</color>es reaching into the air like fingers.
+    \n"
   roomID: axe handle room
   exits:
   - keyString: west

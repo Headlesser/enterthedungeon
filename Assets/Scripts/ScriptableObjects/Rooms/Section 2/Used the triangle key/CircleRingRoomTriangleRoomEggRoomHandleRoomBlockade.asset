@@ -12,15 +12,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 33679f0a95fef08478f51265b4f0a415, type: 3}
   m_Name: CircleRingRoomTriangleRoomEggRoomHandleRoomBlockade
   m_EditorClassIdentifier: 
-  description: The axe room is still blockaded. Handle room is open.
+  description: The air is much drier on this side of the dungeon. It appears there
+    once was a lot of traffic here, but when and by whom, you are not sure. You notice
+    that part of the ceiling has caved in, blocking the passage to the north. The
+    pile of rubble is much too large to dig away by hand.
   roomID: circle room triangle room egg room handle room blockade
   exits:
   - keyString: west
-    exitDescription: There is a passage to the WEST where you entered from.
+    exitDescription: There is a passage to the WEST that leads to the main gate.
     valueRoom: {fileID: 11400000, guid: 7dc52331ef4387d46aee2c41bbbf1936, type: 2}
   - keyString: east
-    exitDescription: The door to the EAST has been unlocked. This leads to the axe
-      handle room.
+    exitDescription: There is a passageway that now leads to the EAST.
     valueRoom: {fileID: 11400000, guid: ee811366b99c78f4bab5fb42c3a2f84d, type: 2}
   sprite: {fileID: 21300000, guid: 5a061c834d90b5d479c1822841eca760, type: 3}
   audio: {fileID: 0}

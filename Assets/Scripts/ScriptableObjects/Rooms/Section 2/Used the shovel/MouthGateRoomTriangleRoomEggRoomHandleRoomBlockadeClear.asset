@@ -21,13 +21,12 @@ MonoBehaviour:
   exits:
   - keyString: east
     exitDescription: You can feel a distinctly warmer breeze blowing from the passageway
-      to the EAST. On the wall above the passageway, you see the word 'LIFE' carved
-      above it.
+      to the EAST. The tunnel is covered in thriving green foliage.
     valueRoom: {fileID: 11400000, guid: 6890d7f4ebb655e4790e02500e92d3fb, type: 2}
   - keyString: west
-    exitDescription: You can sense nothing noticeably useful coming from the passageway
-      to the WEST. On the wall above the passageway, you see the word 'DEATh' carved
-      above it.
+    exitDescription: You can see strange scuffs and drag marks on the ground coming
+      from the passageway to the WEST. The tunnel is covered in dried, brittle branches
+      covered in prickly thorns.
     valueRoom: {fileID: 11400000, guid: e700f1db33137b948808f04f275ec5e4, type: 2}
   sprite: {fileID: 21300000, guid: 05133a1687d2ea54caf69c0ff43a95c1, type: 3}
   audio: {fileID: 0}

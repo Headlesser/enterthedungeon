@@ -12,18 +12,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 33679f0a95fef08478f51265b4f0a415, type: 3}
   m_Name: CircleRingRoomTriangleRoomEggRoomHandleRoomBlockadeClearOpen
   m_EditorClassIdentifier: 
-  description: This is the circle room with the rubble cleared. The player should
-    still be able to collect the AXE HANDLE and GLUE if they still need to.
+  description: The air is much drier on this side of the dungeon. It appears there
+    once was a lot of traffic here, but when and by whom, you are not sure. The walls
+    are lined with heavy iron <color="lightblue">ring</color>s, some of which are
+    still fitted with old, rusted chains. The faint stench of iron and salt hangs
+    in the air.
   roomID: circle room triangle room egg room open
   exits:
   - keyString: west
-    exitDescription: There is a passage to the WEST where you entered from.
+    exitDescription: There is a passage to the WEST that leads to the main gate.
     valueRoom: {fileID: 11400000, guid: eb1311cc8f8e2e94594ac1e0c95ad094, type: 2}
   - keyString: north
-    exitDescription: There is a door to the NORTH. This leads to the axe room.
+    exitDescription: There is a short passageway to the NORTH, where you can see the
+      faint outline of some sort of object.
     valueRoom: {fileID: 11400000, guid: 3d52053af1e499f418a2d002fc1a2a07, type: 2}
   - keyString: east
-    exitDescription: There is a door to the EAST. This leads to the axe handle room.
+    exitDescription: There is a passageway that now leads to the EAST.
     valueRoom: {fileID: 11400000, guid: 0abe187f1db462c418031be26ce39561, type: 2}
   sprite: {fileID: 21300000, guid: fa6d35de25ee42d448d7a5b263691129, type: 3}
   audio: {fileID: 0}

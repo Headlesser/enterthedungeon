@@ -12,8 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 33679f0a95fef08478f51265b4f0a415, type: 3}
   m_Name: EggRoomHandleRoomBlockade
   m_EditorClassIdentifier: 
-  description: This is the egg room, now opened and with glue inside, as well as with
-    the shovel/handle room opened.
+  description: The once tall and sturdy mounds have melted and sunk into a thick,
+    disgusting sludge.
   roomID: egg room open
   exits:
   - keyString: south

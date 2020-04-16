@@ -12,7 +12,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 33679f0a95fef08478f51265b4f0a415, type: 3}
   m_Name: EggRoom
   m_EditorClassIdentifier: 
-  description: This is the egg room.
+  description: Immediately you are assaulted with the foul scent of bile and puss.
+    Huge towering mounds of dirt and other noxious materials populate the room, rising
+    up from every speck of flat foundation available. The mounds are covered from
+    tip to base in slightly transparent, jell-filled sacks, each with a small, opaque
+    kernel at the center. They appear to move and undulate in waves, like a water
+    balloon ready to burst. You find more of the unnamed, <color="olive">puce</color>
+    colored substance leaking from the granuels covering the mounds. It seems that
+    the <color="orange">heated air</color> is stimulating its production.
   roomID: egg room
   exits:
   - keyString: south

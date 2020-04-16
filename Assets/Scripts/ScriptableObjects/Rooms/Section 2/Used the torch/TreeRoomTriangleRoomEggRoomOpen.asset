@@ -12,14 +12,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 33679f0a95fef08478f51265b4f0a415, type: 3}
   m_Name: TreeRoomTriangleRoomEggRoomOpen
   m_EditorClassIdentifier: 
-  description: This room has the bleeding tree in it.
+  description: There is a lonely old tree rooted at the center of the crossing. While
+    lacking any sign of fruit, it appears sturdy and thriving.
   roomID: tree room triangle room egg room open
   exits:
   - keyString: west
-    exitDescription: WEST leads to the triangle key room before the egg room.
+    exitDescription: There is a passage to the WEST where a rather vulgar smell is
+      wafting in.
     valueRoom: {fileID: 11400000, guid: 064336f4e83c89f45903b3b505523883, type: 2}
   - keyString: east
-    exitDescription: There is a passage to the EAST where you entered from.
+    exitDescription: There is a passage to the EAST which leads back to the main gate.
     valueRoom: {fileID: 11400000, guid: 69572d2dd7b6f5b4a948cda71e9bbff3, type: 2}
   sprite: {fileID: 21300000, guid: 9a6843d8e10e05b41b9af04a814b467c, type: 3}
   audio: {fileID: 0}

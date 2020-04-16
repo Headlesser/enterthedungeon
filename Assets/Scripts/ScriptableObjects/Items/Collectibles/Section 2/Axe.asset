@@ -13,8 +13,7 @@ MonoBehaviour:
   m_Name: Axe
   m_EditorClassIdentifier: 
   noun: axe
-  description: There is an old, heavy axe embedded into the stump. It might be a useful
-    tool to use, but without a proper handle there's no way you could use it effectively.
+  description: 
   interactions:
   - inputAction: {fileID: 11400000, guid: 90542c9d641a4f744bc08a88649757c9, type: 2}
     textResponse: The handle is broken and the blade appears rusted. Even so, the

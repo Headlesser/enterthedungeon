@@ -12,9 +12,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 33679f0a95fef08478f51265b4f0a415, type: 3}
   m_Name: CircleRingRoomTriangleRoomEggRoomBlockade
   m_EditorClassIdentifier: 
-  description: There is a door to the EAST. This door is 'locked' by the triangle
-    key, the broken axe room is blocked by rubble. The player cannot go forward until
-    getting the shovel.
+  description: 'The air is much drier on this side of the dungeon. It appears there
+    once was a lot of traffic here, but when and by whom, you are not sure. The walls
+    are lined with heavy iron <color="lightblue">ring</color>s, some of which are
+    still fitted with old, rusted chains. The faint stench of iron and salt hangs
+    in the air.
+
+    There is an oddly shaped door to the EAST that is blocked by the same unidentified
+    material as the main gate. There is some sort of triangular depression on the
+    wall beside it.'
   roomID: circle room triangle room egg room blockade
   exits:
   - keyString: west

@@ -12,7 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 33679f0a95fef08478f51265b4f0a415, type: 3}
   m_Name: CircleRingRoomTriangleRoomEggRoomHandleRoomBlockadeClearGluedRepaired
   m_EditorClassIdentifier: 
-  description: The handle/shovel room is now permanently blocked off.
+  description: Part of the ceiling has caved in, blocking off the passageway to the
+    EAST. It must have been all the noise from before. It would be wise to ffind a
+    way out of this place as quickly as possible.
   roomID: circle room triangle room egg room open
   exits:
   - keyString: west
