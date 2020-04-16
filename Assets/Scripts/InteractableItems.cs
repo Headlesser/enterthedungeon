@@ -8,6 +8,7 @@ public class InteractableItems : MonoBehaviour
     //Master list of every possible usable item in the game
     public Dictionary<string, string> examineDictionary = new Dictionary<string, string>();
     public Dictionary<string, string> takeDictionary = new Dictionary<string, string>();
+    public Dictionary<string, ActionResponse> takeDictionaryAction = new Dictionary<string, ActionResponse>();
     public Dictionary<string, string> useDictionaryResponse = new Dictionary<string, string>();
     private Dictionary<string, ActionResponse> useDictionary = new Dictionary<string, ActionResponse>();
 
@@ -64,6 +65,33 @@ public class InteractableItems : MonoBehaviour
         }
     }
 
+    public void AddActionResponsesToTakeActions()
+    {
+        //Whenever you take an item, update the 'use' dictionary.
+        for (int i = 0; i < nounsInInventory.Count; i++)
+        {
+            string noun = nounsInInventory[i];
+            //go through every noun in the inventory and get their name
+            InteractableObject interactableObjectInInventory = GetInteractableObjectFromUsableList(noun);
+            if(interactableObjectInInventory == null)
+            {
+                continue;
+            }
+            for (int j = 0; j < interactableObjectInInventory.interactions.Length; j++)
+            {
+                Interaction interaction = interactableObjectInInventory.interactions[j];
+                if(interaction.actionResponse == null)
+                {
+                    continue;
+                }
+                if(!takeDictionaryAction.ContainsKey(noun))
+                {
+                    takeDictionaryAction.Add(noun, interaction.actionResponse);
+                }
+            }
+        }
+    }
+
     InteractableObject GetInteractableObjectFromUsableList(string noun)
     {
         for (int i = 0; i < usableItemList.Count; i++)
@@ -102,9 +130,12 @@ public class InteractableItems : MonoBehaviour
         {
             //if the item is in the room, add it to inventory, remove it from ROOM. This keeps you 
             //from being able to examine an object you have already taken should you backtrack.
+            //also change the room's image?
             nounsInInventory.Add(noun);
+            AddActionResponsesToTakeActions();
             AddActionResponsesToUseDictionary();
             nounsInRoom.Remove(noun);
+            takeDictionaryAction[noun].DoActionResponse(controller, separatedInputWords);
             //controller.roomNavigation.currentRoom.interactableObjectsInRoom.Remove(FindObjectToRemove(separatedInputWords));
             //Debug.Log("Remove the item from the room list");
             return takeDictionary;

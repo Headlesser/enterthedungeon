@@ -20,7 +20,7 @@ MonoBehaviour:
     actionResponse: {fileID: 0}
   - inputAction: {fileID: 11400000, guid: 4004b81a9d6368a4d958b07ba4a7772b, type: 2}
     textResponse: You take the shovel.
-    actionResponse: {fileID: 0}
+    actionResponse: {fileID: 11400000, guid: ab5e92aee50705d438f876b8c5f242f8, type: 2}
   - inputAction: {fileID: 11400000, guid: 703f97af50ba68d4dbcabf97f7fc2f38, type: 2}
     textResponse: You clear away the rubble using the shovel and can now enter the
       room again.

@@ -54,6 +54,7 @@
   </ItemGroup>
   <ItemGroup>
      <Compile Include="Assets\Scripts\ActionResponse.cs" />
+     <Compile Include="Assets\Scripts\ChangeRoomImage.cs" />
      <Compile Include="Assets\Scripts\ChangeRoomResponse.cs" />
      <Compile Include="Assets\Scripts\Examine.cs" />
      <Compile Include="Assets\Scripts\ExamineRoom.cs" />
