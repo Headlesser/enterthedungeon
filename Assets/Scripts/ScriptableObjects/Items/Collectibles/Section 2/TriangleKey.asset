@@ -14,10 +14,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   noun: keystone
   description: You notice an object on the floor that you don't recall being there
-    before. It looks like some sort of <color=#008080ff>keystone</color>.
+    before. It looks like some sort of <color=#008080ff>triangular keystone</color>.
   interactions:
   - inputAction: {fileID: 11400000, guid: 90542c9d641a4f744bc08a88649757c9, type: 2}
-    textResponse: The triangular piece of stone is flat and thin, almost like a plate.
+    textResponse: The triangular piece of stone is flat and thin, almost like a plate
+      of some kind. It is cool to the touch.
     actionResponse: {fileID: 0}
   - inputAction: {fileID: 11400000, guid: 4004b81a9d6368a4d958b07ba4a7772b, type: 2}
     textResponse: You take the keystone.
