@@ -14,8 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   description: At the center of the room, you find an old rotted tree stump. Signs
     of <color="red">blood</color> still stain the wood. There is a heavy axe embedded
-    into the stump. It might be a useful tool to use, but without a proper handle
-    there's no way you could use it effectively.
+    into the stump. It might be a useful tool to use, <color=#008080ff>but without
+    a proper handle there's no way you could use it effectively.</color>
   roomID: axe room
   exits:
   - keyString: south

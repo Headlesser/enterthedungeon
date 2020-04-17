@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: CircleRingRoomTriangleRoomEggRoomHandleRoomBlockadeClearGluedRepaired
   m_EditorClassIdentifier: 
   description: Part of the ceiling has caved in, blocking off the passageway to the
-    EAST. It must have been all the noise from before. It would be wise to ffind a
+    east. It must have been all the noise from before. It would be wise to ffind a
     way out of this place as quickly as possible.
   roomID: circle room triangle room egg room open
   exits:

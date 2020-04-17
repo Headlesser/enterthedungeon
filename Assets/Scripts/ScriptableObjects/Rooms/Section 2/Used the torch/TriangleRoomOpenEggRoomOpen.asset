@@ -12,13 +12,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 33679f0a95fef08478f51265b4f0a415, type: 3}
   m_Name: TriangleRoomOpenEggRoomOpen
   m_EditorClassIdentifier: 
-  description: 'As you enter the room, you see a trail of awkward tracks leading away
-    from the hallway to the east that appear to have exited, stopped, and then turned
-    back the way they came. '
+  description: 'As you enter the room, you see a trail of awkward <color=#008080ff>tracks</color>
+    leading away from the hallway to the east that appear to have exited, stopped,
+    and then turned back the way they came. '
   roomID: triangle room egg room open
   exits:
   - keyString: north
-    exitDescription: There is a passage to the NORTH to the eggie room.
+    exitDescription: There is now a passage leading NORTH.
     valueRoom: {fileID: 11400000, guid: ff0daffc95214964ab3d8a7cd3aa46dd, type: 2}
   - keyString: east
     exitDescription: There is a passage to the EAST where you entered from.

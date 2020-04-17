@@ -16,13 +16,12 @@ MonoBehaviour:
     enter the room. There is a large, rounded formation protruding from the wall like
     a boil on raised, fleshy skin. It looks like there might be something on the other
     side, but you see no sign of anything to indicate a handle or button to open the
-    way beyond a <color="lightblue">circular</color> indentation in the center of
-    the door. It looks like something must have been able to fit it at one point in
-    time.
+    way beyond a <color=#008080ff>circular indentation in the center of the door</color>.
+    It looks like something must have been able to fit it at one point in time.
 
     The festering smell is stronger here, but you cannot see anything that would indicate
-    a source besides an unsavory, <color="olive">puce</color> colored substance that
-    seems to have dripped onto the floor.'
+    a source besides an unsavory, <color=#808000ff>puce</color> colored substance
+    that seems to have dripped onto the floor.'
   roomID: triangle room
   exits:
   - keyString: east

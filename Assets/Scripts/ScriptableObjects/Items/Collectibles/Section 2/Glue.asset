@@ -13,9 +13,9 @@ MonoBehaviour:
   m_Name: Glue
   m_EditorClassIdentifier: 
   noun: mucous
-  description: A sticky <color="olive">mucous</color> has formed on the floor in fat,
-    pliable globs. The smell is unlike anything you have ever had the discomfort of
-    encountering before.
+  description: A sticky <color=#808000ff>mucous</color> has formed on the floor in
+    fat, pliable globs. The smell is unlike anything you have ever had the discomfort
+    of encountering before.
   interactions:
   - inputAction: {fileID: 11400000, guid: 90542c9d641a4f744bc08a88649757c9, type: 2}
     textResponse: You feel your fingers stick together as if covered in glue upon

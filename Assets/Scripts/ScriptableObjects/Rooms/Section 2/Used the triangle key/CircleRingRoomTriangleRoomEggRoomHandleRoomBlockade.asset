@@ -12,10 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 33679f0a95fef08478f51265b4f0a415, type: 3}
   m_Name: CircleRingRoomTriangleRoomEggRoomHandleRoomBlockade
   m_EditorClassIdentifier: 
-  description: The air is much drier on this side of the dungeon. It appears there
-    once was a lot of traffic here, but when and by whom, you are not sure. You notice
-    that part of the ceiling has caved in, blocking the passage to the north. The
-    pile of rubble is much too large to dig away by hand.
+  description: You notice that part of the ceiling has caved in, blocking the passage
+    to the north. The pile of rubble is much too large to dig away by hand.
   roomID: circle room triangle room egg room handle room blockade
   exits:
   - keyString: west

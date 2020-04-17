@@ -18,7 +18,7 @@ MonoBehaviour:
   exits:
   - keyString: east
     exitDescription: There is a passage to the EAST which leads back to the main gate.
-    valueRoom: {fileID: 11400000, guid: 7dc52331ef4387d46aee2c41bbbf1936, type: 2}
+    valueRoom: {fileID: 11400000, guid: eb1311cc8f8e2e94594ac1e0c95ad094, type: 2}
   - keyString: west
     exitDescription: There is a passage to the WEST where a rather vulgar smell is
       wafting in.

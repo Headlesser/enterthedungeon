@@ -16,8 +16,7 @@ MonoBehaviour:
   roomID: triangle room open
   exits:
   - keyString: north
-    exitDescription: There is a passage to the NORTH that leads to the incubation
-      chamber.
+    exitDescription: There is a passage that now leads to the NORTH.
     valueRoom: {fileID: 11400000, guid: 29b8f9de021513446a780b5d44ef06dd, type: 2}
   - keyString: east
     exitDescription: There is a passage to the EAST that leads to the lonely tree.

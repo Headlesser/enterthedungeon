@@ -13,8 +13,8 @@ MonoBehaviour:
   m_Name: CircleKey
   m_EditorClassIdentifier: 
   noun: ring
-  description: One of the rings hangs loosely from its bearings, clanking innocently
-    against the wall.
+  description: One <color=#008080ff>ring</color> hangs loosely from its bearings,
+    clanking innocently against the wall.
   interactions:
   - inputAction: {fileID: 11400000, guid: 90542c9d641a4f744bc08a88649757c9, type: 2}
     textResponse: It looks worn and ready to fall off.

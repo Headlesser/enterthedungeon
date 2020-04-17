@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   description: There is a lonely old tree rooted at the center of the crossing. While
     lacking any sign of fruit, it appears sturdy and thriving. You can see that further
-    down the passage to the WEST the ceiling has caved in. You'd better get out of
+    down the passage to the west the ceiling has caved in. You'd better get out of
     this dungeon before the rest of the ceiling goes with it.
   roomID: tree room triangle room egg room open
   exits:

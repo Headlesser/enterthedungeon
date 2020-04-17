@@ -12,11 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 33679f0a95fef08478f51265b4f0a415, type: 3}
   m_Name: CircleRingRoomTriangleRoomEggRoomHandleRoomBlockadeClearOpen
   m_EditorClassIdentifier: 
-  description: The air is much drier on this side of the dungeon. It appears there
+  description: 'The air is much drier on this side of the dungeon. It appears there
     once was a lot of traffic here, but when and by whom, you are not sure. The walls
-    are lined with heavy iron <color="lightblue">ring</color>s, some of which are
-    still fitted with old, rusted chains. The faint stench of iron and salt hangs
-    in the air.
+    are lined with heavy iron rings, some of which are still fitted with old, rusted
+    chains. '
   roomID: circle room triangle room egg room open
   exits:
   - keyString: west

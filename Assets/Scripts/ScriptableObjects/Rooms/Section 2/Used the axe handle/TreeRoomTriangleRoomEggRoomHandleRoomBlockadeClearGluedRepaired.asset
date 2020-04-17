@@ -14,12 +14,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   description: There is a lonely old tree rooted at the center of the crossing. While
     lacking any sign of fruit, it appears sturdy and thriving. You can see that further
-    down the passage to the WEST the ceiling has caved in. You'd better get out of
+    down the passage to the west the ceiling has caved in. You'd better get out of
     here before the rest of the ceiling goes with it.
   roomID: tree room triangle room egg room open
   exits:
   - keyString: east
-    exitDescription: EAST leads to the main room.
+    exitDescription: There is a passage to the EAST that leads back to the main gate.
     valueRoom: {fileID: 11400000, guid: 69fb8691b80286646b9010c71608a632, type: 2}
   sprite: {fileID: 21300000, guid: 9a6843d8e10e05b41b9af04a814b467c, type: 3}
   audio: {fileID: 0}

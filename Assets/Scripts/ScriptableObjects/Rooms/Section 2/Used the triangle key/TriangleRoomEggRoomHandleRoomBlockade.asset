@@ -16,7 +16,7 @@ MonoBehaviour:
   roomID: triangle room egg room open
   exits:
   - keyString: north
-    exitDescription: There is a passage to the NORTH to the eggie room.
+    exitDescription: There is now a passage leading NORTH.
     valueRoom: {fileID: 11400000, guid: 8e7c9dd874209f54fb4f2b66da7d76d5, type: 2}
   - keyString: east
     exitDescription: There is a passage to the EAST where you entered from.

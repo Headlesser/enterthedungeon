@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: TreeRoomTriangleRoomEggRoomHandleRoomBlockadeClearGluedRepairedChopped
   m_EditorClassIdentifier: 
   description: At the center of the room is a dead tree with a large chunk hacked
-    out of it. You can see that further down the passage to the WEST the ceiling has
+    out of it. You can see that further down the passage to the west the ceiling has
     caved in. You'd better get out of here before the rest of the ceiling goes with
     it.
   roomID: tree room triangle room egg room open

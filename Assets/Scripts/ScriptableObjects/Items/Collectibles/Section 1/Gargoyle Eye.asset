@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Gargoyle Eye
   m_EditorClassIdentifier: 
   noun: gemstone
-  description: 'Sitting on the pedestal is a glowing blue GEMSTONE. '
+  description: 'Sitting on the pedestal is a glowing blue <color=#008080ff>gemstone</color>. '
   interactions:
   - inputAction: {fileID: 11400000, guid: 90542c9d641a4f744bc08a88649757c9, type: 2}
     textResponse: 'The gemstone appears polished and valuable. It looks about the
@@ -25,3 +25,5 @@ MonoBehaviour:
   - inputAction: {fileID: 11400000, guid: 703f97af50ba68d4dbcabf97f7fc2f38, type: 2}
     textResponse: You insert the gemstone into the gargoyle statue.
     actionResponse: {fileID: 11400000, guid: fe15ab54cf5e26c4b8bc71f0f2148dd1, type: 2}
+  changeSprite: 0
+  changeTo: {fileID: 0}

@@ -18,13 +18,13 @@ MonoBehaviour:
   roomID: mouth room triangle room egg room open
   exits:
   - keyString: east
-    exitDescription: You can feel a distinctly warmer breeze blowing from the passageway
-      to the EAST. The tunnel is covered in thriving green foliage.
+    exitDescription: You can see strange scuffs and drag marks on the ground coming
+      from the passageway to the EAST. The tunnel is covered in dried, brittle branches
+      covered in prickly thorns.
     valueRoom: {fileID: 11400000, guid: b483c1f20497dfb4985ef1f8dbb194c5, type: 2}
   - keyString: west
-    exitDescription: You can see strange scuffs and drag marks on the ground coming
-      from the passageway to the WEST. The tunnel is covered in dried, brittle branches
-      covered in prickly thorns.
+    exitDescription: You can feel a distinctly warmer breeze blowing from the passageway
+      to the WEST. The tunnel is covered in thriving green foliage.
     valueRoom: {fileID: 11400000, guid: 6dad8587be52c3043bd76b7e49dde0e2, type: 2}
   sprite: {fileID: 21300000, guid: 05133a1687d2ea54caf69c0ff43a95c1, type: 3}
   audio: {fileID: 0}

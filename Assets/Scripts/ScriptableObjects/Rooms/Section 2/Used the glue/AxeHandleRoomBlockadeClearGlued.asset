@@ -15,7 +15,7 @@ MonoBehaviour:
   description: "The room appears to be a dead end, though it is cluttered and filled
     to the brim with waste. Piles of bramble, mud, rocks, and other material sit in
     festering piles. A large, uprooted tree takes up most of the space, with dried
-    yet sturdy <color=\"brown\">branch</color>es reaching into the air like fingers.
+    yet sturdy <color=#008080ff>branch</color>es reaching into the air like fingers.
     \n"
   roomID: axe handle room
   exits:

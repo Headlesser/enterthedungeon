@@ -13,9 +13,9 @@ MonoBehaviour:
   m_Name: Rusty Key
   m_EditorClassIdentifier: 
   noun: key
-  description: "Dangling from a hook on the wall hangs a rusted iron KEY. It seems
-    someone has left a message for you just beside it.\r\n\u201CIf you want to escape,
-    keep moving forward.\u201D"
+  description: "Dangling from a hook on the wall hangs a rusted iron <color=#008080ff>key</color>.
+    It seems someone has left a message for you just beside it.\r\n\u201CIf you want
+    to escape, keep moving forward.\u201D"
   interactions:
   - inputAction: {fileID: 11400000, guid: 90542c9d641a4f744bc08a88649757c9, type: 2}
     textResponse: The key to the iron gate. It is brittle and rough to the touch and
@@ -29,3 +29,5 @@ MonoBehaviour:
       your feet and you hear the cranking of invisible machinery as the iron gate
       ascends.
     actionResponse: {fileID: 11400000, guid: 2ad2b5ce8d0c10147ac31e01d5883ce9, type: 2}
+  changeSprite: 0
+  changeTo: {fileID: 0}
