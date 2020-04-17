@@ -65,33 +65,6 @@ public class InteractableItems : MonoBehaviour
         }
     }
 
-    // public void AddActionResponsesToTakeActions()
-    // {
-    //     //Whenever you take an item, update the 'etake' dictionary.
-    //     for (int i = 0; i < nounsInInventory.Count; i++)
-    //     {
-    //         string noun = nounsInInventory[i];
-    //         //go through every noun in the inventory and get their name
-    //         InteractableObject interactableObjectInInventory = GetInteractableObjectFromUsableList(noun);
-    //         if(interactableObjectInInventory == null)
-    //         {
-    //             continue;
-    //         }
-    //         for (int j = 0; j < interactableObjectInInventory.interactions.Length; j++)
-    //         {
-    //             Interaction interaction = interactableObjectInInventory.interactions[j];
-    //             if(interaction.actionResponse == null)
-    //             {
-    //                 continue;
-    //             }
-    //             if(!takeDictionaryAction.ContainsKey(noun))
-    //             {
-    //                 takeDictionaryAction.Add(noun, interaction.actionResponse);
-    //             }
-    //         }
-    //     }
-    // }
-
     InteractableObject GetInteractableObjectFromUsableList(string noun)
     {
         for (int i = 0; i < usableItemList.Count; i++)

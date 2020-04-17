@@ -25,7 +25,7 @@ MonoBehaviour:
   - inputAction: {fileID: 11400000, guid: 703f97af50ba68d4dbcabf97f7fc2f38, type: 2}
     textResponse: You use the iron ring on the rounded depression. The wall writhes
       and the indentation squelches as it peels back like the rind of an orange, revealing
-      a new passage to the NORTH.
+      a new passage.
     actionResponse: {fileID: 11400000, guid: 7742d7e1c814d7641accc950107429d7, type: 2}
   changeSprite: 0
   changeTo: {fileID: 0}

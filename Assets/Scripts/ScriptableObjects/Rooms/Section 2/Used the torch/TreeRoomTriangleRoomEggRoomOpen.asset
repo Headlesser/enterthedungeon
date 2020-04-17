@@ -12,8 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 33679f0a95fef08478f51265b4f0a415, type: 3}
   m_Name: TreeRoomTriangleRoomEggRoomOpen
   m_EditorClassIdentifier: 
-  description: There is a lonely old tree rooted at the center of the crossing. While
-    lacking any sign of fruit, it appears sturdy and thriving.
+  description: There is a <color=#008080ff>lonely old tree</color> rooted at the center
+    of the crossing. While lacking any sign of fruit, it appears sturdy and thriving.
   roomID: tree room triangle room egg room open
   exits:
   - keyString: west

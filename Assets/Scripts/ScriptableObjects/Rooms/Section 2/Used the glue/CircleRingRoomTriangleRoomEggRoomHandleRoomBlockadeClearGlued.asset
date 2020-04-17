@@ -20,7 +20,7 @@ MonoBehaviour:
   exits:
   - keyString: west
     exitDescription: There is a passage to the WEST where you entered from.
-    valueRoom: {fileID: 11400000, guid: eb1311cc8f8e2e94594ac1e0c95ad094, type: 2}
+    valueRoom: {fileID: 11400000, guid: 3429fdbc33c392f41bd0eab45a18c979, type: 2}
   - keyString: north
     exitDescription: There is a short passageway to the NORTH, where you can see the
       faint outline of some sort of object.

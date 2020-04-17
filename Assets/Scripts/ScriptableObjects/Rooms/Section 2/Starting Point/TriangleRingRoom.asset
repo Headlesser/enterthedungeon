@@ -12,16 +12,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 33679f0a95fef08478f51265b4f0a415, type: 3}
   m_Name: TriangleRingRoom
   m_EditorClassIdentifier: 
-  description: 'You notice a strange condensation begin to form on the walls as you
+  description: "You notice a strange condensation begin to form on the walls as you
     enter the room. There is a large, rounded formation protruding from the wall like
     a boil on raised, fleshy skin. It looks like there might be something on the other
     side, but you see no sign of anything to indicate a handle or button to open the
     way beyond a <color=#008080ff>circular indentation in the center of the door</color>.
-    It looks like something must have been able to fit it at one point in time.
-
-    The festering smell is stronger here, but you cannot see anything that would indicate
-    a source besides an unsavory, <color=#808000ff>puce</color> colored substance
-    that seems to have dripped onto the floor.'
+    \nThe festering smell is stronger here, but you cannot see anything that would
+    indicate a source besides an unsavory, <color=#808000ff>puce colored substance</color>
+    that seems to have dripped onto the floor."
   roomID: triangle room
   exits:
   - keyString: east
