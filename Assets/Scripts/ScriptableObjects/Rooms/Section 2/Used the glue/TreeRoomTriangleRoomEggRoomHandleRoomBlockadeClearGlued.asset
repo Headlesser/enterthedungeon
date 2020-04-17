@@ -12,15 +12,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 33679f0a95fef08478f51265b4f0a415, type: 3}
   m_Name: TreeRoomTriangleRoomEggRoomHandleRoomBlockadeClearGlued
   m_EditorClassIdentifier: 
-  description: There is a lonely old tree rooted at the center of the crossing. While
-    lacking any sign of fruit, it appears sturdy and thriving. You can see that further
-    down the passage to the west the ceiling has caved in. You'd better get out of
-    this dungeon before the rest of the ceiling goes with it.
+  description: There is a <color=#008080ff>lonely old tree</color> rooted at the center
+    of the crossing. While lacking any sign of fruit, it appears sturdy and thriving.
+    You can see that further down the passage to the west the ceiling has caved in.
+    You'd better get out of this dungeon before the rest of the ceiling goes with
+    it.
   roomID: tree room triangle room egg room open
   exits:
   - keyString: east
     exitDescription: There is a passage to the EAST which leads back to the main gate.
     valueRoom: {fileID: 11400000, guid: 3429fdbc33c392f41bd0eab45a18c979, type: 2}
-  sprite: {fileID: 21300000, guid: 9a6843d8e10e05b41b9af04a814b467c, type: 3}
+  sprite: {fileID: 21300000, guid: 079a7cfb4d4cf2442a3b424b04054b75, type: 3}
   audio: {fileID: 0}
   interactableObjectsInRoom: []

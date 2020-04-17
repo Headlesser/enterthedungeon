@@ -21,6 +21,6 @@ MonoBehaviour:
     exitDescription: You can now travel NORTH through the gate without getting cut
       to pieces.
     valueRoom: {fileID: 11400000, guid: 928cf7c9dd8cad341908a7335bd6c661, type: 2}
-  sprite: {fileID: 21300000, guid: 30c8e890a97d1d54d8550527d126bd26, type: 3}
+  sprite: {fileID: 21300000, guid: b07ec9ff12c6d344c967f9b9600bebfe, type: 3}
   audio: {fileID: 0}
   interactableObjectsInRoom: []

@@ -12,11 +12,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 33679f0a95fef08478f51265b4f0a415, type: 3}
   m_Name: MouthGateRoomTriangleRoomEggRoomHandleRoomBlockadeClearGluedRepairedChopped
   m_EditorClassIdentifier: 
-  description: You can hear the faintest sound of breathing as you approach the main
+  description: 'You can hear the faintest sound of breathing as you approach the main
     gate. The sharp, teeth-like protrusions shift and grind together. <color="red">It
     looks hungry...</color>
+
+    The passage to the east has collapsed.'
   roomID: mouth room triangle room egg room open
-  exits: []
-  sprite: {fileID: 21300000, guid: 05133a1687d2ea54caf69c0ff43a95c1, type: 3}
+  exits:
+  - keyString: west
+    exitDescription: You can feel a distinctly warmer breeze blowing from the passageway
+      to the WEST. The tunnel is covered in thriving green foliage.
+    valueRoom: {fileID: 11400000, guid: 09fe779631c773e4c99fa53908e522ff, type: 2}
+  sprite: {fileID: 21300000, guid: d03d12cfa88cb2b428c6c1c691118534, type: 3}
   audio: {fileID: 0}
   interactableObjectsInRoom: []
