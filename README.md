@@ -363,14 +363,14 @@ First playtest session conducted with 4 adults ages 22-30. Mixed familiarity wit
 - Players enjoyed the audio, though some placeholder tracks were too loud/were not cut properly
 
 # To Do List
- -POSTMORTEM ESSAY
- -FINISH DOCUMENTATION (INDICATE COVID AND ANY POSSIBLE BUGS, AS WELL AS THE SOLUTION TO THE GAME)
-  - Add maps for all puzzle sections (1 and 2)
-  - Attribute Justin for audio clips
-  - Attribute playtesters (Dylan, Gaby, Mara)
-  - Add notebook notes to process & discuss them
-  - State how COVID made playtesting/feedback resources difficult to acquire
-  - Add citations for unity tutorials, 'designing puzzles' video
+ - POSTMORTEM ESSAY
+ - FINISH DOCUMENTATION (INDICATE COVID AND ANY POSSIBLE BUGS, AS WELL AS THE SOLUTION TO THE GAME)
+  	- Add maps for all puzzle sections (1 and 2)
+  	- Attribute Justin for audio clips
+  	- Attribute playtesters (Dylan, Gaby, Mara)
+  	- Add notebook notes to process & discuss them
+  	- State how COVID made playtesting/feedback resources difficult to acquire
+  	- Add citations for unity tutorials, 'designing puzzles' video
  - ~~Design section 2 puzzle~~
  - Create audio assets for section 2
  - ~~second pass text for section 2~~
