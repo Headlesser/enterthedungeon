@@ -363,10 +363,24 @@ First playtest session conducted with 4 adults ages 22-30. Mixed familiarity wit
 - Players enjoyed the audio, though some placeholder tracks were too loud/were not cut properly
 
 # To Do List
- - Second pass text for section 1
- - Ditch scrollbar idea, have 'typewriter text'. Ask for help w/ this.
- - Create audio assets for section 1
- - Finalize goals for deadline submission (3 completed sections)
+ -POSTMORTEM ESSAY
+ -FINISH DOCUMENTATION (INDICATE COVID AND ANY POSSIBLE BUGS, AS WELL AS THE SOLUTION TO THE GAME)
+  - Add maps for all puzzle sections (1 and 2)
+  - Attribute Justin for audio clips
+  - Attribute playtesters (Dylan, Gaby, Mara)
+  - Add notebook notes to process & discuss them
+  - State how COVID made playtesting/feedback resources difficult to acquire
+  - Add citations for unity tutorials, 'designing puzzles' video
+ - ~~Design section 2 puzzle~~
+ - Create audio assets for section 2
+ - ~~second pass text for section 2~~
+ - third pass text for section 2
+ - ~~Second pass text for section 1~~
+ - ~~Ditch scrollbar idea, have 'typewriter text'. Ask for help w/ this.~~
+ 	- Decided against any text effects
+ - ~~Create audio assets for section 1~~
+ - ~~Finalize goals for deadline submission (3 completed sections)~~
+ 	- Had to cut down to 2 completed sections
  - ~~Fix things w/ playtest 1 feedback~~
  - ~~Make it so text does not scroll infinitely up over the sprite. 'Lock' size of the text area, make scroll bar.~~
  - ~~Create art assets for section 1~~
