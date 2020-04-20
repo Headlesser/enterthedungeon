@@ -217,6 +217,16 @@ While implementing and creating all the assets for section 2, I ran into an unsu
 
 Eventually, I made a series of folders in my project to separate each map of rooms into even smaller sections which can also be seen below.
 
+![Directories](https://github.com/Headlesser/enterthedungeon/raw/master/images/room_organization.png) "Inspector directories"
+
+While still difficult, this made it easier to keep track of which rooms connected to which exits, and helped separate the problem into smaller chunks rather than filing through a giant list of room objects, searching for the one that had the wrong connections.
+
+After finishing the design for puzzle 2 and writing the descriptions, I was informed that my audio designer could not make any more tracks for me due to other responsibilities. For section 2 I had to resort to re-using other tracks and mixing a few of my own using free tracks from freesound.org. I also did not have enough time to go back and add more 'clutter' items to the puzzles (items that do nothing, but can be examined none the less) due to all the time spent debugging rooms and making the audio clips.
+
+As this project reaches its 'academic' deadline, I am glad to have completed two whole sections with a few elements of polish, having essentially reached my goal of completing a playable demo as stated in my proposal. If I continue the project into the summer, I plan on making another pass at all the dialogue, adding clutter elements, remixing some better sounds, and adding more sections.
+
+
+
 ## Technical Documentation
 ### Adding Image Support
 In Room.cs I added a public Sprite variable `sprite` which would store the image representing the layout of whatever particular room object it is assigned to. This is essentially extending off of the variables the tutorial had already designated (`description`, `roomID`, etc).
@@ -356,6 +366,82 @@ to
 DoActionResponse()
 ```
 as well, which logged the `textResponse` value identical to the way `take` and `examine` had been initially set up.
+
+### Debugging & Adding 'ActionResponses' to the 'Take' Keyword
+One mechanic that I wanted to implement for the final stretch of this project was allowing other keywords, not just `use`, to allow for ActionResponses. That is, I wanted the `Take` keyword to have the ability for events to occur. Specifically, I wanted to be able to have a room's sprite change after taking an item from it, to visualize the act of taking something and make it clearer for the player (such as taking the shovel from the room in section 2).
+
+This proved difficult at first as originally I tried expanding on the ```ActionResponse``` logic itself by creating a new class inheriting from ```ActionResponse``` that was almost identical to `ChangeRoomResponse`.
+
+```
+public class ChangeRoomImage : ActionResponse
+{
+    public Sprite changeImageTo;
+    public AudioClip actionSound;
+    //The sound to play after performing the use action.
+
+    public override bool DoActionResponse(GameController controller, string[] separatedInputWords)
+    {
+        if(controller.roomNavigation.currentRoom.roomID == requiredString)
+        {
+            controller.roomNavigation.currentRoom.sprite = changeImageTo; //problem, does not reset the images to their original ones after testing.
+            controller.LogStringWithReturn(controller.TextVerbDictionaryWithNoun(controller.interactableItems.takeDictionary, separatedInputWords[0], separatedInputWords[1]));
+            controller.DisplayRoomImage();
+            //Debug.Log("Took the item, change the image");
+
+            if(actionSound != null)
+            {
+                controller.actionAudioSource.PlayOneShot(actionSound);
+                //actionSound = null; to remove the old sound? 
+                //Plays the 'activation' sound ONCE.
+                //This will only be for the 'use' functionality
+                //Things such as jingling of key, scraping gargoyle statue, etc. Stuff that indicates 'that input was successful'
+                //Put within a != null statement in case any room happens to not have an audio clip.
+            }
+            return true;
+        }
+        return false;
+    }
+
+}
+```
+
+As I worked, however, I concluded that this was a bit overkill for what I wanted to accomplish. Instead, I made a small function in the ```InteractableItem``` script,
+
+``` 
+public void ChangeImage(string noun)
+    {
+        //Debug.Log("begin change image...");
+        //check it the old fashioned way. If the noun given was taken, change the current room's sprite value
+        //ONLY IF that object is supposed to.
+        InteractableObject target = GetInteractableObjectFromUsableList(noun);
+        //Debug.Log(target + " This is the object found.");
+        if(target.changeSprite == true)
+        {
+            //Debug.Log("This object is set to true to switch images");
+            controller.roomNavigation.currentRoom.sprite = target.changeTo;
+            controller.DisplayRoomImage();
+            //Debug.Log("Change the image.");
+        }
+    }
+  ```
+and made a small addition to the ```InteractableObject``` class,
+
+```
+public class InteractableObject : ScriptableObject
+{
+
+    public string noun = "name";
+    [TextArea]
+    public string description = "Description of item in the room";
+    public Interaction[] interactions;
+    public bool changeSprite; //This variable is ONLY true if the item needs to have its image changed
+
+    public Sprite changeTo; //This variable is ONLY used if the particular item needs to have an image changed
+
+}
+```
+
+to have a boolean that checks whether or not this object should trigger a sprite change, and a sprite object that stores an image to 'change to' should that be true.
 
 # Art and Visuals
 The visual aesthetic of Enter the Dungeon is intended to be simple, pixelated and and primarily restricted to a color palette of black and white only (with some few exceptions). I inevitably decided on this approach due to the time constraints on the project and estimating ahead of time how long I thought I would have to both complete the tutorial, build upon it, design puzzles, and incorporate art and sound within a roughly 3 month period.
