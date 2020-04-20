@@ -679,8 +679,24 @@ Youtube Playlist version:
  
  [Metallic cranking audio clip from freesound.org](https://freesound.org/people/arnaud%20coutancier/sounds/468500/)
  
+ [Fire crackling audio clip from freesound.org](https://freesound.org/people/kingsrow/sounds/181563/)
+ 
+ [Cutting a tree audio clip from freesound.org](https://freesound.org/people/tomattka/sounds/401730/)
+ 
+ [Owl screech audio clip from freesound.org](https://freesound.org/people/Yacob_l/sounds/242772/)
+ 
+ [Corellas screeching audio clip from freesound.org](https://freesound.org/people/magicthighs/sounds/436570/)
+ 
+ [Low growling audio clip from freesound.org](https://freesound.org/people/yatoimtop/sounds/171178/)
+ 
+ [Lock clicking audio clip from freesound.org](https://freesound.org/people/ingudios/sounds/119494/)
+ 
+ [Digging audio clip from freesound.org](https://freesound.org/people/wormletter/sounds/513866/)
+ 
+ [Squishy audio clip from freesound.org](https://freesound.org/people/SaxOman7/sounds/448641/)
+ 
  ### Attributions
- *Justin Hatfield - Sound Designer - Created ambient dungeon and water rapids audio tracks*
+ [*Justin Hatfield - Sound Designer - Created ambient dungeon and water rapids audio tracks*](https://github.com/Headlesser/enterthedungeon/raw/master/Assets/Audio/Ambient_Dungeon.wav)
  
  *Gaby Benninghoff - Playtester - Gave good advice during the design process and also playtesting feedback*
  
