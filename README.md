@@ -20,7 +20,7 @@ This file contains the documentation for Enter the Dungeon.
 
 [Section 2 - Going Deeper](#section-2)
 
-[Game Map](#game-map)
+[Solution](#solution)
 
 ## Process
 [Process](#process-1)
@@ -174,6 +174,96 @@ I put the first section into two parts as a 'section' is defined by moving up th
 ## Section 2
 Section 2 is a larger puzzle with twice as many rooms. Having finished this section, going forward, I think I will try to keep the room count to a minimum, as setting up alternate versions of rooms take an exceptionally long time and makes the implementation process difficult. This section is intended to play upon the strangeness of the dungeon a bit more as certain objects or things that need to be bypassed and used are not as conventional as they were in the first section (eg. using mucous for 'glue').
 ![Diagram2](https://github.com/Headlesser/enterthedungeon/raw/master/images/diagram_section_2.png)
+
+## Solution
+
+Below is the walkthrough for the solutions to both sections 1 and 2. They will not include any steps involving the 'examine' keyword.
+
+### Section 1 Solution
+In the room with the locked gate
+	- Take `key`
+	- Use `key`
+	- Go `north`
+In the gargoyle room
+	- Go `west`
+In the skeleton room
+	- Take `rod`
+	- Go `east`
+In the gargoyle room
+	- Go `east`
+In the bridge room
+	- Use `rod`
+	- Go `north`
+In the pedestal room
+	- Take `gemstone`
+	- Go `south`
+In the bridge room
+	- Go `west`
+In the gargoyle room
+	- Use `gemstone`
+	- Go `north`
+
+*Section 1 complete*
+
+### Section 2 Solution
+*Note: It is technically possible to finish the puzzle in more than one exact order. This is the most straight forward one that takes the least amount of backtracking.*
+*Note 2: I had testers check for bugs or game-breaking solutions and have fixed as many as I could find. If you encounter a bug that prevents you from going forward, it was one I was unable to find or replicate. If you remember the order in which you moved, please send me a note about it! Following the instructions below should lead to a successful victory.*
+
+In the hallway
+	- Go `north`
+In the main gate room
+	- Take `torch`
+	- Go `east`
+In the ring room
+	- Take `ring`
+	- Go `west`
+In the main gate room
+	- Go `west`
+In the tree room
+	- Go `west`
+In the circular doorway room
+	- Use `ring`
+	- Go `north`
+In the incubation room
+	- Use `torch`
+	- Take `mucous`
+	- Go `south`
+In the circular doorway room
+	- Take `keystone`
+	- Go `east`
+In the tree room
+	- Go `east`
+In the main gate room
+	- Go `east`
+In the ring room
+	- Use `keystone`
+	- Go `east`
+In the tool room
+	- Take `shovel`
+	- Take `branch`
+	- Go `west`
+In the ring room
+	- Use `shovel`
+	- Go `north`
+In the axe room
+	- Use `mucous`
+	- Use `branch`
+	- Take `axe`
+	- Go `south`
+In the ring room
+	- Go `west`
+In the main gate room
+	- Go `west`
+In the tree room
+	- Use `axe`
+	- Take `meat`
+	- Go `east`
+In the main gate room
+	- Use `meat`
+	- Go `north`
+
+*Section 2 complete*
+
 
 # Process
 I began this project on January 20th, 2020, which began as a few sketches of ideas in my notebook. At first I thought of making a 2D point-and-click puzzle game. I was very into games such as [Deep Sleep](https://scriptwelder.itch.io/deep-sleep) and [Don't Escape: 4 Days to Survive](https://dont-escape.com/) by *scriptwealder*, and started writing up some notes in my sketchbook seen here:
