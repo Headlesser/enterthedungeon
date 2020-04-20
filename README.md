@@ -169,6 +169,10 @@ The trunk of this puzzle tree can now be elongated (or shortened) as much as is 
 I put the first section into two parts as a 'section' is defined by moving up the 'trunk' of the puzzle tree. Section 1.1, although one room long, moves directly up the trunk of the tree (no branches), so I define it as one very small section. The stars on this diagram represent 'keys' needed to enter another room. Stars found within rectangles indicate that key is found within that room. Stars on lines indicate that specific key is needed to reach the connecting room.
 ![Diagram1](https://github.com/Headlesser/enterthedungeon/raw/master/images/diagram_section_1.png)
 
+## Section 2
+Section 2 is a larger puzzle with twice as many rooms. Having finished this section, going forward, I think I will try to keep the room count to a minimum, as setting up alternate versions of rooms take an exceptionally long time and makes the implementation process difficult. This section is intended to play upon the strangeness of the dungeon a bit more as certain objects or things that need to be bypassed and used are not as conventional as they were in the first section (eg. using mucous for 'glue').
+![Diagram2](https://github.com/Headlesser/enterthedungeon/raw/master/images/diagram_section_2.png)
+
 # Process
 I began this project on January 20th, 2020, which began as a few sketches of ideas in my notebook. At first I thought of making a 2D point-and-click puzzle game. I was very into games such as [Deep Sleep](https://scriptwelder.itch.io/deep-sleep) and [Don't Escape: 4 Days to Survive](https://dont-escape.com/) by *scriptwealder*, and started writing up some notes in my sketchbook seen here:
 ![Page1](https://github.com/Headlesser/enterthedungeon/raw/master/images/p3.png "My first idea for the game")
