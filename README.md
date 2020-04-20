@@ -381,6 +381,9 @@ First playtest session conducted with 4 adults ages 22-30. Mixed familiarity wit
  - ~~Create audio assets for section 1~~
  - ~~Finalize goals for deadline submission (3 completed sections)~~
  	- Had to cut down to 2 completed sections
+	
+*Covid-19 quarantine began around here. All items above this note were completed while quarantine was in effect*
+
  - ~~Fix things w/ playtest 1 feedback~~
  - ~~Make it so text does not scroll infinitely up over the sprite. 'Lock' size of the text area, make scroll bar.~~
  - ~~Create art assets for section 1~~
