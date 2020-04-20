@@ -493,7 +493,7 @@ One mechanic that I wanted to implement for the final stretch of this project wa
 
 This proved difficult at first as originally I tried expanding on the ```ActionResponse``` logic itself by creating a new class inheriting from ```ActionResponse``` that was almost identical to `ChangeRoomResponse`.
 
-```
+```csharp
 public class ChangeRoomImage : ActionResponse
 {
     public Sprite changeImageTo;
@@ -528,7 +528,7 @@ public class ChangeRoomImage : ActionResponse
 
 As I worked, however, I concluded that this was a bit overkill for what I wanted to accomplish. Instead, I made a small function in the ```InteractableItem``` script,
 
-``` 
+```csharp
 public void ChangeImage(string noun)
     {
         //Debug.Log("begin change image...");
@@ -547,7 +547,7 @@ public void ChangeImage(string noun)
   ```
 and made a small addition to the ```InteractableObject``` class,
 
-```
+```csharp
 public class InteractableObject : ScriptableObject
 {
 
