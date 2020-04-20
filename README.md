@@ -181,27 +181,35 @@ Below is the walkthrough for the solutions to both sections 1 and 2. They will n
 
 ### Section 1 Solution
 In the room with the locked gate
-	- Take `key`
-	- Use `key`
-	- Go `north`
+- Take `key`
+- Use `key`
+- Go `north`
+	
 In the gargoyle room
-	- Go `west`
+- Go `west`
+	
 In the skeleton room
-	- Take `rod`
-	- Go `east`
+- Take `rod`
+- Go `east`
+	
 In the gargoyle room
-	- Go `east`
+- Go `east`
+	
 In the bridge room
-	- Use `rod`
-	- Go `north`
+- Use `rod`
+- Go `north`
+	
 In the pedestal room
-	- Take `gemstone`
-	- Go `south`
+- Take `gemstone`
+- Go `south`
+	
 In the bridge room
-	- Go `west`
+- Go `west`
+	
 In the gargoyle room
-	- Use `gemstone`
-	- Go `north`
+- Use `gemstone`
+- Go `north`
+	
 
 *Section 1 complete*
 
@@ -210,57 +218,74 @@ In the gargoyle room
 *Note 2: I had testers check for bugs or game-breaking solutions and have fixed as many as I could find. If you encounter a bug that prevents you from going forward, it was one I was unable to find or replicate. If you remember the order in which you moved, please send me a note about it! Following the instructions below should lead to a successful victory.*
 
 In the hallway
-	- Go `north`
+- Go `north`
+	
 In the main gate room
-	- Take `torch`
-	- Go `east`
+- Take `torch`
+- Go `east`
+	
 In the ring room
-	- Take `ring`
-	- Go `west`
+- Take `ring`
+- Go `west`
+	
 In the main gate room
-	- Go `west`
+- Go `west`
+	
 In the tree room
-	- Go `west`
+- Go `west`
+	
 In the circular doorway room
-	- Use `ring`
-	- Go `north`
+- Use `ring`
+- Go `north`
+	
 In the incubation room
-	- Use `torch`
-	- Take `mucous`
-	- Go `south`
+- Use `torch`
+- Take `mucous`
+- Go `south`
+	
 In the circular doorway room
-	- Take `keystone`
-	- Go `east`
+- Take `keystone`
+- Go `east`
+	
 In the tree room
-	- Go `east`
+- Go `east`
+	
 In the main gate room
-	- Go `east`
+- Go `east`
+	
 In the ring room
-	- Use `keystone`
-	- Go `east`
+- Use `keystone`
+- Go `east`
+	
 In the tool room
-	- Take `shovel`
-	- Take `branch`
-	- Go `west`
+- Take `shovel`
+- Take `branch`
+- Go `west`
+	
 In the ring room
-	- Use `shovel`
-	- Go `north`
+- Use `shovel`
+- Go `north`
+	
 In the axe room
-	- Use `mucous`
-	- Use `branch`
-	- Take `axe`
-	- Go `south`
+- Use `mucous`
+- Use `branch`
+- Take `axe`
+- Go `south`
+	
 In the ring room
-	- Go `west`
+- Go `west`
+	
 In the main gate room
-	- Go `west`
+- Go `west`
+	
 In the tree room
-	- Use `axe`
-	- Take `meat`
-	- Go `east`
+- Use `axe`
+- Take `meat`
+- Go `east`
+	
 In the main gate room
-	- Use `meat`
-	- Go `north`
+- Use `meat`
+- Go `north`
 
 *Section 2 complete*
 
