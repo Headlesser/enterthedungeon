@@ -440,6 +440,10 @@ Youtube Playlist version:
  
  [Wind chimes audio clip from freesound.org](https://freesound.org/people/MrCisum/sounds/336664/)
  
+ [Key jingling audio clip from freesound.org](https://freesound.org/people/Joao_Janz/sounds/485116/)
+ 
+ [Metallic cranking audio clip from freesound.org](https://freesound.org/people/arnaud%20coutancier/sounds/468500/)
+ 
  ### Attributions
  Justin Hatfield - Sound Designer - Created ambient dungeon and water rapids audio tracks
  Gaby Benninghoff - Playtester - Gave good advice during the design process and also playtesting feedback
