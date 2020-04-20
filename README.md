@@ -559,8 +559,12 @@ Youtube Playlist version:
  [Metallic cranking audio clip from freesound.org](https://freesound.org/people/arnaud%20coutancier/sounds/468500/)
  
  ### Attributions
- Justin Hatfield - Sound Designer - Created ambient dungeon and water rapids audio tracks
- Gaby Benninghoff - Playtester - Gave good advice during the design process and also playtesting feedback
- 'Mara' Christine - Playtester - Gave good feedback for playtesting online
- 'Janet' Dylan - Playtester - Gave good feedback for playtesting online
- Jordan Hannon - Classmate - Had good discussions with him when class was in-person and also gave good feedback
+ *Justin Hatfield - Sound Designer - Created ambient dungeon and water rapids audio tracks*
+ 
+ *Gaby Benninghoff - Playtester - Gave good advice during the design process and also playtesting feedback*
+ 
+ *'Mara' Christie - Playtester - Gave good feedback for playtesting online*
+ 
+ *'Janet' Dylan - Playtester - Gave good feedback for playtesting online*
+ 
+ *Jordan Hannon - Classmate - Had good discussions with him when class was in-person and also gave good feedback*
