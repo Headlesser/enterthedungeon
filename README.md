@@ -195,6 +195,28 @@ After reaching the halfway point of the project (approximately 7 weeks in), I we
 
 ### As of March 23rd, I had completed the first puzzle section of the game. All subsequent sections will be developed during the coronavirus epidemic in a work-from-home environment.
 
+After quarantine began, progress on the game slowed a bit as adjustments had to be made. Playtesting became increasingly difficult as, while online playtesting was possible, being able to speak in person and watch players react to certain things (or more importantly, not interact at all) is incredibly helpful information that I could no longer accurately collect. That being said, I made the switch to online testing and returned with helpful feedback before moving on to designing section 2. Some of the most important information I gathered involved:
+	- Players unable to read the text because it was too small/the color was too dark
+	- Players unable to read some text because they picked up something and you cannot scroll the text back up
+	- Players forgot some of the controls and wanted a reference
+	- First puzzle was fairly easy but sparked curiosity to play more
+
+With this information from my round of online playtests, I made some adjustments to the text, added a 'main menu' and also a few new commands that players can type in (like key words) to reference controls, re-print room text, and even quit the game. I did it this way because I wanted the game to remain true to the text adventure style, rather than adding a full-fledged menu system with sprites/buttons.
+
+After designing section 2 I also ran a second series of playtests with some of the same people and some new with a focus on finding bugs and determining the difficulty of the puzzle. Overall feedback in regards to the puzzle and art was good, though more adjustments had to be made to the text and a few bugs related to room organization had to be fixed to prevent a 'soft lock' (that is, the player could not continue forward due to doing something in the 'wrong' order).
+
+Rewinding a bit: I began the design work for section 2 in the beginning of April, and sketched out a rough idea (seen below) which was eventually adjusted into the final design.
+
+![Initial design for section 2](https://github.com/Headlesser/enterthedungeon/raw/master/images/section_2_sketch.png "Initial design for section 2")
+
+I tried to separate my design into a few different lists: one for ```ActionResponses```, one for Items, and a map to visualize the overall layout of the dungeon.
+
+While implementing and creating all the assets for section 2, I ran into an unsuspected number of issues, most of which pertained to the organization of rooms. Whenever a player uses an item and 'teleports' (or 'unlocks' something) to a new room, every other room must be given an 'alternate' version of itself that leads to that new, 'unlocked' version of the room. This exponentially grew the number of ```Room``` objects I had to create, and made it hard to keep track of which rooms were attached to which exits. I tried to sketch out the problem first to try and understand it better, as seen below.
+
+![Sketch of rooms](https://github.com/Headlesser/enterthedungeon/raw/master/images/section_2_keypaths.png) "Sketch of how a 'new' map had to be made every time an item was used"
+
+Eventually, I made a series of folders in my project to separate each map of rooms into even smaller sections which can also be seen below.
+
 ## Technical Documentation
 ### Adding Image Support
 In Room.cs I added a public Sprite variable `sprite` which would store the image representing the layout of whatever particular room object it is assigned to. This is essentially extending off of the variables the tutorial had already designated (`description`, `roomID`, etc).
