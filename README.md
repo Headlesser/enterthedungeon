@@ -370,7 +370,7 @@ First playtest session conducted with 4 adults ages 22-30. Mixed familiarity wit
   	- Attribute playtesters (Dylan, Gaby, Mara)
   	- Add notebook notes to process & discuss them
   	- State how COVID made playtesting/feedback resources difficult to acquire
-  	- Add citations for unity tutorials, 'designing puzzles' video
+  	- ~~Add citations for unity tutorials, 'designing puzzles' video~~
  - ~~Design section 2 puzzle~~
  - Create audio assets for section 2
  - ~~second pass text for section 2~~
@@ -417,6 +417,9 @@ Youtube Playlist version:
  - [Part 2 Section 9](https://www.youtube.com/watch?v=SqoPJ2-gDwc&list=PLX2vGYjWbI0RfcpqpKlmLEy7NteIog8g4&index=17)
  - [Part 2 Section 10](https://www.youtube.com/watch?v=WewuY--upVw&list=PLX2vGYjWbI0RfcpqpKlmLEy7NteIog8g4&index=18)
  
+ [Unity Tutorial for Typewriter Effect](https://www.youtube.com/watch?v=1qbjmb_1hV4)
+ [Youtube video on puzzle design tips](https://www.youtube.com/watch?v=EDt6XXsRXag)
+ 
  ### Images
  [Screenshot from Zork: The Great Underground Empire](https://www.mobygames.com/game/apple2/zork-the-great-underground-empire/screenshots/gameShotId,305672/)
  
@@ -434,3 +437,12 @@ Youtube Playlist version:
  [Rushing water audio clip from freesound.org](https://freesound.org/people/eardeer/sounds/443869/)
  
  [Testing 'beep' audio clip from freesound.org](https://freesound.org/people/thisusernameis/sounds/426888/)
+ 
+ [Wind chimes audio clip from freesound.org](https://freesound.org/people/MrCisum/sounds/336664/)
+ 
+ ### Attributions
+ Justin Hatfield - Sound Designer - Created ambient dungeon and water rapids audio tracks
+ Gaby Benninghoff - Playtester - Gave good advice during the design process and also playtesting feedback
+ 'Mara' Christine - Playtester - Gave good feedback for playtesting online
+ 'Janet' Dylan - Playtester - Gave good feedback for playtesting online
+ Jordan Hannon - Classmate - Had good discussions with him when class was in-person and also gave good feedback
