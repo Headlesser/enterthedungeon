@@ -14,4 +14,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   requiredString: circle room triangle room egg room blockade
   roomToChangeTo: {fileID: 11400000, guid: 8ae29569d225951459237f70b2fc029d, type: 2}
-  actionSound: {fileID: 8300000, guid: 9863ffa5bd2b5eb46abadef149968fec, type: 3}
+  actionSound: {fileID: 8300000, guid: 6fde0d0899567754d9ac929e1e6b43be, type: 3}

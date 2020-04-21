@@ -23,5 +23,5 @@ MonoBehaviour:
     exitDescription: There is a passage to the EAST which leads back to the main gate.
     valueRoom: {fileID: 11400000, guid: 3429fdbc33c392f41bd0eab45a18c979, type: 2}
   sprite: {fileID: 21300000, guid: 079a7cfb4d4cf2442a3b424b04054b75, type: 3}
-  audio: {fileID: 0}
+  audio: {fileID: 8300000, guid: cd7757861c99619458b31e59e6cc2637, type: 3}
   interactableObjectsInRoom: []

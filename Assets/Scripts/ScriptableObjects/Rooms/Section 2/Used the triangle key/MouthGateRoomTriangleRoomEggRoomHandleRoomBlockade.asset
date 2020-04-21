@@ -29,5 +29,5 @@ MonoBehaviour:
       to the WEST. The tunnel is covered in thriving green foliage.
     valueRoom: {fileID: 11400000, guid: 56d0206ef9197da41875c252bff65037, type: 2}
   sprite: {fileID: 21300000, guid: 05133a1687d2ea54caf69c0ff43a95c1, type: 3}
-  audio: {fileID: 0}
+  audio: {fileID: 8300000, guid: cd7757861c99619458b31e59e6cc2637, type: 3}
   interactableObjectsInRoom: []

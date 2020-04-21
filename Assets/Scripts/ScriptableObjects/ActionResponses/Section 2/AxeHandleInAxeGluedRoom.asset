@@ -14,4 +14,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   requiredString: axe room glue
   roomToChangeTo: {fileID: 11400000, guid: 89eae8e547ca7b24b9b39d445ead98d1, type: 2}
-  actionSound: {fileID: 8300000, guid: 9863ffa5bd2b5eb46abadef149968fec, type: 3}
+  actionSound: {fileID: 8300000, guid: 86bbd7de007ff2b449e6c9859df9b732, type: 3}

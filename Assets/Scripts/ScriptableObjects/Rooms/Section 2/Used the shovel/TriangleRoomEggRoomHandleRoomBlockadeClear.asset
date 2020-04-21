@@ -22,5 +22,5 @@ MonoBehaviour:
     exitDescription: There is a passage to the EAST where you entered from.
     valueRoom: {fileID: 11400000, guid: e700f1db33137b948808f04f275ec5e4, type: 2}
   sprite: {fileID: 21300000, guid: f0ae3f0c2bfbfb1478b6b4cd733886c1, type: 3}
-  audio: {fileID: 0}
+  audio: {fileID: 8300000, guid: cd7757861c99619458b31e59e6cc2637, type: 3}
   interactableObjectsInRoom: []

@@ -14,4 +14,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   requiredString: tree room triangle room egg room open
   roomToChangeTo: {fileID: 11400000, guid: 09fe779631c773e4c99fa53908e522ff, type: 2}
-  actionSound: {fileID: 8300000, guid: 9863ffa5bd2b5eb46abadef149968fec, type: 3}
+  actionSound: {fileID: 8300000, guid: 878b8919e069881498cb476d8930f67e, type: 3}

@@ -14,4 +14,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   requiredString: triangle room
   roomToChangeTo: {fileID: 11400000, guid: afc94ca791dbf9a45bc379010ee0d275, type: 2}
-  actionSound: {fileID: 8300000, guid: 9863ffa5bd2b5eb46abadef149968fec, type: 3}
+  actionSound: {fileID: 8300000, guid: 9f61c6a0323c53a41a076d9da64faa85, type: 3}

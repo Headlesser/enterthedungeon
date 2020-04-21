@@ -24,5 +24,5 @@ MonoBehaviour:
       wafting in.
     valueRoom: {fileID: 11400000, guid: e87fb520e66d511458057c8b6223aecd, type: 2}
   sprite: {fileID: 21300000, guid: 9a6843d8e10e05b41b9af04a814b467c, type: 3}
-  audio: {fileID: 0}
+  audio: {fileID: 8300000, guid: cd7757861c99619458b31e59e6cc2637, type: 3}
   interactableObjectsInRoom: []

@@ -22,5 +22,5 @@ MonoBehaviour:
     exitDescription: There is a passage to the EAST that leads to the lonely tree.
     valueRoom: {fileID: 11400000, guid: edf55fae9398591488356a3330aae2d6, type: 2}
   sprite: {fileID: 21300000, guid: e9ad0db4321b7594fb84c23ef3529403, type: 3}
-  audio: {fileID: 0}
+  audio: {fileID: 8300000, guid: cd7757861c99619458b31e59e6cc2637, type: 3}
   interactableObjectsInRoom: []
