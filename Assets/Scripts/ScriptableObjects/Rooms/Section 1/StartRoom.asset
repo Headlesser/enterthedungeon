@@ -14,8 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   description: 'You feel cold as the walls of the prison close around you. You can
     hear the distant clacking of loose pebbles falling from the ceiling and the incessant,
-    rhythmic dripping of water. Before you stands a rusted iron gate, locked by an
-    old iron padlock. '
+    rhythmic dripping of water. Before you stands a rusted iron <color=#008080ff>gate</color>,
+    locked by an old padlock. '
   roomID: start room
   exits: []
   sprite: {fileID: 21300000, guid: e516812b65a2c7f4ba4d38be4e58f750, type: 3}
