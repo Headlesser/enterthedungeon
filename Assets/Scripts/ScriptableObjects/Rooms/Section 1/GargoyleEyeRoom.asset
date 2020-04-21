@@ -26,3 +26,4 @@ MonoBehaviour:
   audio: {fileID: 8300000, guid: c5912a4aa7c6b394990e409ee05270ba, type: 3}
   interactableObjectsInRoom:
   - {fileID: 11400000, guid: 2c63ddcf26c49bd499f0e7d225f95b9a, type: 2}
+  - {fileID: 11400000, guid: 343b716e8b945294e96822ae9da25793, type: 2}

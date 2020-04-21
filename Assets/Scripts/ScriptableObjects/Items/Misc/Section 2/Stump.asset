@@ -18,7 +18,7 @@ MonoBehaviour:
   - inputAction: {fileID: 11400000, guid: 90542c9d641a4f744bc08a88649757c9, type: 2}
     textResponse: It seems that whoever last used this axe hasn't been gone for very
       long. The stump shows signs of scuffing that would suggest recent use. Whoever
-      it belongs to must have left to find a new handle. Or a new axe entirely.
+      it belongs to must have left to find a new handle. Or a new axe...
     actionResponse: {fileID: 0}
   changeSprite: 0
   canNotTake: 1

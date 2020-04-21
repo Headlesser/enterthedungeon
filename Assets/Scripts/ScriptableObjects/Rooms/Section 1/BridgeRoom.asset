@@ -15,8 +15,8 @@ MonoBehaviour:
   description: You feel the spray of salt water as you stand at the edge of an enormous
     gap too large to cross. An icy torrent of frothing water rushes below you. A fall
     down there would assuredly spell certain death. There is a raised drawbridge visible
-    on the opposite ledge. A mechanism controlling the drawbridge sits nearby. It
-    appears to be broken.
+    on the opposite ledge. <color=#008080ff>A mechanism controlling the drawbridge
+    sits nearby. It appears to be broken.</color>
   roomID: bridge room
   exits:
   - keyString: west
