@@ -54,7 +54,7 @@ The target audience for Enter the Dungeon is primarily young adults, people who 
 * People who like the slowly building anticipation of horror genres
 
 ## Platform
-Enter the Dungeon will be released for PCs running windows and will be available for free on itch.io.
+Enter the Dungeon will be released for PCs running windows and will be available for free.
 
 
 
