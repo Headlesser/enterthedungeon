@@ -221,6 +221,7 @@ In the gargoyle room
 
 ### Section 2 Solution
 *Note: It is technically possible to finish the puzzle in more than one exact order. This is the most straight forward one that takes the least amount of backtracking.*
+
 *Note 2: I had testers check for bugs or game-breaking solutions and have fixed as many as I could find. If you encounter a bug that prevents you from going forward, it was one I was unable to find or replicate. If you remember the order in which you moved, please send me a note about it! Following the instructions below should lead to a successful victory.*
 
 In the hallway
@@ -694,6 +695,8 @@ Youtube Playlist version:
  [Digging audio clip from freesound.org](https://freesound.org/people/wormletter/sounds/513866/)
  
  [Squishy audio clip from freesound.org](https://freesound.org/people/SaxOman7/sounds/448641/)
+ 
+ [Branch snapping audio clip from freesound.org](https://freesound.org/people/kyles/sounds/452109/)
  
  ### Attributions
  [*Justin Hatfield - Sound Designer - Created ambient dungeon and water rapids audio tracks*](https://github.com/Headlesser/enterthedungeon/raw/master/Assets/Audio/Ambient_Dungeon.wav)
