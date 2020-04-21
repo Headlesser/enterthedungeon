@@ -99,7 +99,7 @@ public class InteractableItems : MonoBehaviour
     {
         string noun = separatedInputWords[1];
         
-        if(nounsInRoom.Contains(noun))
+        if(nounsInRoom.Contains(noun) && !GetInteractableObjectFromUsableList(noun).canNotTake)
         {
             //if the item is in the room, add it to inventory, remove it from ROOM. This keeps you 
             //from being able to examine an object you have already taken should you backtrack.
@@ -118,7 +118,7 @@ public class InteractableItems : MonoBehaviour
         }
         else
         {
-            controller.LogStringWithReturn("There is no " + noun + " in the room.");
+            controller.LogStringWithReturn("You cannot take " + noun + ".");
             return null;
         }
     }

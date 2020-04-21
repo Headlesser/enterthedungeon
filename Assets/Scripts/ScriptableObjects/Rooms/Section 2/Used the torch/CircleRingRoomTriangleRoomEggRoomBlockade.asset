@@ -25,4 +25,5 @@ MonoBehaviour:
     valueRoom: {fileID: 11400000, guid: 69572d2dd7b6f5b4a948cda71e9bbff3, type: 2}
   sprite: {fileID: 21300000, guid: d23e39b5b2b2b6c4fa93cf6ebe201a1a, type: 3}
   audio: {fileID: 8300000, guid: cd7757861c99619458b31e59e6cc2637, type: 3}
-  interactableObjectsInRoom: []
+  interactableObjectsInRoom:
+  - {fileID: 11400000, guid: 3f5f19ec850534649ab984c3f650f747, type: 2}

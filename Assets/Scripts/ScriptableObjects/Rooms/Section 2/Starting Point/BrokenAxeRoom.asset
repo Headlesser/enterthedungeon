@@ -12,10 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 33679f0a95fef08478f51265b4f0a415, type: 3}
   m_Name: BrokenAxeRoom
   m_EditorClassIdentifier: 
-  description: At the center of the room, you find an old rotted tree stump. Signs
-    of <color="red">blood</color> still stain the wood. There is a heavy axe embedded
-    into the stump. It might be a useful tool to have, <color=#008080ff>but without
-    a proper handle there's no way you could use it effectively.</color>
+  description: At the center of the room, you find an old rotted tree <color=#008080ff>stump</color>.
+    Signs of <color="red">blood</color> still stain the wood. There is a heavy axe
+    embedded into the stump. It might be a useful tool to have, <color=#008080ff>but
+    without a proper handle there's no way you could use it effectively.</color>
   roomID: axe room
   exits:
   - keyString: south
@@ -23,4 +23,5 @@ MonoBehaviour:
     valueRoom: {fileID: 11400000, guid: 73dda893e31780d43894d99ad78448a4, type: 2}
   sprite: {fileID: 21300000, guid: 30b4f3738a2a2c14ca65e44f8787740c, type: 3}
   audio: {fileID: 8300000, guid: cd7757861c99619458b31e59e6cc2637, type: 3}
-  interactableObjectsInRoom: []
+  interactableObjectsInRoom:
+  - {fileID: 11400000, guid: 1a372dcdb6cebd145bb2d73c1f3fbf04, type: 2}

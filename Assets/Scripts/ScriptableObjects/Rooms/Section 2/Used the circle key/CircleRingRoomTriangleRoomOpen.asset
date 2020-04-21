@@ -18,7 +18,8 @@ MonoBehaviour:
     fitted with rusted chains.
 
     There is an oddly shaped door to the east that is blocked by thick bars. There
-    is some sort of triangular depression on the wall beside it.'
+    is some sort of <color=#008080ff>triangular depression</color> on the wall beside
+    it.'
   roomID: circle room triangle room open
   exits:
   - keyString: west
@@ -30,4 +31,5 @@ MonoBehaviour:
     valueRoom: {fileID: 11400000, guid: e75b8e0db0603134c905bc05c02151d3, type: 2}
   sprite: {fileID: 21300000, guid: f2dfdb87b2f5c2d40b78d1aa10dbd883, type: 3}
   audio: {fileID: 8300000, guid: cd7757861c99619458b31e59e6cc2637, type: 3}
-  interactableObjectsInRoom: []
+  interactableObjectsInRoom:
+  - {fileID: 11400000, guid: 3f5f19ec850534649ab984c3f650f747, type: 2}

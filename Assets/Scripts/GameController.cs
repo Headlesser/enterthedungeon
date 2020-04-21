@@ -180,7 +180,7 @@ public class GameController : MonoBehaviour
                     //add it to examine dictionary. For example, if you pass in "Key", return the text response for it.
                     interactableItems.examineDictionary.Add(interactableInRoom.noun, interaction.textResponse);
                 }
-                if(interaction.inputAction.keyWord == "take")
+                if(interaction.inputAction.keyWord == "take" && !interactableInRoom.canNotTake)
                 {
                     //Debug.Log("Took an item, delete it from the room's list");
                     //if the player types the take keyword...

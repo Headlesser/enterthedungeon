@@ -12,9 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 33679f0a95fef08478f51265b4f0a415, type: 3}
   m_Name: BrokenAxeRoomTriangleRoomEggRoomHandleRoomBlockadeClearGlued
   m_EditorClassIdentifier: 
-  description: At the center of the room, you find an old rotted tree stump. Signs
-    of <color="red">blood</color> still stain the wood. There is a heavy axe embedded
-    into the stump, with the broken handle covered in a sticky mucous.
+  description: At the center of the room, you find an old rotted tree <color=#008080ff>stump</color>.
+    Signs of <color="red">blood</color> still stain the wood. There is a heavy axe
+    embedded into the stump, with the broken handle covered in a sticky mucous.
   roomID: axe room glue
   exits:
   - keyString: south
@@ -22,4 +22,5 @@ MonoBehaviour:
     valueRoom: {fileID: 11400000, guid: df5cbc2daf9570c45abff62cade3d9a4, type: 2}
   sprite: {fileID: 21300000, guid: ca3f3a44eba6fcc41a6c246870a83fb7, type: 3}
   audio: {fileID: 8300000, guid: cd7757861c99619458b31e59e6cc2637, type: 3}
-  interactableObjectsInRoom: []
+  interactableObjectsInRoom:
+  - {fileID: 11400000, guid: 1a372dcdb6cebd145bb2d73c1f3fbf04, type: 2}

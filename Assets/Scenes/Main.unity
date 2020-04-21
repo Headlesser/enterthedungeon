@@ -302,6 +302,13 @@ MonoBehaviour:
   - {fileID: 11400000, guid: f13982ca2e103174e83bd2ebc6d2cd87, type: 2}
   - {fileID: 11400000, guid: 176571d4e43270545bc8cba88bad61c9, type: 2}
   - {fileID: 11400000, guid: 762b616176cd8b14a95d8722cd9b1598, type: 2}
+  - {fileID: 11400000, guid: 4e6fbfadac3fe734eaba0e7e18b046c8, type: 2}
+  - {fileID: 11400000, guid: 343b716e8b945294e96822ae9da25793, type: 2}
+  - {fileID: 11400000, guid: 3f5f19ec850534649ab984c3f650f747, type: 2}
+  - {fileID: 11400000, guid: 56cf76db6dba22345b684b2051c8079b, type: 2}
+  - {fileID: 11400000, guid: 1a372dcdb6cebd145bb2d73c1f3fbf04, type: 2}
+  - {fileID: 11400000, guid: 29e6b3dd0777bef48b3f67ffc35f72f4, type: 2}
+  - {fileID: 11400000, guid: f9eb4c00b9c464c4da5b328b3dc830f7, type: 2}
   nounsInRoom: []
   nounsInInventory: []
 --- !u!82 &412027418
