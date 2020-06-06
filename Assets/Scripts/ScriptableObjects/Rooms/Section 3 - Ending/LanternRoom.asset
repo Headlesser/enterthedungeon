@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 33679f0a95fef08478f51265b4f0a415, type: 3}
+  m_Name: LanternRoom
+  m_EditorClassIdentifier: 
+  description: Your eyes adjust to the blinding light and you find yourself in a large
+    cavern where more of those strange baubles hang from the ceiling. They appear
+    to be some kind of organic <color=#008080ff>lantern</color>.
+  roomID: lantern room
+  exits:
+  - keyString: north
+    exitDescription: There is an impressively large archway to the north.
+    valueRoom: {fileID: 11400000, guid: 79fff45228175c14394932fce18688b9, type: 2}
+  sprite: {fileID: 21300000, guid: eb8d01f9994e8254da028a6f1e725ac7, type: 3}
+  audio: {fileID: 8300000, guid: 4eb7c87658873fa439df502bca248c89, type: 3}
+  interactableObjectsInRoom:
+  - {fileID: 11400000, guid: e6cb25d7ff4d93947b5a6af45fe92938, type: 2}

@@ -22,6 +22,7 @@ public class ChangeRoomResponse : ActionResponse
             controller.interactableItems.nounsInInventory.Remove(separatedInputWords[1]);
             controller.DisplayRoomText();
             controller.DisplayRoomImage();
+            controller.PlayRoomSound();
 
             if(actionSound != null)
             {

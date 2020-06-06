@@ -309,6 +309,9 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 1a372dcdb6cebd145bb2d73c1f3fbf04, type: 2}
   - {fileID: 11400000, guid: 29e6b3dd0777bef48b3f67ffc35f72f4, type: 2}
   - {fileID: 11400000, guid: f9eb4c00b9c464c4da5b328b3dc830f7, type: 2}
+  - {fileID: 11400000, guid: e6cb25d7ff4d93947b5a6af45fe92938, type: 2}
+  - {fileID: 11400000, guid: fa83d23176f34cf4f94560eeedb2c3f0, type: 2}
+  - {fileID: 11400000, guid: 8f3a303d0a8990b4c81a27154f064655, type: 2}
   nounsInRoom: []
   nounsInInventory: []
 --- !u!82 &412027418

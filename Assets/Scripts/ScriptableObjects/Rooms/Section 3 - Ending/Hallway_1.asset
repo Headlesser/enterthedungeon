@@ -10,11 +10,15 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 33679f0a95fef08478f51265b4f0a415, type: 3}
-  m_Name: End Demo
+  m_Name: Hallway_1
   m_EditorClassIdentifier: 
-  description: Thank you for playing this demo!
-  roomID: fin
-  exits: []
-  sprite: {fileID: 21300000, guid: e3456a23b93601d499a4acf4163b4ba9, type: 3}
+  description: A long hallway stretches out in front of you... You see a bright light
+    shining from the end of the tunnel.
+  roomID: hallway 1
+  exits:
+  - keyString: north
+    exitDescription: The hallway continues north.
+    valueRoom: {fileID: 11400000, guid: e07618c6cfea0b6499e9fee8f9030c1a, type: 2}
+  sprite: {fileID: 21300000, guid: 3e728fd628a06b742861dcff800d8ac8, type: 3}
   audio: {fileID: 0}
   interactableObjectsInRoom: []

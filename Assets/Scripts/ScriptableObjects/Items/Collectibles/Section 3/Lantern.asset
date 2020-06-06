@@ -1,0 +1,31 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ed19a84eeb1cdeb4ba651ef11a20d3b5, type: 3}
+  m_Name: Lantern
+  m_EditorClassIdentifier: 
+  noun: lantern
+  description: One of the lanterns has fallen from the ceiling, creating the bright
+    light you saw from the tunnel.
+  interactions:
+  - inputAction: {fileID: 11400000, guid: 90542c9d641a4f744bc08a88649757c9, type: 2}
+    textResponse: The lantern gives off a bright, blinding light. It might be useful
+      for seeing in the dark.
+    actionResponse: {fileID: 0}
+  - inputAction: {fileID: 11400000, guid: 4004b81a9d6368a4d958b07ba4a7772b, type: 2}
+    textResponse: You take the lantern.
+    actionResponse: {fileID: 0}
+  - inputAction: {fileID: 11400000, guid: 703f97af50ba68d4dbcabf97f7fc2f38, type: 2}
+    textResponse: Light fills the room...
+    actionResponse: {fileID: 11400000, guid: 32528c82a79896b4dab4d31b9deb06e0, type: 2}
+  changeSprite: 1
+  canNotTake: 0
+  changeTo: {fileID: 21300000, guid: 312e5902c176d0545b52181fe5b15047, type: 3}

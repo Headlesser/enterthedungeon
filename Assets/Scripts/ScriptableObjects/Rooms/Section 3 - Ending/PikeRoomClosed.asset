@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 33679f0a95fef08478f51265b4f0a415, type: 3}
+  m_Name: PikeRoomClosed
+  m_EditorClassIdentifier: 
+  description: The gate shuts behind you as you enter the room. It is ominously quiet.
+    There is a passage to the east that appears blocked by more of that strange, foul-smelling
+    mucous. A pearly-white skeleton hangs from the gooey threads, mangled and contorted.
+    The passageway to the west is blocked by a gate.
+  roomID: pike room closed
+  exits: []
+  sprite: {fileID: 21300000, guid: 7ca372b270769604d84169f558dbf846, type: 3}
+  audio: {fileID: 8300000, guid: 4eb7c87658873fa439df502bca248c89, type: 3}
+  interactableObjectsInRoom:
+  - {fileID: 11400000, guid: 8f3a303d0a8990b4c81a27154f064655, type: 2}
