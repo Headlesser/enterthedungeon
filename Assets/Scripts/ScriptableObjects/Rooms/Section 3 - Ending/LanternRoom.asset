@@ -21,6 +21,6 @@ MonoBehaviour:
     exitDescription: There is an impressively large archway to the north.
     valueRoom: {fileID: 11400000, guid: 79fff45228175c14394932fce18688b9, type: 2}
   sprite: {fileID: 21300000, guid: eb8d01f9994e8254da028a6f1e725ac7, type: 3}
-  audio: {fileID: 8300000, guid: 4eb7c87658873fa439df502bca248c89, type: 3}
+  audio: {fileID: 8300000, guid: c5912a4aa7c6b394990e409ee05270ba, type: 3}
   interactableObjectsInRoom:
   - {fileID: 11400000, guid: e6cb25d7ff4d93947b5a6af45fe92938, type: 2}
